@@ -1,13 +1,2606 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Made in UAE Marketplace | Global B2B Sourcing</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B GoX</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cloudflare.com">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1d4ed8', // Deep Blue
+                        primaryDark: '#1e3a8a',
+                        secondary: '#f97316', // Orange highlight (like Wolmart)
+                        textDark: '#333333',
+                        textLight: '#666666',
+                        borderGray: '#e5e7eb',
+                        bgGray: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; overflow-x: hidden; background-color: #f5f7fa; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #999; }
+        /* B2B Specific Styles */
+        .tier-price { font-size: 0.8rem; line-height: 1.2; }
+        .tier-price strong { font-size: 1.1rem; color: #333; }
+        .hover-primary:hover { color: #1d4ed8; transition: color 0.3s; }
+        .header-dropdown-shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    
 
+	
+	</style>
+</head>
+<body class="bg-[#fcfdff]"> 
+
+
+<!-- top nav start -->
+<div class="bg-gray-100 text-xs text-textLight py-2 border-gray-200 hidden md:block">
+    <div class="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+							<div class="flex items-center space-x-4">
+								<span>B2B GoX - Global Market Place!</span>
+							</div>
+     <div class="flex items-center space-x-6">
+                
+			
+       <span class="text-gray-300">|</span>
+
+				
+	<a href="become-supplier.html" style=" display: inline-flex; align-items: center; justify-content: center; background-color: #004d99; color: #ffffff; text-decoration: none; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; font-size: 12px; font-weight: 800; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.1px; white-space: nowrap; box-shadow: 0 2px 6px rgba(242, 101, 34, 0); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); " onmouseover=" this.style.backgroundColor='#e05313'; this.style.boxShadow='0 0 12px rgba(242, 101, 34, 0.7), 0 2px 8px rgba(242, 101, 34, 0.3)'; this.style.transform='translateY(-1px)'; " onmouseout=" this.style.backgroundColor='#f26522'; this.style.boxShadow='0 2px 6px rgba(242, 101, 34, 0)'; this.style.transform='translateY(0px)'; "> Be Supplier </a>
+		
+
+
+<div class="relative group py-1">
+    <a href="help-center.html" class="hover-primary font-semibold text-textDark flex items-center">
+        <i class="far fa-question-circle mr-1"></i> Help Center
+    </a>            
+    
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 20px 40px;">
+        
+		
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+            
+            <div style="flex: 1; display: flex; gap: 20px; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🚢</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Supplier</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">List your product</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential buying leads</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Supplier centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; background: #eef5f0; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/BKqsVXjc/help2.jpg" alt="Supplier Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 1px; gap: 10px; background-color: #e5e7eb; align-self:stretch;"></div>
+
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Buyer</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Post buying request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/cStpprd3/help.jpg" alt="Buyer Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+	
+
+<li style="list-style: none; margin: 0; padding: 0; box-sizing: border-box;">
+
+    <nav style="position: sticky; top: 0; z-index: 50; width: 100%; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #f1f5f9; box-sizing: border-box;">
+        <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;">
+
+            <div></div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                
+                <div style="position: relative; display: inline-block;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #475569; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9';" onmouseout="this.style.backgroundColor='transparent';">
+                        <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="globe-dropdown-wrapper" 
+                     style="position: relative; display: inline-block;"
+                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.12)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.3)'; this.querySelector('.tall-oval-btn').style.transform='scale(1.03)';"
+                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.08)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.15)'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
+                    
+                    <script>
+                        window.tempLang = "EN";
+                        window.tempLangFlag = "https://flagcdn.com/w20/us.png";
+                        window.tempCurrency = "USD ($)";
+                    </script>
+
+                    <a href="javascript:void(0);" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <div class="tall-oval-btn" style="border-radius: 50% / 35%; aspect-ratio: 3 / 4; height: 50px; display: flex; align-items: center; justify-content: center; background-color: rgba(249, 115, 22, 0.08); border: 1.5px solid rgba(249, 115, 22, 0.15); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
+                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <i class="fas fa-chevron-down" style="font-size:10px; color:#94a3b8;"></i>
+                    </a>
+
+                    <div class="dropdown-panel" style="position: absolute; top: 100%; right: 0; margin-top: 10px; width: 400px; background-color: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.16); padding: 16px; box-sizing: border-box; z-index: 100; opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.97); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s, visibility 0.2s; pointer-events: none;">
+                        
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f8fafc;">
+                            <div style="text-align: left;">
+                                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: #0f172a; font-size: 14px; margin: 0 0 2px 0;">Regional Settings</h4>
+                                <p style="color: #64748b; font-size: 11px; margin: 0; line-height: 1.3;">Configure language & currency variables.</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 5px; background-color: #f1f5f9; padding: 4px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                                <img id="active-lang-flag" src="https://flagcdn.com/w20/us.png" style="width: 13px; height: 9px; object-fit: cover; border-radius: 1px;" alt="Flag">
+                                <span id="active-settings-badge" style="font-size: 10px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">EN / USD</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 14px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Language</label>
+                            
+                            <div class="lang-grid-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                                <div class="lang-card" data-lang="EN" data-flag="https://flagcdn.com/w20/us.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'EN'; window.tempLangFlag = 'https://flagcdn.com/w20/us.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: rgba(79, 70, 229, 0.04); border: 1.5px solid #4f46e5; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="English">
+                                    <span style="font-size: 12px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">English (US)</span>
+                                </div>
+                                <div class="lang-card" data-lang="AE" data-flag="https://flagcdn.com/w20/ae.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'AE'; window.tempLangFlag = 'https://flagcdn.com/w20/ae.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Arabic">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">العربية (AE)</span>
+                                </div >
+                                <div class="lang-card" data-lang="ES" data-flag="https://flagcdn.com/w20/es.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'ES'; window.tempLangFlag = 'https://flagcdn.com/w20/es.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/es.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Spanish">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Español (ES)</span>
+                                </div>
+                                <div class="lang-card" data-lang="FR" data-flag="https://flagcdn.com/w20/fr.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'FR'; window.tempLangFlag = 'https://flagcdn.com/w20/fr.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/fr.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="French">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Français (FR)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 16px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Currency</label>
+                            
+                            <div class="currency-scroll-list" style="max-height: 130px; overflow-y: auto; border: 1px solid #f1f5f9; border-radius: 10px; padding: 3px; box-sizing: border-box;">
+                                
+                                <div class="curr-row" data-curr="USD" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'USD ($)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background-color: rgba(79, 70, 229, 0.04); cursor: pointer; margin-bottom: 3px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="USA">
+                                        <span style="font-size: 12px; font-weight: 700; color: #475569; font-family: sans-serif;">United States</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 11px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">USD ($)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="AED" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'AED (د.إ)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UAE">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Arab Emirates</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">AED (د.إ)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="GBP" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'GBP (£)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/gb.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UK">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Kingdom</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">GBP (£)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="EUR" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'EUR (€)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/eu.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="EU">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Germany (Eurozone)</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">EUR (€)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="JPY" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'JPY (¥)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/jp.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Japan">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Japan</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">JPY (¥)</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 10px; border-top: 1px solid #f8fafc; width: 100%;">
+                            <button type="button" 
+                                    onclick="
+                                        document.getElementById('active-settings-badge').innerText = window.tempLang + ' / ' + window.tempCurrency.split(' ')[0];
+                                        document.getElementById('active-lang-flag').src = window.tempLangFlag;
+                                        alert('Settings saved successfully: ' + window.tempLang + ' and ' + window.tempCurrency);
+                                    " 
+                                    style="width: 100%; display: block; padding: 10px 16px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); transition: all 0.2s;" 
+                                    onmouseover="this.style.backgroundColor='#1e293b';" 
+                                    onmouseout="this.style.backgroundColor='#0f172a';">
+                                Save Changes
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</li>
+
+    <!-- globe and currency ends -->
+
+
+	   <!-- sign card in start  -->		
+	   
+ <div class="relative group py-1">
+    <a href="help-center.html" class="hover-primary font-semibold text-textDark flex items-center">  <i class="far fa-user mr-1"></i> Sign  </a>            
+    
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 10px 10px;">
+        
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+                        
+			
+
+<!-- FOUR IMAGE CARDS CONTAINER -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap:15px; width: 100%;  box-sizing: border-box;">
+  <div style="text-align: center; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;">
+    <h1 style="margin: 0; color: #0a2540; font-size: 26px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">GET STARTED WITH</h1>
+    <div style="display: flex; align-items: center; background: transparent;">
+      <img src="https://i.ibb.co/xvhHV92/b2bx.png" alt="GoX Logo" style="width:160px; height:50px; object-fit:contain;">
+    </div>
+  </div>
+       <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 95%; max-width: 1300px; min-height: 55vh; box-sizing: border-box; align-items: stretch; padding: 0 10px;">
+        
+        <div style="background: #fff; border: 4px solid #0052cc; border-radius: 16px; padding: 25px 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+            <div style="width: 100%;">
+                <div style="background-color: #0052cc; color: white; font-weight: bold; padding: 10px; border-radius: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">LOGIN BY SOCIAL</div>
+              <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <img src="https://i.ibb.co/6cdd35Gb/si.jpg" alt="Login Illustration" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+      </div>
+            </div>
+            
+            <div style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                <a href="https://google.com" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #fff; color: #333; border: 1px solid #ccc; padding: 10px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 13px; transition: transform 0.2s, background-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);" onmouseover="this.style.backgroundColor='#f7f7f7'; this.style.transform='scale(1.02)'" onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1)'">
+                    <span style="font-weight: bold; color: #4285F4;">G</span> Continue with Google
+                </a>
+                <a href="https://facebook.com" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #1877F2; color: white; padding: 10px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 13px; transition: transform 0.2s, opacity 0.2s;" onmouseover="this.style.opacity='0.9'; this.style.transform='scale(1.02)'" onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'">
+                    <span style="font-weight: bold;">f</span> Continue with Facebook
+                </a>
+                <a href="https://instagram.com" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; padding: 10px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 13px; transition: transform 0.2s, opacity 0.2s;" onmouseover="this.style.opacity='0.9'; this.style.transform='scale(1.02)'" onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'">
+                    <span style="font-weight: bold;">📷</span> Continue with Instagram
+                </a>
+            </div>
+            
+            <p style="font-size: 11px; color: #666; margin: 0; line-height: 1.4;">Access with your social accounts.</p>
+            <div style="position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background-color: #0052cc; color: white; width: 26px; height: 26px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 2;">1</div>
+        </div>
+
+        <div style="background: #fff; border: 4px solid #00a651; border-radius: 16px; padding: 25px 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+            <div style="width: 100%;">
+                <div style="background-color: #00a651; color: white; font-weight: bold; padding: 10px; border-radius: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">EMAIL LOGIN</div>
+                <div style="font-size: 11px; font-weight: bold; color: #333; margin-bottom: 10px; text-transform: uppercase;">LOGIN WITH YOUR</div>
+<div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <img src="https://i.ibb.co/dJjsxt44/em.jpg" alt="Login Illustration" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+      </div>
+            </div>
+            
+            <form action="/login-endpoint" method="POST" style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                <div style="position: relative; width: 100%;">
+                    <input type="email" placeholder="Email Address" required style="width: 100%; padding: 10px 10px 10px 30px; border: 1px solid #ccc; border-radius: 8px; font-size: 13px; box-sizing: border-box; background-color: #f9f9f9; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#00a651'; this.style.backgroundColor='#fff'" onblur="this.style.borderColor='#ccc'; this.style.backgroundColor='#f9f9f9'">
+                    <span style="position: absolute; left: 10px; top: 11px; font-size: 12px; color: #888;">✉</span>
+                </div>
+                <div style="position: relative; width: 100%;">
+                    <input type="password" placeholder="Password" required style="width: 100%; padding: 10px 10px 10px 30px; border: 1px solid #ccc; border-radius: 8px; font-size: 13px; box-sizing: border-box; background-color: #f9f9f9; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#00a651'; this.style.backgroundColor='#fff'" onblur="this.style.borderColor='#ccc'; this.style.backgroundColor='#f9f9f9'">
+                    <span style="position: absolute; left: 10px; top: 11px; font-size: 12px; color: #888;">🔒</span>
+                </div>
+                <button type="submit" style="width: 100%; background-color: #00a651; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: bold; font-size: 14px; cursor: pointer; transition: background-color 0.2s, transform 0.1s;" onmouseover="this.style.backgroundColor='#008540'; this.style.transform='scale(1.02)'" onmouseout="this.style.backgroundColor='#00a651'; this.style.transform='scale(1)'">LOG IN</button>
+            </form>
+            
+            <p style="font-size: 11px; color: #666; margin: 0; line-height: 1.4;">Secure access with your credentials.</p>
+            <div style="position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background-color: #00a651; color: white; width: 26px; height: 26px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 2;">2</div>
+        </div>
+
+        <div style="background: #fff; border: 4px solid #ff5500; border-radius: 16px; padding: 25px 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+            <div style="width: 100%;">
+                <div style="background-color: #ff5500; color: white; font-weight: bold; padding: 10px; border-radius: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px;">BECOME A SUPPLIER</div>
+                <div style="font-size: 11px; font-weight: bold; color: #333; margin-bottom: 10px; text-transform: uppercase;">CREATE AN ACCOUNT AS</div>
+                <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <img src="https://i.ibb.co/CKc9Gc1j/bs.jpg" alt="Login Illustration" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+      </div>
+            </div>
+            
+            <div style="width: 100%; margin-bottom: 15px;">
+                <a href="/supplier-registration-page" style="display: block; width: 100%; background-color: #ff5500; color: white; text-align: center; padding: 12px 0; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; border: none; box-sizing: border-box; transition: background-color 0.2s, transform 0.1s;" onmouseover="this.style.backgroundColor='#e04b00'; this.style.transform='scale(1.02)'" onmouseout="this.style.backgroundColor='#ff5500'; this.style.transform='scale(1)'">
+                    REGISTER AS SUPPLIER
+                </a>
+            </div>
+            
+            <p style="font-size: 11px; color: #666; margin: 0; line-height: 1.4;">Start selling your products globally. Register now!</p>
+            <div style="position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background-color: #ff5500; color: white; width: 26px; height: 26px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 2;">3</div>
+        </div>
+
+        <div style="background: #fff; border: 4px solid #7000cc; border-radius: 16px; padding: 25px 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+            <div style="width: 100%;">
+                <div style="background-color: #7000cc; color: white; font-weight: bold; padding: 10px; border-radius: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px;">CREATE CUSTOMER ACCOUNT</div>
+                <div style="font-size: 11px; font-weight: bold; color: #333; margin-bottom: 10px; text-transform: uppercase;">JOIN OUR COMMUNITY</div>
+                <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <img src="https://i.ibb.co/tpHYGcNX/bc.jpg" alt="Login Illustration" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+      </div>
+            </div>
+            
+            <form action="/signup-endpoint" method="POST" style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                <div style="position: relative; width: 100%;">
+                    <input type="text" placeholder="User Name" required style="width: 100%; padding: 10px 10px 10px 30px; border: 1px solid #ccc; border-radius: 8px; font-size: 13px; box-sizing: border-box; background-color: #f9f9f9; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#7000cc'; this.style.backgroundColor='#fff'" onblur="this.style.borderColor='#ccc'; this.style.backgroundColor='#f9f9f9'">
+                    <span style="position: absolute; left: 10px; top: 11px; font-size: 12px; color: #888;">👤</span>
+                </div>
+                <div style="position: relative; width: 100%;">
+                    <input type="email" placeholder="Email Address" required style="width: 100%; padding: 10px 10px 10px 30px; border: 1px solid #ccc; border-radius: 8px; font-size: 13px; box-sizing: border-box; background-color: #f9f9f9; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#7000cc'; this.style.backgroundColor='#fff'" onblur="this.style.borderColor='#ccc'; this.style.backgroundColor='#f9f9f9'">
+                    <span style="position: absolute; left: 10px; top: 11px; font-size: 12px; color: #888;">✉</span>
+                </div>
+                <button type="submit" style="width: 100%; background-color: #7000cc; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: bold; font-size: 14px; cursor: pointer; transition: background-color 0.2s, transform 0.1s;" onmouseover="this.style.backgroundColor='#5900a3'; this.style.transform='scale(1.02)'" onmouseout="this.style.backgroundColor='#7000cc'; this.style.transform='scale(1)'">SIGN UP NOW</button>
+            </form>
+            
+            <p style="font-size: 11px; color: #666; margin: 0; line-height: 1.4;">Create your personal profile for shopping, tracking, and more.</p>
+            <div style="position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background-color: #7000cc; color: white; width: 26px; height: 26px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 2;">4</div>
+        </div>
+
+     </div>
+    </div>
+
+
+
+
+
+
+				
+						
+
+
+           </div>
+			
+</div>  
+        </div>
+    </div>
+
+	
+</div>
+
+</div>
+   <!-- sign in card ends -->
+ <!-- top nav ends -->
+	
+	
+	
+	
+	
+	
+
+	
+
+<header class="py-2 border-b border-gray-200 sticky top-0 bg-white z-40">
+    <div class="container mx-auto px-4 flex items-center justify-between max-w-7xl w-full">
+        
+        <div class="flex items-center flex-shrink-0">
+            <button class="md:hidden text-2xl mr-4" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="/" class="flex items-center"> 
+                <img src="https://i.ibb.co/5WrVC3q3/logoo.png" alt="B2B GoX" class="h-14 lg:h-16 w-auto object-contain">  
+            </a> 
+        </div>
+
+        <div class="flex-1 hidden md:flex mx-6 lg:mx-12 border-2 border-primary rounded-full overflow-hidden h-11 items-center">
+            <select class="bg-gray-50 text-sm px-3 border-r border-gray-200 outline-none text-gray-600 font-medium cursor-pointer h-full flex-shrink-0">
+                <option>Products</option>
+                <option>Suppliers</option>
+                <option>Categories</option>
+            </select>
+            <input type="text" placeholder="What are you looking for..." class="w-full px-4 outline-none text-sm h-full">
+            <button class="bg-white text-gray-500 hover:text-primary px-5 h-full transition duration-300">
+                <i class="fas fa-search text-base"></i>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-6 flex-shrink-0">
+
+            <a href="videocard.html" style="display: flex; align-items: center; gap: 8px; background: linear-gradient(to right, #ff0000, #ff2b2b); color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 30px; box-shadow: 0 3px 10px rgba(255, 0, 0, .25); transition: all .3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px rgba(214, 0, 0, .3)';" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 3px 10px rgba(255, 0, 0, .25)';">
+                <div style="width: 22px; height: 22px; background: #fff; color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px;">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <img src="https://i.ibb.co/rK2M1mCr/x.png" alt="X" style="height: 24px; width: auto; object-fit: contain;">
+            </a>
+
+            
+			
+			
+<!-- Wrapper Div: Set to block to seamlessly link the icon hover zone directly with the mega-menu grid boundary -->
+<div class="sms-trigger-wrapper"
+     style="display: block;"
+     onmouseenter="this.querySelector('.msg-mega-dropdown').style.display='block'"
+     onmouseleave="this.querySelector('.msg-mega-dropdown').style.display='none'">
+
+    <!-- Icon Trigger Link Context Container -->
+    <a href="my-inbox.html" class="group flex flex-col items-center text-center no-underline transition duration-200" style="transform: scale(1.05); display: inline-flex; padding: 10px 16px; margin-bottom: 0;">
+        <i class="fas fa-envelope text-2xl transition duration-200 group-hover:text-gray-700" style="color: #2563eb;"></i>
+        <span style="font-size: 10px; font-weight: 700; margin-top: 3px; color: #1e3a8a; letter-spacing: 0.3px;">SMS</span>
+    </a>
+
+    <!-- FULL DESKTOP WIDTH MEGA DROPDOWN PANEL -->
+    <!-- Removed 100vw to prevent screen spill. Added seamless top anchoring so there is absolute zero gap -->
+    <div class="msg-mega-dropdown" style="display: none; position: absolute; left: 0; right: 0; width: 100%; background: #ffffff; border-bottom: 2px solid #e2e8f0; border-top: 1px solid #f1f5f9; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12); z-index: 9999; padding: 24px 0; margin-top: 0; box-sizing: border-box;">
+        
+        <!-- Hover Bridge: Guarantees your mouse never loses focus transitioning onto the component items -->
+        <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: transparent;"></div>
+        
+        <div class="container mx-auto px-4 max-w-7xl">
+            
+            <!-- 4-Column Responsive Messaging Grid System -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                
+                <!-- COLUMN 1: Inquiry Messages Box -->
+                <div onclick="window.location.href='message.html';"
+                     style="display: flex; flex-direction: column; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; cursor: pointer; transition: all 0.25s ease;"
+                     onmouseover="this.style.background='#ffffff'; this.style.borderColor='#2563eb'; this.style.boxShadow='0 10px 20px rgba(37, 99, 235, 0.06)';"
+                     onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+                    
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="font-family: sans-serif; font-size: 15px; font-weight: 700; color: #0f172a;">📩 Inquiry Messages</span>
+                        <span style="background: #dbeafe; color: #2563eb; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px;">Active</span>
+                    </div>
+                    
+                    <div style="width: 100%; height: 110px; background: #eff6ff; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; overflow: hidden;">
+                        <img src="https://img.icons8.com/illustrations/external-pack-flat-symbols-tanah-basah/100/external-inquiry-customer-reviews-pack-flat-symbols-tanah-basah.png" alt="Inquiry" style="max-height: 85px; object-fit: contain;">
+                    </div>
+                    
+                    <p style="font-family: sans-serif; font-size: 12px; color: #64748b; margin: 0; line-height: 1.4;">
+                        Review pricing offers, corporate product inquiries, and custom specifications sheet logs.
+                    </p>
+                </div>
+
+                <!-- COLUMN 2: RFQ Messages Box -->
+<a href="message.html"
+   style="display:flex; flex-direction:column; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer; transition:all 0.25s ease; text-decoration:none;"
+   onmouseover="this.style.background='#ffffff'; this.style.borderColor='#2563eb'; this.style.boxShadow='0 10px 20px rgba(37, 99, 235, 0.06)';"
+   onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+        <span style="font-family:sans-serif; font-size:15px; font-weight:700; color:#0f172a;">
+            📄 RFQ Messages
+        </span>
+
+        <span style="background:#fef3c7; color:#d97706; font-size:11px; font-weight:700; padding:2px 8px; border-radius:20px;">
+            Quotes
+        </span>
+    </div>
+
+    <div style="width:100%; height:110px; background:#fffbeb; border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:12px; overflow:hidden;">
+        <img src="https://img.icons8.com/illustrations/external-shadow-pack-linear-gradient-icha-sayang/100/external-rfq-business-process-shadow-pack-linear-gradient-icha-sayang.png"
+             alt="RFQ"
+             style="max-height:85px; object-fit:contain;">
+    </div>
+
+    <p style="font-family:sans-serif; font-size:12px; color:#64748b; margin:0; line-height:1.4;">
+        Track current Request for Quotes, manage direct supplier bids, and view estimates.
+    </p>
+</a>
+
+                <!-- COLUMN 3: Chat Messages Box -->
+                <div onclick="window.location.href='message.html';"
+                     style="display: flex; flex-direction: column; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; cursor: pointer; transition: all 0.25s ease;"
+                     onmouseover="this.style.background='#ffffff'; this.style.borderColor='#2563eb'; this.style.boxShadow='0 10px 20px rgba(37, 99, 235, 0.06)';"
+                     onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+                    
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="font-family: sans-serif; font-size: 15px; font-weight: 700; color: #0f172a;">💬 Chat Messages</span>
+                        <span style="background: #bbf7d0; color: #16a34a; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px;">Live Chat</span>
+                    </div>
+                    
+                    <div style="width: 100%; height: 110px; background: #f0fdf4; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; overflow: hidden;">
+                        <img src="https://img.icons8.com/illustrations/flat-color/100/chat.png" alt="Chat" style="max-height: 85px; object-fit: contain;">
+                    </div>
+                    
+                    <p style="font-family: sans-serif; font-size: 12px; color: #64748b; margin: 0; line-height: 1.4;">
+                        Connect in real-time instantly with verified regional logistics partners and global support channels.
+                    </p>
+                </div>
+
+                <!-- COLUMN 4: System Notifications Box -->
+                <div onclick="window.location.href='message.html';"
+                     style="display: flex; flex-direction: column; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; cursor: pointer; transition: all 0.25s ease;"
+                     onmouseover="this.style.background='#ffffff'; this.style.borderColor='#2563eb'; this.style.boxShadow='0 10px 20px rgba(37, 99, 235, 0.06)';"
+                     onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+                    
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="font-family: sans-serif; font-size: 15px; font-weight: 700; color: #0f172a;">🔔 System Alerts</span>
+                        <span style="background: #fee2e2; color: #dc2626; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px;">Alerts</span>
+                    </div>
+                    
+                    <div style="width: 100%; height: 110px; background: #fef2f2; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; overflow: hidden;">
+                        <img src="https://img.icons8.com/illustrations/flat-color/100/alarm.png" alt="System" style="max-height: 85px; object-fit: contain;">
+                    </div>
+                    
+                    <p style="font-family: sans-serif; font-size: 12px; color: #64748b; margin: 0; line-height: 1.4;">
+                        Monitor your dynamic account validation checkpoints, invoice logs, and compliance statuses.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+			
+			
+		
+		
+			
+			
+
+        </div>
+    </div>
+</header>
+
+
+    <main class="container mx-auto px-4 max-w-7xl pt-4">
+        <div class="flex flex-col lg:flex-row gap-6">
+            
+            <!-- Sidebar Navigation (Browse Categories) -->
+            <div class="hidden lg:block w-1/4 flex-shrink-0 relative z-30">
+                <div class="border border-borderGray rounded-lg shadow-sm bg-white overflow-hidden">
+                    <div class="bg-gray-50 py-4 px-5 font-bold text-textDark border-b border-borderGray flex items-center justify-between">
+                        <span><i class="fas fa-list-ul mr-2 text-primary"></i>CATEGORIES</span>
+                        <i class="fas fa-chevron-down text-xs text-gray-400"></i>
+                    </div>
+                    <ul class="py-2 text-sm text-gray-600 font-medium">
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-tshirt w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Apparel & Accessories</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-industry w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Machinery & Industrial</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-microchip w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Consumer Electronics</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-seedling w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Agriculture & Food</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-tools w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Hardware & Tools</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-box w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Packaging & Printing</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-car w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Vehicles & Accessories</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                            <span><i class="fas fa-couch w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Home, Lights & Construction</span>
+                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+                        </li>
+                        <li class="px-5 py-2 text-primary text-xs font-bold hover:underline cursor-pointer">
+                            VIEW ALL CATEGORIES <i class="fas fa-chevron-right text-[8px] ml-1"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <!-- Main Content Area (Nav + Hero Slider) -->
+<div class="w-full lg:w-3/4 flex flex-col">
+                
+
+                <!-- Horizontal Nav -->
+<nav class="flex items-center justify-between mb-1 border-b lg:border-primary pb-2 lg:pb-0">
+                 <ul class="flex space-x-6 text-sm font-bold text-textDark items-center whitespace-nowrap" style="overflow:visible;">
+                        <li class="text-primary border-b-2 border-primary pb-1 cursor-pointer">Home</li>
+                        <li class="hover:text-primary cursor-pointer flex items-center">Sourcing <i class="fas fa-chevron-down text-[10px] ml-1 text-gray-400"></i> </li>
+                    
+
+ 
+ <li style="position: relative; list-style: none;"
+    onmouseenter="this.querySelector('.buyer-dropdown').style.display='block'"
+    onmouseleave="this.querySelector('.buyer-dropdown').style.display='none'">
+
+    <a href="buyer-central.html"
+       style="cursor: pointer; display: flex; align-items: center; text-decoration: none; color: #1e293b; font-weight: 600; padding: 12px 18px; font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; transition: color 0.2s;"
+       onmouseover="this.style.color='#2563eb'"
+       onmouseout="this.style.color='#1e293b'">
+        Buyer
+        <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 6px; color: #94a3b8;"></i>
+    </a>
+
+    <div class="buyer-dropdown" style="
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -320px;
+        width: 940px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+        padding: 30px;
+        z-index: 99999;
+        border-radius: 8px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+
+        <div style="display: flex; justify-content: space-between; gap: 35px;">
+
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+                <div style="width: 100%; height: 130px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0;">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&q=80" 
+                         alt="Sourcing Search Engine Service" 
+                         style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #f0fdf4; padding-bottom: 6px; letter-spacing: -0.3px;">
+                        Search Services
+                    </h4>
+                    <div style="line-height: 2.2; font-size: 14px;">
+                        <div><a href="product-directory.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Product Directory</a></div>
+                        <div><a href="supplier-discover.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Supplier Discover</a></div>
+                        <div><a href="post-sourcing-request.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Post Sourcing Request</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+                <div style="width: 100%; height: 130px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0;">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&q=80" 
+                         alt="Quick Panel Access Hub" 
+                         style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #faf5ff; padding-bottom: 6px; letter-spacing: -0.3px;">
+                        Quick Access Hub
+                    </h4>
+                    <div style="line-height: 2.2; font-size: 14px;">
+                        <div><a href="my-favorites.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">My Favorites</a></div>
+                        <div><a href="browsing-history.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Browsing History</a></div>
+                        <div><a href="my-rfqs.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">My RFQs</a></div>
+                        <div><a href="saved-suppliers.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Saved Suppliers</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+                <div style="width: 100%; height: 130px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0;">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" 
+                         alt="Premium Sourcing Assistance Services" 
+                         style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+
+                <div>
+                    <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #eff6ff; padding-bottom: 6px; letter-spacing: -0.3px;">
+                        Premium Solutions
+                    </h4>
+                    <div style="line-height: 2.2; font-size: 14px;">
+                        <div><a href="secured-trading-service.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Secured Trading Assistance</a></div>
+                        <div><a href="audited-suppliers-reports.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Audited Factory Reports</a></div>
+                        <div><a href="buyer-center.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">Global VIP Buyer Center</a></div>
+                        <div><a href="contact-us.html" style="color: #475569; text-decoration: none; display: block; padding: 2px 0;" onmouseover="this.style.color='#2563eb'; this.style.paddingLeft='4px';" onmouseout="this.style.color='#475569'; this.style.paddingLeft='0';">24/7 Priority Support</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <!-- supplier start -->
+  <li class="relative group py-1" style="position: relative; list-style: none;"
+    onmouseenter="this.querySelector('.buyer-dropdown').style.display='block'"
+    onmouseleave="this.querySelector('.buyer-dropdown').style.display='none'">
+    
+    <!-- Trigger Main Link -->
+        <a href="buyer-central.html"
+       style="cursor: pointer; display: flex; align-items: center; text-decoration: none; color: #1e293b; font-weight: 600; padding: 12px 18px; font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; transition: color 0.2s;"
+       onmouseover="this.style.color='#2563eb'"
+       onmouseout="this.style.color='#1e293b'">
+       Supplier
+        <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 6px; color: #94a3b8;"></i>
+    </a>        
+    
+    <!-- Full-Width Mega Dropdown Panel -->
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 20px 40px;">
+        
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+            
+            <!-- SECTION 1: FOR SUPPLIER -->
+            <div style="flex: 1; display: flex; gap: 20px; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🚢</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Supplier</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">List your product</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential buying leads</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Supplier centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 200px; height: 200px; border-radius: 10px; margin-top: 40px; background: #eef5f0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div style="width: 100%; height: 100%;"> 
+                        <img src="https://i.ibb.co/vxFCDB3r/Supplier.jpg" alt="Supplier Flyer" style="width: 100%; height: 100%; object-fit: cover; display: block;"> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Divider Line -->
+            <div style="width: 1px; gap: 10px; background-color: #e5e7eb; align-self: stretch;"></div>
+
+            <!-- SECTION 2: FOR BUYER -->
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Buyer</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Post buying request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 200px; height: 200px; border-radius: 10px; margin-top: 40px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div style="width: 100%; height: 100%;"> 
+                        <img src="https://i.ibb.co/vxFCDB3r/Supplier.jpg" alt="Buyer Flyer" style="width: 100%; height: 100%; object-fit: cover; display: block;"> 
+                    </div>
+                </div>
+            </div>
+			
+			
+			<!-- SECTION 3: FOR BUYER -->
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">Quick Links</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">RFQ request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'"> Verify Supplier account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Trade Show</a></li>
+                    </ul>
+                </div>
+                <div style="width: 200px; height: 200px; border-radius: 10px; margin-top: 40px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div style="width: 100%; height: 100%;"> 
+                        <img src="https://i.ibb.co/NRyXtbW/buyers.webp" alt="Buyer Flyer" style="width: 100%; height: 100%; object-fit: cover; display: block;"> 
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</li>
+<!-- supplier end -->
+				
+		<li style="list-style:none;">
+			<a href="rfq.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color=''"> <i class="far fa-file-alt" style="margin-right:6px;"> </i>  Submit RFQ </a>
+		</li>
+
+		<li class="list-none">
+			<a href="order-list.html" class="flex items-center no-underline text-inherit hover:text-blue-600"> <i class="fas fa-clipboard-list mr-[6px]"></i>Order List</a>
+		</li>
+
+ 
+</ul>
+              <div class="hidden xl:flex items-center space-x-4 text-sm font-bold" style="display: flex; align-items: center; font-size: 14px; font-weight: bold;">
+    
+    <div class="mobile-app-dropdown-wrapper" style="position: relative; display: inline-block; padding: 10px 0;">
+        
+        <span class="hover-primary cursor-pointer" style="color: #1e293b; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: color 0.2s ease;">
+            <i class="fas fa-mobile-screen-button text-primary" style="color: #0284c7;"></i> 
+            Mobile App
+            <i class="fas fa-chevron-down dropdown-arrow" style="font-size: 11px; color: #64748b; margin-left: 2px; transition: transform 0.2s ease;"></i>
+        </span>
+
+        <div class="dropdown-content" style="
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 540px;
+            padding: 24px 28px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        ">
+            
+            <div style="flex: 1; text-align: left;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Download App</h3>
+                <p style="font-size: 13px; font-weight: 400; color: #64748b; line-height: 1.5; margin-bottom: 16px; max-width: 180px;">
+                    Better Online and Trade Show Sourcing Experiences. Scan the QR code to download.
+                </p>
+                <a href="#" style="font-size: 13px; font-weight: 600; color: #0284c7; text-decoration: underline;">Learn More</a>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                
+                <div style="text-align: center; width: 120px;">
+                    <div style="border: 1px solid #e2e8f0; padding: 6px; border-radius: 6px; background: #ffffff;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=108x108&data=https://b2bcox.com/app" alt="iOS & Android" style="width: 100%; height: auto; display: block;" />
+                    </div>
+                    <span style="display: block; font-size: 11px; font-weight: 500; color: #64748b; margin-top: 8px; line-height: 1.3;">iOS & Android</span>
+                </div>
+
+                <div style="text-align: center; width: 120px;">
+                    <div style="border: 1px solid #e2e8f0; padding: 6px; border-radius: 6px; background: #ffffff;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=108x108&data=https://b2bcox.com/app-china" alt="iOS & Android Mainland China" style="width: 100%; height: auto; display: block;" />
+                    </div>
+                    <span style="display: block; font-size: 11px; font-weight: 500; color: #64748b; margin-top: 8px; line-height: 1.3;">iOS & Android<br><span style="color: #94a3b8;">(Mainland China)</span></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        .mobile-app-dropdown-wrapper:hover .dropdown-content {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        .mobile-app-dropdown-wrapper:hover .hover-primary {
+            color: #0284c7 !important;
+        }
+        .mobile-app-dropdown-wrapper:hover .dropdown-arrow {
+            transform: rotate(180deg);
+            color: #0284c7 !important;
+        }
+    </style>
+
+</div>
+
+</nav>
+
+
+
+
+
+                <!-- Hero Banner main -->
+       <div id="hero-carousel" class="group relative rounded-lg overflow-hidden h-[400px] flex items-center bg-gray-100">
+    
+    <div class="absolute inset-0 w-full h-full">
+        
+        <div class="carousel-slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000 ease-in-out flex items-center">
+            <img src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg" alt="Running Shoes" class="absolute inset-0 w-full h-full object-cover  mix-blend-multiply">
+            
+            <div class="relative z-10 px-10 md:px-16 md:w-2/3">
+                <p class="text-gray-600 font-semibold mb-2 text-lg">Direct from Verified Manufacturers</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-2">Amazing Men's<br>Luxury Ferfume</h2>
+                <p class="text-xl text-gray-400 mb-6 font-medium">Bulk Orders up to <span class="text-secondary font-bold">30% OFF</span></p>
+                <button class="border-2 border-textDark text-textDark font-bold py-3 px-8 hover:bg-textDark hover:text-white transition duration-300 flex items-center space-x-2">
+                    <span>SOURCE NOW</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out flex items-center">
+            <img src="https://i.ibb.co/k6DGsWcx/1.jpg" alt="Athletic Footwear" class="absolute inset-0 w-full h-full object-cover  mix-blend-multiply">
+            
+            <div class="relative z-10 px-10 md:px-16 md:w-2/3">
+                <p class="text-gray-600 font-semibold mb-2 text-lg">Eco-Friendly Smart Manufacturing</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-2">Long Lasting<br>Perfume</h2>
+                <p class="text-xl text-gray-700 mb-6 font-medium">MOQ: <span class="text-secondary font-bold">100 Pairs</span> / Free Sample</p>
+                <button class="border-2 border-textDark text-textDark font-bold py-3 px-8 hover:bg-textDark hover:text-white transition duration-300 flex items-center space-x-2">
+                    <span>REQUEST SAMPLE</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out flex items-center">
+            <img src="https://i.ibb.co/RGnzTV70/banner.png" alt="Premium Sneakers" class="absolute inset-0 w-full h-full object-cover  mix-blend-multiply">
+            
+            <div class="relative z-10 px-10 md:px-16 md:w-2/3">
+                <p class="text-gray-600 font-semibold mb-2 text-lg">Global OEM/ODM Customization</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-2">Premium Quality<br>Furniture</h2>
+                <p class="text-xl text-white-700 mb-6 font-medium">Certified <span class="text-secondary font-bold">ISO 9001</span> Factory</p>
+                <button class="border-2 border-textDark text-textDark font-bold py-3 px-8 hover:bg-textDark hover:text-white transition duration-300 flex items-center space-x-2">
+                    <span>CONTACT SUPPLIER</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="prevBtn" class="absolute left-4 z-20 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-md flex items-center justify-center text-textDark opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button id="nextBtn" class="absolute right-4 z-20 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-md flex items-center justify-center text-textDark opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+        <button class="carousel-dot w-3 h-3 rounded-full bg-textDark opacity-100 transition-all duration-300" data-slide="0"></button>
+        <button class="carousel-dot w-3 h-3 rounded-full bg-textDark opacity-40 hover:opacity-70 transition-all duration-300" data-slide="1"></button>
+        <button class="carousel-dot w-3 h-3 rounded-full bg-textDark opacity-40 hover:opacity-70 transition-all duration-300" data-slide="2"></button>
+    </div>
+
+
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const slides = document.querySelectorAll(".carousel-slide");
+        const dots = document.querySelectorAll(".carousel-dot");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const carouselContainer = document.getElementById("hero-carousel");
+        
+        let currentIndex = 0;
+        let slideInterval;
+        const intervalTime = 5000; // Auto-slide delay (5 seconds)
+
+        function updateCarousel(index) {
+            currentIndex = index;
+            
+            // Toggle active Slide views via opacity changes
+            slides.forEach((slide, i) => {
+                if(i === currentIndex) {
+                    slide.classList.replace("opacity-0", "opacity-100");
+                    slide.style.zIndex = "10";
+                } else {
+                    slide.classList.replace("opacity-100", "opacity-0");
+                    slide.style.zIndex = "0";
+                }
+            });
+
+            // Toggle Pagination Active States
+            dots.forEach((dot, i) => {
+                if(i === currentIndex) {
+                    dot.classList.replace("opacity-40", "opacity-100");
+                } else {
+                    dot.classList.replace("opacity-100", "opacity-40");
+                }
+            });
+        }
+
+        function nextSlide() {
+            let next = (currentIndex + 1) % slides.length;
+            updateCarousel(next);
+        }
+
+        function prevSlide() {
+            let prev = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel(prev);
+        }
+
+        // Run automation timer
+        function startTimer() {
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+
+        function stopTimer() {
+            clearInterval(slideInterval);
+        }
+
+        // Button Click Triggers
+        nextBtn.addEventListener("click", () => { nextSlide(); stopTimer(); startTimer(); });
+        prevBtn.addEventListener("click", () => { prevSlide(); stopTimer(); startTimer(); });
+
+        // Pagination Dot Triggers
+        dots.forEach(dot => {
+            dot.addEventListener("click", (e) => {
+                const targetIndex = parseInt(e.target.getAttribute("data-slide"));
+                updateCarousel(targetIndex);
+                stopTimer();
+                startTimer();
+            });
+        });
+
+        // Pause cycle when user hovers over layout frame
+        carouselContainer.addEventListener("mouseenter", stopTimer);
+        carouselContainer.addEventListener("mouseleave", startTimer);
+
+        // Initiate System
+        startTimer();
+    });
+</script>
+    <!-- Hero Banner main ends-->
+       </div>
+ </div>
+   
+   </main>
+
+    <section class="container mx-auto px-4 max-w-7xl mt-8">
+        <div class="border border-borderGray rounded-lg py-6 px-4 md:px-10 flex flex-wrap justify-between items-center gap-y-6">
+            <div class="flex items-center w-full md:w-auto md:flex-1 justify-center md:justify-start">
+                <i class="fas fa-shield-alt text-4xl text-gray-600 mr-4"></i>
+                <div>
+                    <h4 class="font-bold text-textDark text-sm">Trade Assurance</h4>
+                    <p class="text-xs text-gray-500">Protects your B2B orders</p>
+                </div>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-borderGray"></div>
+            <div class="flex items-center w-full md:w-auto md:flex-1 justify-center md:justify-center">
+                <i class="fas fa-certificate text-4xl text-gray-600 mr-4"></i>
+                <div>
+                    <h4 class="font-bold text-textDark text-sm">Verified Suppliers</h4>
+                    <p class="text-xs text-gray-500">Strictly inspected factories</p>
+                </div>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-borderGray"></div>
+            <div class="flex items-center w-full md:w-auto md:flex-1 justify-center md:justify-center">
+                <i class="fas fa-globe-americas text-4xl text-gray-600 mr-4"></i>
+                <div>
+                    <h4 class="font-bold text-textDark text-sm">Global Logistics</h4>
+                    <p class="text-xs text-gray-500">Fast & reliable ocean/air freight</p>
+                </div>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-borderGray"></div>
+            <div class="flex items-center w-full md:w-auto md:flex-1 justify-center md:justify-end">
+                <i class="fas fa-headset text-4xl text-gray-600 mr-4"></i>
+                <div>
+                    <h4 class="font-bold text-textDark text-sm">B2B Support</h4>
+                    <p class="text-xs text-gray-500">Dedicated account managers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 max-w-7xl mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Banner 1 -->
+            <div class="bg-gray-100 rounded-lg p-10 flex items-center relative overflow-hidden h-48 group cursor-pointer">
+                <div class="relative z-10 w-2/3">
+                    <p class="text-sm font-semibold text-gray-600 mb-1">Get up to <span class="text-secondary">20% OFF</span></p>
+                    <h3 class="text-2xl font-extrabold text-textDark mb-1">SPORTS OUTFITS</h3>
+                    <p class="text-lg text-gray-600 mb-2">OEM / ODM Collection</p>
+                    <p class="text-xs text-gray-500 font-bold">MOQ: 100 Sets <span class="text-gray-300 mx-2">|</span> Starting at <span class="text-secondary">$12.00</span>/set</p>
+                </div>
+                <img src="https://placehold.co/300x300/f1f5f9/94a3b8?text=Apparel+Bulk" class="absolute -right-10 top-0 h-full object-cover transform group-hover:scale-105 transition duration-500" alt="Sports Outfits">
+            </div>
+            
+            <!-- Banner 2 -->
+            <div class="bg-gray-800 rounded-lg p-10 flex items-center relative overflow-hidden h-48 group cursor-pointer text-white">
+                <div class="relative z-10 w-2/3">
+                    <p class="text-sm font-medium text-gray-300 mb-1">New Manufacturing Tech</p>
+                    <h3 class="text-2xl font-extrabold mb-1">ACCESSORIES</h3>
+                    <p class="text-lg text-gray-300 mb-2">Smart Gadgets</p>
+                    <p class="text-xs text-gray-400 font-bold">Ready to Ship <span class="text-gray-500 mx-2">|</span> Only From <span class="text-secondary">$9.50</span></p>
+                </div>
+                <img src="https://placehold.co/300x300/334155/cbd5e1?text=Smart+Gadgets" class="absolute right-0 top-0 h-full object-cover transform group-hover:scale-105 transition duration-500 opacity-80" alt="Accessories">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="bg-bgGray py-12 mt-16 border-t border-gray-200">
+        <div class="container mx-auto px-4 max-w-7xl text-center">
+            <h2 class="text-2xl font-extrabold text-textDark mb-8">Top Categories For Sourcing</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 relative">
+                <!-- Navigation arrows for categories -->
+                <button class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow flex items-center justify-center z-10 hidden lg:flex text-gray-600 hover:text-primary"><i class="fas fa-chevron-left"></i></button>
+                <button class="absolute -right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-gray-800 rounded-full shadow flex items-center justify-center z-10 hidden lg:flex text-white hover:bg-primary"><i class="fas fa-chevron-right"></i></button>
+
+                <!-- Category Cards -->
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Apparel" class="w-full h-full object-contain rounded-full" alt="Fashion">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Apparel</h4>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Furniture" class="w-full h-full object-contain rounded-full" alt="Furniture">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Furniture</h4>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Shoes" class="w-full h-full object-contain rounded-full" alt="Shoes">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Shoes & Bags</h4>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Sports" class="w-full h-full object-contain rounded-full" alt="Sports">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Sports Equip</h4>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Electronics" class="w-full h-full object-contain rounded-full" alt="Games">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Consumer Elec.</h4>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col items-center">
+                    <div class="w-20 h-20 mb-4 transform group-hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/100x100/eff6ff/1e3a8a?text=Laptops" class="w-full h-full object-contain rounded-full" alt="Computers">
+                    </div>
+                    <h4 class="font-bold text-sm text-textDark">Computers</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-white mx-auto px-4 max-w-7xl mt-16 mb-16">
+        <div class="flex justify-between items-end mb-6 border-b border-gray-100 pb-2">
+            <h2 class="text-2xl font-extrabold text-textDark">Trending Wholesale Products</h2>
+            <a href="supplier-order.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+
+        <!-- Product Grid (8 items) -->
+        <div class=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-8">
+            
+            <!-- Standard B2B Product Card Function -->
+            
+			<!-- Card 1 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img src="https://i.ibb.co/gMKrFGZ4/61-Xudjc-LXu-L-AC-UF350-350-QL80.jpg" class="max-w-[100%] h-auto object-fit: contain mix-blend-multiply transform group-hover:scale-105 transition duration-500" alt="Product">
+                    <!-- Hover Actions -->
+                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="fas fa-shopping-cart text-xs"></i></button>
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="far fa-heart text-xs"></i></button>
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="fas fa-search text-xs"></i></button>
+                    </div>
+                </div>
+                <div class="text-center px-2">
+                    <a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Classic Wool Fedora Hat Wholesale</a>
+                    <div class="flex justify-center text-secondary text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">4 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$5.00 - $8.00</div>
+                    <div class="text-xs text-gray-500">MOQ: 50 Pieces</div>
+<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Women's PU Leather White Handbag Factory Direct</a>
+                    <div class="flex justify-center text-gray-300 text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">0 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$12.50</div>
+                    <div class="text-xs text-gray-500">MOQ: 100 Pieces</div>
+					
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-1.5 py-0.5 rounded">7% OFF</span>
+                    <img src="https://i.ibb.co/gMKrFGZ4/61-Xudjc-LXu-L-AC-UF350-350-QL80.jpg" class="max-w-[100%] h-auto mix-blend-multiply transform group-hover:scale-105 transition duration-500" alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Multi Functional Silicon Case for iPhone 14/15</a>
+                    <div class="flex justify-center text-secondary text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">112 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$0.80 <span class="text-xs text-gray-400 line-through font-normal ml-1">$0.95</span></div>
+                    <div class="text-xs text-gray-500">MOQ: 500 Pieces</div> 
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+             <!-- Card 4 -->
+             <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"  alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">100% Cotton Hotel Towel Set Wholesale</a>
+                    <div class="flex justify-center text-gray-300 text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">0 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$3.55 - $5.99</div>
+                    <div class="text-xs text-gray-500">MOQ: 200 Sets</div>
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+					
+                </div>
+            </div>
+
+            <!-- Card 5 to 8 (Replicating pattern for grid completion) -->
+            <!-- Just inserting placeholder blocks to match the screenshot density -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"><img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Luxury Hotel Bedding Set</a><div class="font-bold text-textDark mb-1">$32.00 - $35.00</div><div class="text-xs text-gray-500">MOQ: 50 Sets</div> 
+  
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+
+</div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"></div><div class="text-center px-2">
+  
+  <a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Bluetooth Party Speaker OEM</a><div class="font-bold text-textDark mb-1">$45.00</div><div class="text-xs text-gray-500">MOQ: 100 Units</div> 
+  
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>  </div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Waterproof Hiking Backpack</a><div class="font-bold text-textDark mb-1">$12.90</div><div class="text-xs text-gray-500">MOQ: 300 Pieces</div> 
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+
+</div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"><span class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-1.5 py-0.5 rounded">HOT</span> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Professional Salon Hair Dye Bulk</a><div class="font-bold text-textDark mb-1">$1.84 / tube</div><div class="text-xs text-gray-500">MOQ: 1000 Tubes</div> <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a> </div></div>
+        </div>
+
+        <!-- Large Bottom Banners (Screenshot 3 bottom) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <div class="bg-[#42524c] rounded p-10 text-white flex flex-col justify-center h-48 cursor-pointer relative overflow-hidden group">
+                <div class="relative z-10">
+                    <p class="text-xs tracking-wider mb-2 opacity-80">RAW MATERIALS</p>
+                    <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">Cosmetic Makeup<br>Professional Ingredients</h3>
+                    <a href="#" class="text-sm font-bold border-b-2 border-white pb-1 inline-block hover:text-gray-300 hover:border-gray-300 transition">SOURCE NOW <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+            <div class="bg-[#e5e5e5] rounded p-10 text-textDark flex flex-col justify-center h-48 cursor-pointer relative overflow-hidden group">
+                <div class="relative z-10">
+                    <p class="text-xs font-semibold text-gray-500 mb-2">TRENDING FACTORIES</p>
+                    <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4 text-[#333]">Women's Lifestyle<br>Collection Manufacturers</h3>
+                    <a href="#" class="text-sm font-bold border-b-2 border-textDark pb-1 inline-block hover:text-primary hover:border-primary transition">VIEW FACTORIES <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	
+
+
+
+
+<section class="container mx-auto px-4 max-w-7xl mt-16 mb-16">
+        <div class="flex justify-between items-end mb-6 border-b border-gray-100 pb-2">
+            <h2 class="text-2xl font-extrabold text-textDark">Trending Eletcronics Products</h2>
+            <a href="#" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+
+        <!-- Product Grid (8 items) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-8">
+            
+            <!-- Standard B2B Product Card Function -->
+            <!-- Card 1 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img src="https://i.ibb.co/xSzdhZBF/m1.jpg" class="max-w-[100%] h-auto object-fit: contain mix-blend-multiply transform group-hover:scale-105 transition duration-500" alt="Product">
+                    <!-- Hover Actions -->
+                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="fas fa-shopping-cart text-xs"></i></button>
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="far fa-heart text-xs"></i></button>
+                        <button class="w-8 h-8 bg-white rounded-full shadow text-gray-600 hover:text-primary hover:bg-gray-50"><i class="fas fa-search text-xs"></i></button>
+                    </div>
+                </div>
+                <div class="text-center px-2">
+                    <a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Classic Wool Fedora Hat Wholesale</a>
+                    <div class="flex justify-center text-secondary text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">4 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$5.00 - $8.00</div>
+
+<div class="text-xs text-gray-500 mb-3">   MOQ: 50 Pieces</div>
+
+<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+				
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img
+  src="https://i.ibb.co/RKxRFyH/s2.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Women's PU Leather White Handbag Factory Direct</a>
+                    <div class="flex justify-center text-gray-300 text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">0 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$12.50</div>
+                    <div class="text-xs text-gray-500">MOQ: 100 Pieces</div>
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-1.5 py-0.5 rounded">7% OFF</span>
+                    <img src="https://i.ibb.co/xSzdhZBF/m1.jpg" class="max-w-[100%] h-auto mix-blend-multiply transform group-hover:scale-105 transition duration-500" alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Multi Functional Silicon Case for iPhone 14/15</a>
+                    <div class="flex justify-center text-secondary text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">112 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$0.80 <span class="text-xs text-gray-400 line-through font-normal ml-1">$0.95</span></div>
+                    <div class="text-xs text-gray-500">MOQ: 500 Pieces</div>
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+             <!-- Card 4 -->
+             <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded">
+                <div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded overflow-hidden">
+                    <img src="https://i.ibb.co/xSzdhZBF/m1.jpg"  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"  alt="Product">
+                </div>
+                <div class="text-center px-2">
+                    <a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">100% Cotton Hotel Towel Set Wholesale</a>
+                    <div class="flex justify-center text-gray-300 text-[10px] mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-gray-400 ml-1">0 Reviews</span>
+                    </div>
+                    <div class="font-bold text-textDark mb-1">$3.55 - $5.99</div>
+                    <div class="text-xs text-gray-500">MOQ: 200 Sets</div>
+					<a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+                </div>
+            </div>
+
+            <!-- Card 5 to 8 (Replicating pattern for grid completion) -->
+            <!-- Just inserting placeholder blocks to match the screenshot density -->
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"><img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Luxury Hotel Bedding Set</a><div class="font-bold text-textDark mb-1">$32.00 - $35.00</div><div class="text-xs text-gray-500">MOQ: 50 Sets</div> 
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+</div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"></div><div class="text-center px-2"><a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Bluetooth Party Speaker OEM</a><div class="font-bold text-textDark mb-1">$45.00</div><div class="text-xs text-gray-500">MOQ: 100 Units</div> <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+
+</div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Waterproof Hiking Backpack</a><div class="font-bold text-textDark mb-1">$12.90</div>
+  <div class="text-xs text-gray-500">MOQ: 300 Pieces</div> 
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+
+</div></div>
+            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"><span class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-1.5 py-0.5 rounded">HOT</span> <img
+  src="https://i.ibb.co/23W7mcr9/Vz-Uqgr8pfb-Ncf-Xrpze-VBPE.jpg"
+  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
+  alt="Product"> </div><div class="text-center px-2"><a href="#" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Professional Salon Hair Dye Bulk</a><div class="font-bold text-textDark mb-1">$1.84 / tube</div><div class="text-xs text-gray-500">MOQ: 1000 Tubes</div> 
+  <a href="supplier-order.html"
+   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
+    <i class="fas fa-comments mr-2"></i>
+    Contact Supplier
+</a>
+</div></div>
+        </div>
+
+        <!-- Large Bottom Banners (Screenshot 3 bottom) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <div class="bg-[#42524c] rounded p-10 text-white flex flex-col justify-center h-48 cursor-pointer relative overflow-hidden group">
+                <div class="relative z-10">
+                    <p class="text-xs tracking-wider mb-2 opacity-80">RAW MATERIALS</p>
+                    <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">Cosmetic Makeup<br>Professional Ingredients</h3>
+                    <a href="#" class="text-sm font-bold border-b-2 border-white pb-1 inline-block hover:text-gray-300 hover:border-gray-300 transition">SOURCE NOW <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+            <div class="bg-[#e5e5e5] rounded p-10 text-textDark flex flex-col justify-center h-48 cursor-pointer relative overflow-hidden group">
+                <div class="relative z-10">
+                    <p class="text-xs font-semibold text-gray-500 mb-2">TRENDING FACTORIES</p>
+                    <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4 text-[#333]">Women's Lifestyle<br>Collection Manufacturers</h3>
+                    <a href="#" class="text-sm font-bold border-b-2 border-textDark pb-1 inline-block hover:text-primary hover:border-primary transition">VIEW FACTORIES <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+<style>
+       
+        /* Custom scrollbar for modern looks */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.03);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(99, 102, 241, 0.2);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(99, 102, 241, 0.4);
+        }
+    </style>
+
+    <!-- Subtle Background Glow Effects (Adapted for Light Theme) -->
+    <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-600/5 blur-[150px] pointer-events-none"></div>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl w-full mx-auto px-4 py-12 z-10 flex-grow">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-200 pb-6">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="inline-block w-3 h-3 rounded-full bg-indigo-600 animate-pulse"></span>
+                    <span class="text-xs text-indigo-600 font-bold tracking-widest uppercase">Trusted Partners</span>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Featured Suppliers
+                </h1>
+                <p class="text-sm text-slate-500 mt-1">Connect directly with leading global manufacturers and verified enterprises</p>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <a href="#" class="group flex items-center gap-2 text-sm text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">
+                    <span>View All Suppliers</span>
+                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Filter Categories Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 custom-scrollbar">
+            <button onclick="filterSuppliers('all')" id="tab-all" class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-indigo-600 text-white shadow-lg shadow-indigo-600/25 transition-all whitespace-nowrap">
+                All Sectors
+            </button>
+            <button onclick="filterSuppliers('tech')" id="tab-tech" class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all border border-slate-200 shadow-sm whitespace-nowrap">
+                Tech & Electronics
+            </button>
+            <button onclick="filterSuppliers('plastic')" id="tab-plastic" class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all border border-slate-200 shadow-sm whitespace-nowrap">
+                Plastics & Rubber
+            </button>
+            <button onclick="filterSuppliers('metal')" id="tab-metal" class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all border border-slate-200 shadow-sm whitespace-nowrap">
+                Metals & Steel
+            </button>
+            <button onclick="filterSuppliers('machinery')" id="tab-machinery" class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all border border-slate-200 shadow-sm whitespace-nowrap">
+                Machinery & Equipment
+            </button>
+        </div>
+
+        <!-- Slider Section Wrapper -->
+        <div class="relative group/slider">
+            
+            <!-- Left Arrow Button -->
+            <button onclick="slide('left')" class="absolute -left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-400 shadow-lg transition-all opacity-0 group-hover/slider:opacity-100 focus:opacity-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+
+            <!-- Right Arrow Button -->
+            <button onclick="slide('right')" class="absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-400 shadow-lg transition-all opacity-0 group-hover/slider:opacity-100 focus:opacity-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- Slider Container -->
+            <div id="supplier-slider" class="flex gap-6 overflow-x-auto scroll-smooth py-4 px-2 custom-scrollbar snap-x">
+                
+                <!-- Card 1 (Jingjiang Fuji Technology) -->
+                <div class="supplier-card snap-start shrink-0 w-[310px] md:w-[340px] rounded-2xl bg-white border border-slate-200/80 hover:border-indigo-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="tech">
+                    <!-- Card Gradient Top bar -->
+                    <div class="h-2 w-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-4"></div>
+                    
+                    <!-- Supplier Badges -->
+                    <div class="flex items-center gap-2 mb-3 flex-wrap">
+                        <span class="inline-flex items-center gap-1 bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                            Verified Supplier
+                        </span>
+                        <span class="bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            Gold
+                        </span>
+                        <span class="bg-blue-500/10 text-blue-700 border border-blue-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            4 Yrs
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug hover:text-indigo-600 transition-colors cursor-pointer" onclick="openDetails(1)">
+                        Jingjiang Fuji Technology Co., Ltd.
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">High-Precision Industrial Gear & Parts Manufacturer</p>
+
+                    <!-- Location & Products info -->
+                    <div class="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Shanghai, China</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <span class="truncate">Main Products: weichai, diesel engine parts</span>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid/Preview -->
+                    <div class="grid grid-cols-2 gap-3 mt-5">
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(1)">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=200" alt="Industrial machinery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(1)">
+                            <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&q=80&w=200" alt="Engineering components" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                    </div>
+
+                    <!-- Connect Button -->
+                    <button onclick="openDetails(1)" class="w-full mt-4 py-2.5 rounded-xl bg-slate-50 hover:bg-indigo-600 text-xs font-semibold text-slate-700 hover:text-white border border-slate-200 hover:border-indigo-500 transition-all flex items-center justify-center gap-2">
+                        <span>View Details & Connect</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Card 2 (Ningbo Jiangbei Tiansheng) -->
+                <div class="supplier-card snap-start shrink-0 w-[310px] md:w-[340px] rounded-2xl bg-white border border-slate-200/80 hover:border-emerald-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="plastic">
+                    <!-- Card Gradient Top bar -->
+                    <div class="h-2 w-full bg-gradient-to-r from-teal-400 to-emerald-500 rounded-full mb-4"></div>
+                    
+                    <!-- Supplier Badges -->
+                    <div class="flex items-center gap-2 mb-3 flex-wrap">
+                        <span class="inline-flex items-center gap-1 bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                            Verified Supplier
+                        </span>
+                        <span class="bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            Gold
+                        </span>
+                        <span class="bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            1 Yr
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug hover:text-emerald-600 transition-colors cursor-pointer" onclick="openDetails(2)">
+                        Ningbo Jiangbei Tiansheng Plastic Co.
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">Premium Molding & Plastic Assembly Line</p>
+
+                    <!-- Location & Products info -->
+                    <div class="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Ningbo, China</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <span class="truncate">Main Products: Razors, custom plastics</span>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid/Preview -->
+                    <div class="grid grid-cols-2 gap-3 mt-5">
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(2)">
+                            <img src="https://images.unsplash.com/photo-1626015276681-2b44a29a2807?auto=format&fit=crop&q=80&w=200" alt="Plastic molded products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(2)">
+                            <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=200" alt="Custom tools" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                    </div>
+
+                    <!-- Connect Button -->
+                    <button onclick="openDetails(2)" class="w-full mt-4 py-2.5 rounded-xl bg-slate-50 hover:bg-emerald-600 text-xs font-semibold text-slate-700 hover:text-white border border-slate-200 hover:border-emerald-500 transition-all flex items-center justify-center gap-2">
+                        <span>View Details & Connect</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Card 3 (Shandong Shoukun Metal) -->
+                <div class="supplier-card snap-start shrink-0 w-[310px] md:w-[340px] rounded-2xl bg-white border border-slate-200/80 hover:border-rose-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="metal">
+                    <!-- Card Gradient Top bar -->
+                    <div class="h-2 w-full bg-gradient-to-r from-orange-500 to-rose-600 rounded-full mb-4"></div>
+                    
+                    <!-- Supplier Badges -->
+                    <div class="flex items-center gap-2 mb-3 flex-wrap">
+                        <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 border border-slate-200 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                            Verified Supplier
+                        </span>
+                        <span class="bg-slate-100 text-slate-700 border border-slate-200 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            Silver
+                        </span>
+                        <span class="bg-rose-500/10 text-rose-700 border border-rose-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            1 Yr
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug hover:text-rose-600 transition-colors cursor-pointer" onclick="openDetails(3)">
+                        Shandong Shoukun Metal Materials Co.
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">Industrial Steel Plates & Copper Tubing Supplier</p>
+
+                    <!-- Location & Products info -->
+                    <div class="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Liaocheng, Shandong, China</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <span class="truncate">Main Products: Steel plate, copper tube</span>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid/Preview -->
+                    <div class="grid grid-cols-2 gap-3 mt-5">
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(3)">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=200" alt="Iron casting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(3)">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=200" alt="Electronics & raw metal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                    </div>
+
+                    <!-- Connect Button -->
+                    <button onclick="openDetails(3)" class="w-full mt-4 py-2.5 rounded-xl bg-slate-50 hover:bg-rose-600 text-xs font-semibold text-slate-700 hover:text-white border border-slate-200 hover:border-rose-500 transition-all flex items-center justify-center gap-2">
+                        <span>View Details & Connect</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Card 4 (Guangzhou Xiebang Machinery) -->
+                <div class="supplier-card snap-start shrink-0 w-[310px] md:w-[340px] rounded-2xl bg-white border border-slate-200/80 hover:border-purple-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="machinery">
+                    <!-- Card Gradient Top bar -->
+                    <div class="h-2 w-full bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full mb-4"></div>
+                    
+                    <!-- Supplier Badges -->
+                    <div class="flex items-center gap-2 mb-3 flex-wrap">
+                        <span class="inline-flex items-center gap-1 bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                            Verified Supplier
+                        </span>
+                        <span class="bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            Gold
+                        </span>
+                        <span class="bg-purple-500/10 text-purple-700 border border-purple-500/20 text-[10px] px-2.5 py-1 rounded-full font-bold">
+                            1 Yr
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug hover:text-purple-600 transition-colors cursor-pointer" onclick="openDetails(4)">
+                        Guangzhou Xiebang Machinery Co., Ltd.
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">High-Load Elastic Couplings & Engine Bearings</p>
+
+                    <!-- Location & Products info -->
+                    <div class="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Guangzhou, Guangdong, China</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <span class="truncate">Main Products: Elastic coupling, Engine parts</span>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid/Preview -->
+                    <div class="grid grid-cols-2 gap-3 mt-5">
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(4)">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=200" alt="Coupling gears" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(4)">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=200" alt="Precision machinery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                    </div>
+
+                    <!-- Connect Button -->
+                    <button onclick="openDetails(4)" class="w-full mt-4 py-2.5 rounded-xl bg-slate-50 hover:bg-purple-600 text-xs font-semibold text-slate-700 hover:text-white border border-slate-200 hover:border-purple-500 transition-all flex items-center justify-center gap-2">
+                        <span>View Details & Connect</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Custom Scroll Indicator/Progress Bar -->
+            <div class="w-full flex items-center justify-center mt-6 gap-1">
+                <div class="w-24 h-1 bg-slate-200 rounded-full overflow-hidden">
+                    <div id="slider-progress" class="w-1/4 h-full bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-300"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    <!-- Interactive Details Modal (Popup Dialog) -->
+    <div id="details-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative transform scale-95 transition-transform duration-300">
+            
+            <!-- Close button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 bg-slate-100 p-2 rounded-lg transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Modal Content inside script -->
+            <div id="modal-content" class="mt-4 text-slate-800">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Logic and Interactions -->
+    <script>
+        // Supplier Data Mock
+        const suppliersData = {
+            1: {
+                title: "Jingjiang Fuji Technology Co., Ltd.",
+                subtitle: "High-Precision Industrial Gear & Parts Manufacturer",
+                badge: "Verified Supplier - Gold - 4 Yrs",
+                location: "Shanghai, China",
+                mainProducts: "weichai, diesel engine parts, machinery spares",
+                desc: "Established as a reliable leader in diesel machinery and transmission gears. We adhere to rigid global ISO-9001 quality certificates and support flexible negotiable rates for large-scale purchase contracts.",
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600"
+            },
+            2: {
+                title: "Ningbo Jiangbei Tiansheng Plastic Co.",
+                subtitle: "Premium Molding & Plastic Assembly Line",
+                badge: "Verified Supplier - Gold - 1 Yr",
+                location: "Ningbo, China",
+                mainProducts: "Razors, custom injection molding, cosmetic bottles",
+                desc: "Specialized in delivering premium plastic molds, daily use commodities, and tailored injection components backed by automatic rapid-prototyping machinery.",
+                image: "https://images.unsplash.com/photo-1626015276681-2b44a29a2807?auto=format&fit=crop&q=80&w=600"
+            },
+            3: {
+                title: "Shandong Shoukun Metal Materials Co.",
+                subtitle: "Industrial Steel Plates & Copper Tubing Supplier",
+                badge: "Verified Supplier - Silver - 1 Yr",
+                location: "Liaocheng, Shandong, China",
+                mainProducts: "Steel plate, copper tube, cold rolled coil",
+                desc: "A massive factory warehouse delivering top-grade structural steel plates, pipes, and alloys to civil engineers, construction projects, and manufacturing hubs.",
+                image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600"
+            },
+            4: {
+                title: "Guangzhou Xiebang Machinery Co., Ltd.",
+                subtitle: "High-Load Elastic Couplings & Engine Bearings",
+                badge: "Verified Supplier - Gold - 1 Yr",
+                location: "Guangzhou, Guangdong, China",
+                mainProducts: "Elastic coupling, Engine parts, excavator seals",
+                desc: "Engineered specifically to supply machinery operations with robust, vibration-dampening couplings and highly heat-resistant hydraulic engine parts.",
+                image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600"
+            }
+        };
+
+        // Modal Controls
+        function openDetails(id) {
+            const supplier = suppliersData[id];
+            if (!supplier) return;
+
+            const contentHtml = `
+                <div class="flex items-center gap-3 mb-4 pr-6">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-extrabold text-xl">
+                        ${id}
+                    </div>
+                    <div>
+                        <span class="text-[10px] bg-indigo-50 text-indigo-700 border border-indigo-100 px-2.5 py-0.5 rounded-full font-semibold">
+                            ${supplier.badge}
+                        </span>
+                        <h2 class="text-xl font-bold text-slate-900 mt-1">${supplier.title}</h2>
+                        <p class="text-xs text-slate-500">${supplier.subtitle}</p>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden h-44 mb-4 bg-slate-100 border border-slate-200">
+                    <img src="${supplier.image}" alt="${supplier.title}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-700">
+                    <div>
+                        <span class="text-xs text-slate-400 block mb-1 font-semibold">Geographic Location:</span>
+                        <div class="flex items-center gap-1.5 text-slate-800">
+                            <span class="inline-block w-2 h-2 rounded-full bg-rose-500"></span>
+                            ${supplier.location}
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-slate-400 block mb-1 font-semibold">Primary Products:</span>
+                        <div class="text-indigo-600 font-semibold">${supplier.mainProducts}</div>
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-slate-400 block mb-1 font-semibold">About Supplier:</span>
+                        <p class="text-slate-600 leading-relaxed text-xs bg-slate-50 p-3 rounded-lg border border-slate-150">
+                            ${supplier.desc}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mt-6">
+                    <button onclick="closeModal()" class="py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-semibold text-slate-700 transition-all border border-slate-200">
+                        Close
+                    </button>
+                    <a href="mailto:info@example.com?subject=Inquiry from Portal&body=Hi, we are interested in your negotiable products." class="py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-xs font-bold text-white text-center shadow-lg shadow-indigo-600/25 transition-all">
+                        Send Direct Inquiry
+                    </a>
+                </div>
+            `;
+
+            document.getElementById('modal-content').innerHTML = contentHtml;
+            const modal = document.getElementById('details-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.add('opacity-100');
+                modal.querySelector('div').classList.remove('scale-95');
+                modal.querySelector('div').classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('details-modal');
+            modal.querySelector('div').classList.remove('scale-100');
+            modal.querySelector('div').classList.add('scale-95');
+            modal.classList.remove('opacity-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        // Filter Functionality
+        function filterSuppliers(category) {
+            // Update tabs UI
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/25', 'border-indigo-500/30');
+                tab.classList.add('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'hover:text-slate-900', 'border-slate-200', 'shadow-sm');
+            });
+
+            const activeTab = document.getElementById(`tab-${category}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'hover:text-slate-900', 'border-slate-200', 'shadow-sm');
+                activeTab.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/25');
+            }
+
+            // Filter cards
+            document.querySelectorAll('.supplier-card').forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            updateProgressBar();
+        }
+
+        // Slider Navigation
+        const slider = document.getElementById('supplier-slider');
+        function slide(direction) {
+            const scrollAmount = 350;
+            if (direction === 'left') {
+                slider.scrollLeft -= scrollAmount;
+            } else {
+                slider.scrollLeft += scrollAmount;
+            }
+            setTimeout(updateProgressBar, 150);
+        }
+
+        function updateProgressBar() {
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+            if (maxScroll <= 0) {
+                document.getElementById('slider-progress').style.width = '100%';
+                return;
+            }
+            const percentage = (slider.scrollLeft / maxScroll) * 100;
+            document.getElementById('slider-progress').style.width = `${Math.min(100, Math.max(10, percentage))}%`;
+        }
+
+        slider.addEventListener('scroll', updateProgressBar);
+        window.addEventListener('resize', updateProgressBar);
+    </script>	
+	
+	
+	
+	
+	
+	
+	
+	
+ <section class="container mx-auto px-4 max-w-7xl mt-8">
+
+<div style="
+background:#fff;
+border-radius:30px;
+overflow:hidden;
+display:flex;
+flex-wrap:wrap;
+min-height:360px;
+margin:0 auto;
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+">
+
+    <!-- LEFT SIDE -->
+    <div style="
+    flex:1;
+    min-width:400px;
+    background:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1600&auto=format&fit=crop&q=80') center center/cover no-repeat;
+    position:relative;
+    color:#fff;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;">
+
+        <div style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(135deg,rgba(15,23,42,.88),rgba(37,99,235,.85));
+        "></div>
+
+        <div style="position:relative;z-index:2;">
+
+            <div style="
+            background:#ff6b00;
+            display:inline-block;
+            padding:8px 15px;
+            border-radius:50px;
+            font-size:13px;
+            font-weight:bold;
+            margin-bottom:18px;">
+                🚀 PREMIUM RFQ SERVICE
+            </div>
+
+            <h1 style="
+            font-size:32px;
+            line-height:1.2;
+            margin:0 0 15px;
+            font-weight:800;">
+                Find Trusted Suppliers Worldwide
+            </h1>
+
+            <p style="
+            font-size:16px;
+            line-height:1.5;
+            color:#dbeafe;
+            margin-bottom:20px;">
+                Submit your RFQ from verified manufacturers, exporters and wholesalers.
+            </p>
+
+            <div style="
+            display:flex;
+            flex-direction:column;
+            gap:10px;">
+
+                <div style="font-size:15px;">✅ 2.4M+ Verified Suppliers</div>
+                <div style="font-size:15px;">✅ RFQ Response Within 24 Hours</div>
+                <div style="font-size:15px;">✅ Global Trade Network</div>
+                <div style="font-size:15px;">✅ Import & Export Opportunities</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div style="
+    flex:1;
+    min-width:450px;
+    background:#fff;
+    padding:30px;
+    display:flex;
+    align-items:center;">
+
+        <div style="width:100%;">
+
+            <h2 style="
+            margin:0 0 8px;
+            color:#111827;
+            font-size:24px;
+            font-weight:800;">
+                Request For Quotation
+            </h2>
+
+            <p style="
+            color:#6b7280;
+            margin-bottom:10px;
+            font-size:14px;">
+                Tell suppliers what you need and receive multiple quotations.
+            </p>
+
+            <input
+                type="text"
+                placeholder="Product Name"
+                style="
+                width:100%;
+                padding:12px;
+                border:1px solid #d1d5db;
+                border-radius:12px;
+                margin-bottom:8px;
+                box-sizing:border-box;">
+
+            <textarea
+                rows="2"
+                placeholder="Describe your requirements..."
+                style="
+                width:100%;
+                padding:12px;
+                border:1px solid #d1d5db;
+                border-radius:12px;
+                margin-bottom:8px;
+                resize:none;
+                box-sizing:border-box;"></textarea>
+
+            <div style="
+            display:flex;
+            gap:10px;
+            margin-bottom:8px;">
+
+                <input
+                    type="number"
+                    placeholder="Quantity"
+                    style="
+                    flex:1;
+                    padding:12px;
+                    border:1px solid #d1d5db;
+                    border-radius:12px;">
+
+                <select style="
+                flex:1;
+                padding:12px;
+                border:1px solid #d1d5db;
+                border-radius:12px;">
+                    <option>Pieces</option>
+                    <option>Sets</option>
+                    <option>Cartons</option>
+                    <option>Containers</option>
+                </select>
+
+            </div>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                style="
+                width:100%;
+                padding:12px;
+                border:1px solid #d1d5db;
+                border-radius:12px;
+                margin-bottom:8px;
+                box-sizing:border-box;">
+
+            <input
+                type="text"
+                placeholder="WhatsApp Number"
+                style="
+                width:100%;
+                padding:12px;
+                border:1px solid #d1d5db;
+                border-radius:12px;
+                margin-bottom:8px;
+                box-sizing:border-box;">
+
+            <div style="
+            border:2px dashed #cbd5e1;
+            border-radius:15px;
+            padding:15px;
+            text-align:center;
+            color:#64748b;
+            margin-bottom:12px;
+            background:#f8fafc;">
+                📷 Upload Product Images / PDF / Documents
+            </div>
+
+            <button style="
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:12px;
+            background:linear-gradient(135deg,#2563eb,#1d4ed8);
+            color:#fff;
+            font-size:16px;
+            font-weight:700;
+            cursor:pointer;
+            box-shadow:0 10px 25px rgba(37,99,235,.35);">
+                Send RFQ Now →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+      <!-- supplier profile page-->	
+<div style="max-width:1250px;margin:30px auto;background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1);overflow:hidden;font-family:Arial,sans-serif;">
+
+    <div style="background:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600') center/cover;height:220px;position:relative;">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,0.45);"></div>
+
+        <div style="position:absolute;bottom:20px;left:30px;display:flex;align-items:center;">
+            <img src="https://i.ibb.co/xvhHV92/b2bx.png"
+            style="width:90px;height:90px;background:#fff;padding:10px;border-radius:50%;">
+
+            <div style="margin-left:20px;color:white;">
+                <h2 style="margin:0;font-size:32px;">Dongguan Golden Tiger Multi-Media Co., Ltd.</h2>
+                <p style="margin:5px 0;">Verified Manufacturer & Exporter</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding:30px;">
+
+        <div style="display:flex;gap:20px;flex-wrap:wrap;">
+
+            <div style="flex:1;min-width:280px;background:#f8fafc;padding:20px;border-radius:10px;">
+                <h3 style="margin-top:0;">Company Information</h3>
+                <p><strong>Country:</strong> China</p>
+                <p><strong>Business Type:</strong> Manufacturer</p>
+                <p><strong>Employees:</strong> 200+</p>
+                <p><strong>Established:</strong> 2012</p>
+                <p><strong>Main Products:</strong> Multimedia Equipment</p>
+            </div>
+
+            <div style="flex:1;min-width:280px;background:#f8fafc;padding:20px;border-radius:10px;">
+                <h3 style="margin-top:0;">Trade Information</h3>
+                <p><strong>Export Markets:</strong> Worldwide</p>
+                <p><strong>Annual Revenue:</strong> USD 5 Million+</p>
+                <p><strong>Certificates:</strong> ISO, CE, FCC</p>
+                <p><strong>Response Time:</strong> Within 24 Hours</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top:25px;display:flex;gap:15px;flex-wrap:wrap;">
+
+            <a href="#"
+            style="padding:14px 25px;background:#2563eb;color:white;text-decoration:none;border-radius:8px;font-weight:bold;">
+            📄 Send RFQ
+            </a>
+
+            <a href="#"
+            style="padding:14px 25px;background:#16a34a;color:white;text-decoration:none;border-radius:8px;font-weight:bold;">
+            💬 Contact Supplier
+            </a>
+
+            <a href="#"
+            style="padding:14px 25px;background:#25d366;color:white;text-decoration:none;border-radius:8px;font-weight:bold;">
+            📱 WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</div>	
+      <!-- supplier profile ends-->		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <footer class="bg-white border-t border-gray-200 mt-16 pt-10">
+        <!-- Newsletter Bar -->
+        <div class="bg-[#2b5d8c] text-white py-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="far fa-envelope-open text-4xl mr-4 opacity-80"></i>
+                    <div>
+                        <h4 class="font-bold text-lg">SUBSCRIBE TO B2B NEWSLETTER</h4>
+                        <p class="text-sm text-blue-200">Get the latest info on global trends, trade shows and bulk offers.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 flex">
+                    <input type="email" placeholder="Your E-mail Address" class="w-full px-4 py-3 text-sm text-gray-700 outline-none">
+                    <button class="bg-[#333] hover:bg-black text-white px-6 py-3 text-sm font-bold uppercase transition flex items-center space-x-2">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="bg-bgGray py-16">
+            <div class="container mx-auto px-4 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Brand Info -->
+                <div>
+                   <a href="/"> <img src="https://i.ibb.co/5WrVC3q3/logoo.png" alt="B2B GoX"class="h-16 lg:h-20 w-auto object-contain"> </a>
+                    <p class="text-sm text-gray-500 mb-6 leading-relaxed">Your premier gateway for global wholesale trade. Connect with verified suppliers, secure transactions, and scale your business effortlessly.</p>
+                    <div class="mb-4 text-sm text-gray-500">
+                        <p>Got Questions? Call us 24/7 B2B Support</p>
+                        <p class="text-2xl font-bold text-textDark mt-1">1-800-570-7777</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1da1f2] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#bd081c] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">About Platform</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">About B2B World Market</a></li>
+                        <li><a href="career.html" class="hover-primary">Careers</a></li>
+                        <li><a href="contact.html" class="hover-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover-primary">News & Blog</a></li>
+                        <li><a href="#" class="hover-primary">Trade Shows</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Suppliers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Become a Supplier</a></li>
+                        <li><a href="#" class="hover-primary">Supplier Memberships</a></li>
+                        <li><a href="#" class="hover-primary">Training Center</a></li>
+                        <li><a href="#" class="hover-primary">Logistics Services</a></li>
+                        <li><a href="#" class="hover-primary">Payment & Escrow</a></li>
+						   <li><a href="package.html" class="hover-primary">Packages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Buyers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Sourcing Guide</a></li>
+                        <li><a href="#" class="hover-primary">Post an RFQ</a></li>
+                        <li><a href="#" class="hover-primary">Trade Assurance Protection</a></li>
+                        <li><a href="#" class="hover-primary">Track Order</a></li>
+                        <li><a href="#" class="hover-primary">Return Policy</a></li>
+						<li><a href="my-account.html" class="hover-primary">My Account</a></li>
+						  
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Categories Tags Bottom -->
+            <div class="container mx-auto px-4 max-w-7xl mt-12 border-t border-gray-200 pt-8 hidden md:block">
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Consumer Electric:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">TV Television</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Air Condition</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Refrigerator</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Washing Machine</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Audio Speaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Security Camera</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Clothing & Apparel:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Men T-shirt</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Dresses</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Men's Sneaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Leather Backpack</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Machinery:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Packaging Machines</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Laser Cutters</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">CNC Routers</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Textile Machinery</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-bgGray pb-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
+                <p>Copyright © 2026 B2B GoX.com. All Rights Reserved.</p>
+                <div class="flex items-center space-x-2 mt-4 md:mt-0">
+                    <span>We're using safe payment for</span>
+                    <!-- Simulated Payment Badges -->
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">VISA</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">MC</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">TT</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">L/C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            // In a full implementation, this would open a side drawer
+            // For this single file demo, we just show an alert or toggle a class
+            alert('Mobile menu navigation would open here.');
+        });
+    </script>
+</body>
+</html>
