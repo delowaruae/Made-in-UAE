@@ -2790,8 +2790,8 @@
 
 
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; ">
-            <div class="thumb-box" style="height: 100%; border-radius: 4px; overflow: hidden; background-color: #f1f5f9; border: 1px solid #e2e8f0;"><img src="https://i.ibb.co/5gkMVTdM/gn.jpg" alt="Steel Sheet" style="width: 100%; height: 100%; object-fit:cover;"></div>
-            <div class="thumb-box" style="border-radius: 4px; overflow: hidden; background-color: #f1f5f9; border: 1px solid #e2e8f0;"><img src="https://i.ibb.co/zWQ77fcp/gn3.jpg" alt="Coils" style="width: 100%; height: 100%; object-fit: cover;"></div>
+            <div class="thumb-box" style="height: 100%; border-radius: 4px; overflow: hidden; background-color: #f1f5f9; border: 1px solid #e2e8f0;"><img src="https://i.ibb.co/5gkMVTdM/gn.jpg" alt="Steel Sheet" style="width: 100%; height: 100%; object-fit: fill;"></div>
+            <div class="thumb-box" style="border-radius: 4px; overflow: hidden; background-color: #f1f5f9; border: 1px solid #e2e8f0;"><img src="https://i.ibb.co/zWQ77fcp/gn3.jpg" alt="Coils" style="width: 100%; height: 100%; object-fit: fill;"></div>
 
         
           </div>
@@ -4420,35 +4420,65 @@
 
 				
 				
-				
-<div class="cat-card" style="border: 1px solid #edf2f7; text-align:center; border-radius: 8px; padding:10px;"> 
-<div style=" width:120px; height:120px; margin:0 auto; border-radius:50%; overflow:hidden; "> <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800" alt="Jewellery" style="width:100%;height:100%;object-fit:cover;" > 
-</div> 
-<h4 style="font-size:12px; font-weight:700; color:#333; "> Jewellery </h4> 
-</div>			
+		
 		
 		
 				
-<a href="electronics.html" class="category-card">
+<a href="electronics.html" class="category-card" style="border:1px solid #edf2f7;text-align:center;border-radius:8px;padding:10px;transition:.3s;cursor:pointer;"
+     onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.1)'"
+     onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
     <div class="cat-img" style=" border-radius:50%;">
         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800" alt="Electronics">
     </div>
-    <h4>Electronics</h4>
+    <h4>Electronics2</h4>
 </a>
 
 
 
+				
+<div class="cat-card"
+     style="border:1px solid #edf2f7;text-align:center;border-radius:8px;padding:10px;background:#fff;transition:all .3s ease;cursor:pointer;"
+     onmouseover="
+        this.style.transform='translateY(-5px)';
+        this.style.boxShadow='0 10px 25px rgba(0,0,0,.12)';
+        this.style.borderColor='#dbeafe';
+        this.querySelector('img').style.transform='scale(1.1)';
+        this.querySelector('h4').style.color='#2563eb';
+     "
+     onmouseout="
+        this.style.transform='translateY(0)';
+        this.style.boxShadow='none';
+        this.style.borderColor='#edf2f7';
+        this.querySelector('img').style.transform='scale(1)';
+        this.querySelector('h4').style.color='#333';
+     ">
 
+    <div style="width:120px;height:120px;margin:0 auto;border-radius:50%;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800"
+             alt="Jewellery"
+             style="width:100%;height:100%;object-fit:cover;transition:transform .4s ease;">
+    </div>
 
+    <h4 style="font-size:12px;font-weight:700;color:#333;transition:color .3s ease;">
+        Jewellery
+    </h4>
 
+</div>
 
 
 
 <!-- Construction -->
-<div class="cat-card" style="border:1px solid #edf2f7;text-align:center;border-radius:8px;padding:10px;">
+<div class="cat-card"
+     style="border:1px solid #edf2f7;text-align:center;border-radius:8px;padding:10px;transition:.3s;cursor:pointer;"
+     onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.1)'"
+     onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
     <div style="width:120px;height:120px;margin:0 auto;border-radius:50%;overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Construction" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800"
+             alt="Construction"
+             style="width:100%;height:100%;object-fit:cover;">
     </div>
+
     <h4 style="font-size:12px;font-weight:700;color:#333;">Construction</h4>
 </div>
 
@@ -4560,9 +4590,7 @@
 				
 				
 				
-				
-
-				
+			
 				
 				
 <!-- Jewellery -->
