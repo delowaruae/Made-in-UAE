@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2BGO X - Enterprise Trading & Intelligence Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind configuration for custom animations -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons for stunning visuals -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for beautiful interactive analytics charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Custom Scrollbar for premium enterprise look */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col overflow-hidden">
+
+    <script>
+        // Multi-language translation system
+        const translations = {
+            ar: {
+                brand: "B2BGO X AI",
+                subtitle: "منصة ذكاء الأعمال المتقدمة",
+                activeDesks: "المكاتب النشطة",
+                newWorkspace: "مكتب ذكاء السلع الجديد",
+                awaitingQuery: "بانتظار استفسارك الأول...",
+                ready: "جاهز",
+                copperHedging: "تحوط النحاس واللوجستيات",
+                archivedRisk: "نماذج تقييم مخاطر محفوظة...",
+                freightOptimizer: "مُحسّن الشحن اللوجستي",
+                contractAnalyzer: "محلل مخاطر العقود الذكي",
+                systemSecure: "حالة النظام: آمن ومحمي",
+                startSession: "ابدأ جلسة تحليل ذكية مع B2BGO X",
+                sessionDesc: "أرسل استفسارك الأول أدناه لتحليل هوامش المبيعات، فروق الأسعار، التحقق من العقود، أو تحسين سلاسل التوريد العالمية فوراً.",
+                btnArbitrage: "تحليل هوامش فروق الأسعار",
+                btnFreight: "حساب تكاليف الشحن البحري",
+                btnRisk: "فحص مخاطر الموردين",
+                inputPlaceholder: "اكتب هنا لبدء تحليل تدفق البيانات والعمليات التجارية...",
+                footnote: "يقوم نظام B2BGO X بمطابقة وتدقيق إرشادات الشركة اللوجستية قبل إرسال مخرجات التقارير.",
+                chatTab: "مكتب الدردشة الذكي",
+                analyticsTab: "لوحة تحليلات الأسواق الحية",
+                statusConnected: "اتصال ذكي نشط",
+                userTrader: "النواة التجارية الذكية",
+                marketTicker: "أسعار المؤشرات الحية",
+                priceCopper: "النحاس",
+                priceSteel: "الفولاذ",
+                priceOil: "برنت",
+                priceFreight: "مؤشر الشحن",
+                themeToggle: "تبديل المظهر",
+                langToggle: "English",
+                searchPlaceholder: "ابحث في المكاتب النشطة...",
+                sendBtn: "إرسال",
+                sidebarTitle: "لوحة التحكم الرئيسية",
+                generating: "جاري التحليل وتوليد الإجابة الذكية...",
+                settings: "الإعدادات",
+                copySuccess: "تم النسخ بنجاح"
+            },
+            en: {
+                brand: "B2BGO X AI",
+                subtitle: "Advanced B2B Intelligence Hub",
+                activeDesks: "Active Desks",
+                newWorkspace: "Commodity Intelligence Desk",
+                awaitingQuery: "Awaiting your first query...",
+                ready: "Ready",
+                copperHedging: "Copper Futures Hedging",
+                archivedRisk: "Archived risk assessment models...",
+                freightOptimizer: "Freight & Logistics Optimizer",
+                contractAnalyzer: "Contract Risk Analyzer",
+                systemSecure: "System Status: Secure",
+                startSession: "Start a B2BGO X Session",
+                sessionDesc: "Send your first prompt below to analyze sales margins, verify shipping spreads, review contract compliancy, or optimize global supply lines instantly.",
+                btnArbitrage: "Analyze Arbitrage Margins",
+                btnFreight: "Calculate Freight Spreads",
+                btnRisk: "Evaluate Supplier Risks",
+                inputPlaceholder: "Type here to initialize your B2B data flow analysis...",
+                footnote: "B2BGO X securely cross-references localized firm logistics guidelines prior to printing output feeds.",
+                chatTab: "AI Chat Desk",
+                analyticsTab: "Live Market Analytics",
+                statusConnected: "API Connected",
+                userTrader: "Trader Core Desktop",
+                marketTicker: "Live Market Indicators",
+                priceCopper: "Copper",
+                priceSteel: "Steel",
+                priceOil: "Brent Crude",
+                priceFreight: "Freight Index",
+                themeToggle: "Switch Theme",
+                langToggle: "العربية",
+                searchPlaceholder: "Search active desks...",
+                sendBtn: "Send",
+                sidebarTitle: "Main Intelligence Panel",
+                generating: "Analyzing & generating smart insights...",
+                settings: "Settings",
+                copySuccess: "Copied successfully"
+            }
+        };
+
+        // Application State
+        let state = {
+            lang: 'en', // Default Language set to English
+            theme: 'light', // Changed default theme to Light (White)
+            activeTab: 'chat', // 'chat' or 'analytics'
+            messages: [],
+            isGenerating: false,
+            activeDeskId: 'desk-1',
+            marketPrices: {
+                copper: { value: 8940, change: '+1.2%', trend: 'up' },
+                steel: { value: 620, change: '-0.4%', trend: 'down' },
+                oil: { value: 83.45, change: '+2.1%', trend: 'up' },
+                freight: { value: 1720, change: '+4.5%', trend: 'up' }
+            }
+        };
+    </script>
+
+    <!-- Top Live Ticker for B2B Commodity Prices -->
+    <div class="bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 text-xs px-4 py-2 flex items-center justify-between overflow-x-auto whitespace-nowrap z-10 select-none">
+        <div class="flex items-center space-x-2 space-x-reverse">
+            <span class="inline-flex items-center justify-center p-1 bg-red-500 text-white rounded-full h-2 w-2 animate-pulse mr-1"></span>
+            <span class="font-bold text-slate-500 dark:text-slate-400" data-i18n="marketTicker">أسعار المؤشرات الحية</span>:
+        </div>
+        <div class="flex items-center space-x-6 space-x-reverse text-sm ml-4">
+            <div class="flex items-center gap-2">
+                <span class="text-slate-400" data-i18n="priceCopper">النحاس</span>
+                <span class="font-mono font-semibold" id="ticker-copper">$8,940</span>
+                <span class="text-emerald-500 text-xs font-bold" id="ticker-copper-change"><i class="fa-solid fa-caret-up"></i> +1.2%</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-slate-400" data-i18n="priceSteel">الفولاذ</span>
+                <span class="font-mono font-semibold" id="ticker-steel">$620</span>
+                <span class="text-rose-500 text-xs font-bold" id="ticker-steel-change"><i class="fa-solid fa-caret-down"></i> -0.4%</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-slate-400" data-i18n="priceOil">برنت</span>
+                <span class="font-mono font-semibold" id="ticker-oil">$83.45</span>
+                <span class="text-emerald-500 text-xs font-bold" id="ticker-oil-change"><i class="fa-solid fa-caret-up"></i> +2.1%</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-slate-400" data-i18n="priceFreight">مؤشر الشحن</span>
+                <span class="font-mono font-semibold" id="ticker-freight">1,720</span>
+                <span class="text-emerald-500 text-xs font-bold" id="ticker-freight-change"><i class="fa-solid fa-caret-up"></i> +4.5%</span>
+            </div>
+        </div>
+        <!-- Quick System Quick Info -->
+        <div class="hidden md:flex items-center gap-2 text-slate-500 dark:text-slate-400 text-xs">
+            <i class="fa-solid fa-globe text-brand-500"></i>
+            <span>Sourcing Gateway: Active</span>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="flex flex-1 overflow-hidden relative">
+
+        <!-- LEFT SIDEBAR (Adapts to right side dynamically if Arabic LTR/RTL is toggled) -->
+        <aside id="sidebar" class="w-80 bg-white dark:bg-slate-900 border-l border-r border-slate-200 dark:border-slate-800 flex flex-col justify-between transition-all duration-300 md:translate-x-0 absolute md:static z-20 h-full -translate-x-full">
+            
+            <!-- Sidebar Header -->
+            <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-brand-600 to-sky-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20">
+                        <i class="fa-solid fa-chart-network text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg text-slate-900 dark:text-white tracking-wide" data-i18n="brand">B2BGO X AI</h1>
+                        <p class="text-xs text-brand-500 font-medium" data-i18n="subtitle">منصة ذكاء الأعمال المتقدمة</p>
+                    </div>
+                </div>
+                <!-- Mobile sidebar close button -->
+                <button onclick="toggleSidebar()" class="md:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Search Bar inside Sidebar -->
+            <div class="p-3">
+                <div class="relative">
+                    <input type="text" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث في المكاتب النشطة..." class="w-full pl-3 pr-9 py-2 bg-slate-100 dark:bg-slate-950 border-0 rounded-lg text-xs focus:ring-1 focus:ring-brand-500 outline-none text-slate-800 dark:text-slate-200">
+                    <i class="fa-solid fa-magnifying-glass absolute top-2.5 right-3 text-slate-400 text-xs"></i>
+                </div>
+            </div>
+
+            <!-- Sidebar Workspace List / Active Desks (Structured dynamically like in the image) -->
+            <div class="flex-1 overflow-y-auto px-2 space-y-1 py-2">
+                <div class="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 flex items-center justify-between">
+                    <span data-i18n="activeDesks">المكاتب النشطة</span>
+                    <i class="fa-solid fa-folder-plus cursor-pointer hover:text-brand-500 transition-colors"></i>
+                </div>
+
+                <!-- Active Desk 1 (Matches Image "New Chat Workspace" / Commodity Intelligence Desk) -->
+                <div id="desk-1" onclick="selectDesk('desk-1')" class="group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-transparent bg-slate-100 dark:bg-slate-800/60 border-slate-200/50 dark:border-slate-800">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 mt-1.5 shrink-0 animate-pulse"></span>
+                            <div>
+                                <h3 class="text-xs font-semibold text-slate-900 dark:text-white" data-i18n="newWorkspace">مكتب ذكاء السلع الجديد</h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 truncate max-w-[150px]" id="workspace-latest-msg" data-i18n="awaitingQuery">بانتظار استفسارك الأول...</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] bg-brand-500/10 text-brand-500 dark:text-brand-400 font-bold px-1.5 py-0.5 rounded uppercase" data-i18n="ready">جاهز</span>
+                    </div>
+                </div>
+
+                <!-- Active Desk 2 (Matches Image "Copper Futures Hedging") -->
+                <div id="desk-2" onclick="selectDesk('desk-2')" class="group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800/30">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600 mt-1.5 shrink-0"></span>
+                            <div>
+                                <h3 class="text-xs font-semibold text-slate-700 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white" data-i18n="copperHedging">تحوط النحاس واللوجستيات</h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-500 mt-1 truncate max-w-[150px]" data-i18n="archivedRisk">نماذج تقييم مخاطر محفوظة...</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] text-slate-400 dark:text-slate-500">2h ago</span>
+                    </div>
+                </div>
+
+                <!-- Active Desk 3 (Custom Freight optimizer) -->
+                <div id="desk-3" onclick="selectDesk('desk-3')" class="group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800/30">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600 mt-1.5 shrink-0"></span>
+                            <div>
+                                <h3 class="text-xs font-semibold text-slate-700 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white" data-i18n="freightOptimizer">مُحسّن الشحن اللوجستي</h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-500 mt-1 truncate max-w-[150px]">Baltic Dry index analyses...</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] text-slate-400 dark:text-slate-500">1d ago</span>
+                    </div>
+                </div>
+
+                <!-- Active Desk 4 (Contract Risk Analyzer) -->
+                <div id="desk-4" onclick="selectDesk('desk-4')" class="group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800/30">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-rose-500 mt-1.5 shrink-0"></span>
+                            <div>
+                                <h3 class="text-xs font-semibold text-slate-700 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white" data-i18n="contractAnalyzer">محلل مخاطر العقود الذكي</h3>
+                                <p class="text-[11px] text-amber-500 dark:text-amber-400 mt-1 truncate max-w-[150px]">3 Warnings pending review</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] bg-rose-500/10 text-rose-500 font-bold px-1.5 py-0.5 rounded uppercase">Urgent</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar User Profile Info & Language Settings Footer -->
+            <div class="p-3 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-3">
+                
+                <!-- Quick Controls: Language + Dark/Light Theme -->
+                <div class="grid grid-cols-2 gap-2">
+                    <button onclick="toggleLanguage()" class="flex items-center justify-center gap-1.5 py-1.5 px-2 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <i class="fa-solid fa-language text-brand-500"></i>
+                        <span data-i18n="langToggle">English</span>
+                    </button>
+                    <button onclick="toggleTheme()" class="flex items-center justify-center gap-1.5 py-1.5 px-2 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <i class="fa-solid fa-circle-half-stroke text-amber-500"></i>
+                        <span data-i18n="themeToggle">المظهر</span>
+                    </button>
+                </div>
+
+                <!-- User identity / API state matched to the image bottom left -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-full bg-gradient-to-tr from-teal-500 to-emerald-400 text-white font-bold text-xs flex items-center justify-center shadow-inner">
+                            TR
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-850 dark:text-slate-200" data-i18n="userTrader">النواة التجارية الذكية</h4>
+                            <div class="flex items-center gap-1 mt-0.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                <span class="text-[9px] text-slate-500 dark:text-slate-400 font-medium" data-i18n="statusConnected">اتصال ذكي نشط</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="p-1.5 text-slate-400 dark:text-slate-500 hover:text-brand-500 dark:hover:text-brand-400 transition-colors rounded-md" data-i18n-title="settings" title="الإعدادات">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN VIEW (Contains Chat Workspace and Market Dashboard Tabbed Switcher) -->
+        <main class="flex-1 flex flex-col h-full bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+            
+            <!-- Mobile Navigation Overlay (For responsive sidebar) -->
+            <div id="sidebar-overlay" onclick="toggleSidebar()" class="hidden fixed inset-0 bg-slate-950/40 z-10 backdrop-blur-xs"></div>
+
+            <!-- Top Header (Matches Layout header in the image) -->
+            <header class="h-16 border-b border-slate-200 dark:border-slate-800 px-4 flex items-center justify-between bg-white dark:bg-slate-900/60 backdrop-blur-md shrink-0">
+                <div class="flex items-center gap-3">
+                    <button onclick="toggleSidebar()" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div>
+                        <h2 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                            <span id="current-workspace-title" data-i18n="newWorkspace">مكتب ذكاء السلع الجديد</span>
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
+                                <span class="w-1 h-1 rounded-full bg-emerald-500 ml-1"></span>
+                                Secure Desk
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Custom Switcher for AI Chat and Analytics Dashboard View -->
+                <div class="flex items-center bg-slate-100 dark:bg-slate-950 p-1 rounded-lg">
+                    <button onclick="switchMainTab('chat')" id="tab-btn-chat" class="px-3 py-1.5 rounded-md text-xs font-bold transition-all duration-200 flex items-center gap-1.5 bg-white dark:bg-slate-800 text-brand-600 dark:text-white shadow-xs">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span data-i18n="chatTab">مكتب الدردشة الذكي</span>
+                    </button>
+                    <button onclick="switchMainTab('analytics')" id="tab-btn-analytics" class="px-3 py-1.5 rounded-md text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span data-i18n="analyticsTab">لوحة تحليلات الأسواق الحية</span>
+                    </button>
+                </div>
+
+                <!-- Utilities matching image top right (Refresh, security, export) -->
+                <div class="flex items-center gap-3">
+                    <span class="hidden lg:inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-brand-500/10 text-brand-500 border border-brand-500/20" data-i18n="systemSecure">حالة النظام: آمن ومحمي</span>
+                    <button onclick="refreshData()" class="p-2 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 hover:rotate-180 transition-all duration-500">
+                        <i class="fa-solid fa-rotate"></i>
+                    </button>
+                    <div class="h-8 w-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-500 text-sm shadow-xs" title="Connected">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- TAB CONTAINER 1: AI CHAT DESK VIEW (Identical to image structure) -->
+            <div id="view-chat" class="flex-1 flex flex-col justify-between overflow-hidden">
+                
+                <!-- Chat Messages Body (Scrollable) -->
+                <div id="chat-messages" class="flex-1 overflow-y-auto p-4 md:p-8 space-y-6 flex flex-col justify-start">
+                    
+                    <!-- Landing Screen (Shows only if chat messages are empty) -->
+                    <div id="chat-welcome-screen" class="max-w-2xl mx-auto text-center my-auto flex flex-col items-center">
+                        <!-- Hologram animated-like blue circle logo matching image exactly -->
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 bg-brand-500/20 rounded-full blur-xl scale-125 animate-pulse"></div>
+                            <div class="h-24 w-24 rounded-full bg-slate-100 dark:bg-slate-900 border border-brand-500/20 flex items-center justify-center text-brand-500 dark:text-brand-400 relative z-10 shadow-inner">
+                                <i class="fa-solid fa-messages text-4xl animate-bounce"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2" data-i18n="startSession">ابدأ جلسة تحليل ذكية مع B2BGO X</h3>
+                        <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-8 max-w-lg" data-i18n="sessionDesc">
+                            أرسل استفسارك الأول أدناه لتحليل هوامش المبيعات، فروق الأسعار، التحقق من العقود، أو تحسين سلاسل التوريد العالمية فوراً.
+                        </p>
+
+                        <!-- Preset Action Buttons from the image -->
+                        <div class="flex flex-wrap items-center justify-center gap-3">
+                            <button onclick="sendPreset('arbitrage')" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-4 py-2 rounded-full text-xs font-semibold shadow-xs hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-scale-balanced text-brand-500"></i>
+                                <span data-i18n="btnArbitrage">تحليل هوامش فروق الأسعار</span>
+                            </button>
+                            <button onclick="sendPreset('freight')" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-4 py-2 rounded-full text-xs font-semibold shadow-xs hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-ship text-amber-500"></i>
+                                <span data-i18n="btnFreight">حساب تكاليف الشحن البحري</span>
+                            </button>
+                            <button onclick="sendPreset('risk')" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-4 py-2 rounded-full text-xs font-semibold shadow-xs hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-triangle-exclamation text-rose-500"></i>
+                                <span data-i18n="btnRisk">فحص مخاطر الموردين</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Conversation Flow Area (Populated dynamically) -->
+                    <div id="messages-container" class="max-w-3xl mx-auto w-full space-y-6 hidden"></div>
+                </div>
+
+                <!-- Bottom Interface: Typing indicator, input form, and localized footnote -->
+                <div class="border-t border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900/60 backdrop-blur-md shrink-0">
+                    <div class="max-w-3xl mx-auto space-y-3">
+                        
+                        <!-- Real-time Loading/Analyzing Panel -->
+                        <div id="typing-indicator" class="hidden flex items-center gap-3 text-xs text-brand-500 dark:text-brand-400 bg-brand-500/10 px-4 py-2 rounded-xl border border-brand-500/20 max-w-max animate-pulse">
+                            <i class="fa-solid fa-spinner-third animate-spin"></i>
+                            <span data-i18n="generating">جاري التحليل وتوليد الإجابة الذكية...</span>
+                        </div>
+
+                        <!-- Chat Input Box - Identical to image layout and features -->
+                        <div class="relative flex items-center bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl focus-within:ring-2 focus-within:ring-brand-500 transition-all shadow-md">
+                            
+                            <!-- Attachment Clip Icon Left -->
+                            <div class="flex items-center px-3 border-l dark:border-slate-800 gap-1.5">
+                                <button class="p-2 text-slate-400 dark:text-slate-500 hover:text-brand-500 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg transition-colors" title="Attach Files">
+                                    <i class="fa-solid fa-paperclip text-sm"></i>
+                                </button>
+                                <button class="p-2 text-slate-400 dark:text-slate-500 hover:text-brand-500 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg transition-colors" title="Upload Chart/Spreadsheet">
+                                    <i class="fa-solid fa-chart-line text-sm"></i>
+                                </button>
+                            </div>
+
+                            <!-- Real Input Area -->
+                            <textarea id="chat-input" rows="1" data-i18n-placeholder="inputPlaceholder" placeholder="اكتب هنا لبدء تحليل تدفق البيانات والعمليات التجارية..." class="flex-1 bg-transparent px-4 py-4 text-xs md:text-sm text-slate-800 dark:text-slate-200 focus:outline-none resize-none placeholder-slate-400 dark:placeholder-slate-500 min-h-[52px]" onkeydown="handleInputKeyPress(event)"></textarea>
+
+                            <!-- Send Button Right -->
+                            <div class="flex items-center px-4">
+                                <button onclick="triggerSendMessage()" class="h-10 w-10 bg-brand-600 dark:bg-brand-500 text-white rounded-xl shadow-lg shadow-brand-500/20 flex items-center justify-center hover:bg-brand-700 dark:hover:bg-brand-600 transition-all duration-200 hover:scale-105">
+                                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Secure Footnote exact to the provided TradeChat AI image -->
+                        <p class="text-[10px] text-slate-400 dark:text-slate-500 text-center flex items-center justify-center gap-1.5" data-i18n="footnote">
+                            <i class="fa-solid fa-info-circle text-brand-500/70"></i>
+                            يقوم نظام B2BGO X بمطابقة وتدقيق إرشادات الشركة اللوجستية قبل إرسال مخرجات التقارير.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTAINER 2: LIVE MARKET ANALYTICS (Not matching original image layout but highly integrated for stunning trading platform feel) -->
+            <div id="view-analytics" class="flex-1 overflow-y-auto p-4 md:p-8 space-y-6 hidden">
+                <div class="max-w-6xl mx-auto space-y-6">
+                    
+                    <!-- Live Overview Stats Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="priceCopper">النحاس</span>
+                                <span class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-md text-xs"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-mono font-bold">$8,940.00</h3>
+                                <p class="text-xs text-emerald-500 mt-1 font-bold">+1.2% (Today)</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="priceSteel">الفولاذ</span>
+                                <span class="p-1.5 bg-rose-500/10 text-rose-500 rounded-md text-xs"><i class="fa-solid fa-arrow-trend-down"></i></span>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-mono font-bold">$620.00</h3>
+                                <p class="text-xs text-rose-500 mt-1 font-bold">-0.4% (Today)</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="priceOil">خام برنت</span>
+                                <span class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-md text-xs"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-mono font-bold">$83.45</h3>
+                                <p class="text-xs text-emerald-500 mt-1 font-bold">+2.1% (Today)</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n="priceFreight">مؤشر الشحن</span>
+                                <span class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-md text-xs"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-mono font-bold">1,720.00</h3>
+                                <p class="text-xs text-emerald-500 mt-1 font-bold">+4.5% (Today)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Chart and Shipping Map Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Interactive Chart.js Area -->
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-3xl lg:col-span-2 shadow-xs space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h3 class="text-sm font-bold text-slate-900 dark:text-white">تحليل أداء مؤشر الأسعار العالمي (B2B Global Indices)</h3>
+                                    <p class="text-xs text-slate-400">تغير تاريخي لأسعار النحاس والشحن البحري</p>
+                                </div>
+                                <div class="flex bg-slate-100 dark:bg-slate-950 p-1 rounded-lg text-xs font-semibold">
+                                    <button class="px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 shadow-xs">1W</button>
+                                    <button class="px-2.5 py-1 text-slate-400">1M</button>
+                                    <button class="px-2.5 py-1 text-slate-400">1Y</button>
+                                </div>
+                            </div>
+                            <!-- Canvas container -->
+                            <div class="relative h-72">
+                                <canvas id="marketChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Global Arbitrage Hotspots Table -->
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-3xl shadow-xs space-y-4">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900 dark:text-white">فرص موازنة الأسعار الحالية (Arbitrage Deals)</h3>
+                                <p class="text-xs text-slate-400">هوامش مبيعات وفرق أسعار فورية عبر الحدود</p>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <!-- Item 1 -->
+                                <div class="p-3 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl flex items-center justify-between">
+                                    <div>
+                                        <h4 class="text-xs font-bold">النحاس: شنغهاي <i class="fa-solid fa-arrow-right px-1 text-slate-400 text-[10px]"></i> لندن</h4>
+                                        <p class="text-[10px] text-emerald-500 mt-1 font-semibold"><i class="fa-solid fa-wallet"></i> عائد متوقع: 11.2%</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded-lg">+$340/ton</span>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="p-3 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl flex items-center justify-between">
+                                    <div>
+                                        <h4 class="text-xs font-bold">الفولاذ: برلين <i class="fa-solid fa-arrow-right px-1 text-slate-400 text-[10px]"></i> دبي</h4>
+                                        <p class="text-[10px] text-emerald-500 mt-1 font-semibold"><i class="fa-solid fa-wallet"></i> عائد متوقع: 6.8%</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded-lg">+$45/ton</span>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="p-3 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl flex items-center justify-between">
+                                    <div>
+                                        <h4 class="text-xs font-bold">الخدمات اللوجستية: دبي <i class="fa-solid fa-arrow-right px-1 text-slate-400 text-[10px]"></i> روتردام</h4>
+                                        <p class="text-[10px] text-amber-500 mt-1 font-semibold"><i class="fa-solid fa-circle-info"></i> فرصة تفاوض متاحة</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-bold text-amber-500 bg-amber-500/10 px-2 py-1 rounded-lg">+$112/TEU</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Set Theme dynamically
+        function updateThemeOnHTML() {
+            if (state.theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+
+        function toggleTheme() {
+            state.theme = state.theme === 'dark' ? 'light' : 'dark';
+            updateThemeOnHTML();
+        }
+
+        // Language Translation Handler
+        function updateTranslations() {
+            const currentTranslations = translations[state.lang];
+            
+            // Handle element alignment/direction based on language
+            const htmlTag = document.documentElement;
+            htmlTag.setAttribute('lang', state.lang);
+            if (state.lang === 'ar') {
+                htmlTag.setAttribute('dir', 'rtl');
+                document.getElementById('sidebar').classList.add('md:border-l');
+                document.getElementById('sidebar').classList.remove('md:border-r');
+            } else {
+                htmlTag.setAttribute('dir', 'ltr');
+                document.getElementById('sidebar').classList.add('md:border-r');
+                document.getElementById('sidebar').classList.remove('md:border-l');
+            }
+
+            // Apply all translated texts
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (currentTranslations[key]) {
+                    el.innerText = currentTranslations[key];
+                }
+            });
+
+            // Apply placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (currentTranslations[key]) {
+                    el.setAttribute('placeholder', currentTranslations[key]);
+                }
+            });
+
+            // Apply titles
+            document.querySelectorAll('[data-i18n-title]').forEach(el => {
+                const key = el.getAttribute('data-i18n-title');
+                if (currentTranslations[key]) {
+                    el.setAttribute('title', currentTranslations[key]);
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            state.lang = state.lang === 'ar' ? 'en' : 'ar';
+            updateTranslations();
+            // Redraw charts if initialized to adjust direction/fonts
+            initChart();
+        }
+
+        // Toggle Sidebar Drawer for responsive views
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            const isAr = state.lang === 'ar';
+
+            if (sidebar.classList.contains('-translate-x-full') || sidebar.classList.contains('translate-x-full')) {
+                // Open
+                sidebar.classList.remove('-translate-x-full', 'translate-x-full');
+                overlay.classList.remove('hidden');
+            } else {
+                // Close
+                sidebar.classList.add(isAr ? 'translate-x-full' : '-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        // Dynamic Active Desk Switcher
+        function selectDesk(deskId) {
+            state.activeDeskId = deskId;
+            
+            // Remove active classes from all desks
+            ['desk-1', 'desk-2', 'desk-3', 'desk-4'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.className = "group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800/30";
+                }
+            });
+
+            // Highlight selected
+            const activeEl = document.getElementById(deskId);
+            if (activeEl) {
+                activeEl.className = "group p-3 rounded-xl cursor-pointer transition-all duration-200 border border-slate-200/50 dark:border-slate-800 bg-slate-100 dark:bg-slate-800/60 shadow-inner";
+            }
+
+            // Update title
+            const deskTitles = {
+                'desk-1': state.lang === 'ar' ? 'مكتب ذكاء السلع الجديد' : 'Commodity Intelligence Desk',
+                'desk-2': state.lang === 'ar' ? 'تحوط النحاس واللوجستيات' : 'Copper Futures Hedging',
+                'desk-3': state.lang === 'ar' ? 'مُحسّن الشحن اللوجستي' : 'Freight & Logistics Optimizer',
+                'desk-4': state.lang === 'ar' ? 'محلل مخاطر العقود الذكي' : 'Contract Risk Analyzer'
+            };
+
+            document.getElementById('current-workspace-title').innerText = deskTitles[deskId];
+
+            // Close mobile sidebar if open
+            if (window.innerWidth < 768) {
+                toggleSidebar();
+            }
+
+            // Clear or update messages based on active desk
+            if (deskId !== 'desk-1') {
+                // Populate desk-specific simulated messages
+                populateSimulatedMessages(deskId);
+            } else {
+                // Return to main user custom session
+                renderMessages();
+            }
+        }
+
+        // Switching Main Area tabs (Chat view vs Analytics Panel view)
+        function switchMainTab(tab) {
+            state.activeTab = tab;
+            const chatBtn = document.getElementById('tab-btn-chat');
+            const analyticsBtn = document.getElementById('tab-btn-analytics');
+            const chatView = document.getElementById('view-chat');
+            const analyticsView = document.getElementById('view-analytics');
+
+            if (tab === 'chat') {
+                chatView.classList.remove('hidden');
+                analyticsView.classList.add('hidden');
+                chatBtn.className = "px-3 py-1.5 rounded-md text-xs font-bold transition-all duration-200 flex items-center gap-1.5 bg-white dark:bg-slate-800 text-brand-600 dark:text-white shadow-xs";
+                analyticsBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200";
+            } else {
+                chatView.classList.add('hidden');
+                analyticsView.classList.remove('hidden');
+                analyticsBtn.className = "px-3 py-1.5 rounded-md text-xs font-bold transition-all duration-200 flex items-center gap-1.5 bg-white dark:bg-slate-800 text-brand-600 dark:text-white shadow-xs";
+                chatBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200";
+                // Initialize market chart on display
+                setTimeout(initChart, 100);
+            }
+        }
+
+        // Initialize Market Trend Chart (using Chart.js)
+        let chartInstance = null;
+        function initChart() {
+            const ctx = document.getElementById('marketChart')?.getContext('2d');
+            if (!ctx) return;
+
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            const isDark = state.theme === 'dark';
+            const gridColor = isDark ? '#1e293b' : '#e2e8f0';
+            const textColor = isDark ? '#94a3b8' : '#64748b';
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                    datasets: [
+                        {
+                            label: state.lang === 'ar' ? 'مؤشر أسعار النحاس ($/طن)' : 'Copper Index ($/ton)',
+                            data: [8200, 8400, 8100, 8500, 8800, 8940],
+                            borderColor: '#0284c7',
+                            backgroundColor: 'rgba(2, 132, 199, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: state.lang === 'ar' ? 'أجور الشحن البحري العالمي' : 'Freight Baltic Index',
+                            data: [1500, 1620, 1580, 1640, 1690, 1720],
+                            borderColor: '#f59e0b',
+                            backgroundColor: 'rgba(245, 158, 11, 0.05)',
+                            borderWidth: 2,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: textColor,
+                                font: { family: 'Cairo, Inter' }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: gridColor },
+                            ticks: { color: textColor, font: { family: 'Cairo, Inter' } }
+                        },
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            grid: { color: gridColor },
+                            ticks: { color: textColor }
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            grid: { drawOnChartArea: false },
+                            ticks: { color: textColor }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+    <script>
+        // Real connection to Gemini for enterprise analysis
+        async function askGemini(promptText) {
+            // Using system prompt specifically matched for the B2BGO X trading desk domain
+            const systemPrompt = `You are B2BGO X AI, an advanced B2B Intelligence & Trading Desk Assistant. 
+            You specialize in logistics optimization, supply chain analytics, global sourcing, risk models, commodity hedging (copper, steel, oil), and trade compliance verification. 
+            Answer questions professionally, provide detailed data-driven insights, use formatted lists or HTML tables where necessary, and cite strategic supply chain strategies.
+            Respond in the language that the user uses (Arabic or English). Keep answers concise, highly analytical, and business-focused. Never mention alerts or raw API mechanics.`;
+            
+            const apiKey = ""; // Left empty as per safety framework so Canvas injects it automatically
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: promptText }] }],
+                        systemInstruction: { parts: [{ text: systemPrompt }] }
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error("API call unsuccessful");
+                }
+
+                const result = await response.json();
+                const textOutput = result.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (textOutput) return textOutput;
+                throw new Error("No payload content");
+
+            } catch (err) {
+                console.warn("Using smart simulated trading logic fallback due to environment key settings:", err);
+                return getSimulationFallback(promptText);
+            }
+        }
+
+        // Intelligent simulated fallback content mapping to trading actions
+        function getSimulationFallback(query) {
+            const isAr = state.lang === 'ar';
+            const q = query.toLowerCase();
+
+            if (q.includes('arbitrage') || q.includes('هامش') || q.includes('فروق الأسعار')) {
+                return isAr ? `### 📊 تقرير فروق أسعار السلع وعمليات موازنة السلع (Arbitrage Desk)
+                
+* تم العثور على فرصة مواتية بنسبة **11.2%** لتصدير النحاس من مستودعات شنغهاي (SHFE) وتسليمه لجمهورية ألمانيا الاتحادية تماشياً مع معدلات LME الحالية.
+* **تحليل التكلفة التقريبي:**
+  * سعر الشراء في شنغهاي: $8,600 / للطن.
+  * سعر البيع في لندن (LME): $8,940 / للطن.
+  * تكلفة الشحن البحري عبر البحر الأحمر أو رأس الرجاء الصالح: $140 / للطن.
+* **التوصية:** قم بفتح مركز تصدير جزئي مسبق التحوط لتجنب تذبذب العملة الأجنبية.` 
+                : `### 📊 Commodity Arbitrage & Margin Report
+                
+* An active **11.2%** margin opportunity has been identified between Shanghai Futures Exchange (SHFE) inventory and Hamburg delivery nodes.
+* **Financial breakdown:**
+  * SHFE Purchase Base: $8,600/ton.
+  * LME Selling Target: $8,940/ton.
+  * Estimated Ocean Freight (via Cape Route): $140/ton.
+* **Recommendation:** Initiate partial hedged trade flow immediately to secure spread lock before European market closes.`;
+            }
+
+            if (q.includes('freight') || q.includes('شحن') || q.includes('لوجست')) {
+                return isAr ? `### 🚢 تقرير حساب فروق وتكاليف الشحن والخدمات اللوجستية
+                
+* **مؤشر البلطيق الجاف (Baltic Dry Index):** يسجل زيادة بمعدل **4.5%** هذا الأسبوع لتصل التكلفة الحالية لـ **1,720 نقطة** على الخطوط اللوجستية العابرة للمحيطات.
+* **مقارنة أسعار الشحن اللوجستي:**
+  * دبي إلى روتردام: **$3,200** لكل حاوية 40 قدم (زيادة 2.3%).
+  * شنغهاي إلى دبي: **$2,100** لكل حاوية 40 قدم (انخفاض 1.1%).
+* **الجدول الزمني:** يوصى بتثبيت الأسعار لمدة 30 يومًا قادمة للخطوط الآسيوية نظراً لترقب ضغوط موسمية.` 
+                : `### 🚢 Freight Spread & Shipping Cost Intelligence
+                
+* **Baltic Dry Index Tracking:** Rising **+4.5%** to **1,720 points** today, pointing to heightened capacity constraints.
+* **Line Pricing Benchmarks (40ft High-Cube container):**
+  * Jebel Ali to Rotterdam: **$3,200** (Up 2.3%).
+  * Shanghai to Jebel Ali: **$2,100** (Down 1.1%).
+* **Actionable Insight:** Lock bulk spot rates for the upcoming 30 days to avoid anticipated seasonal container surges.`;
+            }
+
+            if (q.includes('risk') || q.includes('مخاطر') || q.includes('عقد') || q.includes('contract')) {
+                return isAr ? `### ⚠️ تحليل مخاطر العقود وسلسلة الإمداد
+                
+* تم مسح **3 بنود** في مستند الشراكة المقترح مع الموردين وأظهرت مستويات مخاطر متوسطة:
+  1. **بند القوة القاهرة:** غير محدد جغرافيا بما يتوافق مع القواعد الجديدة للاتحاد الأوروبي.
+  2. **مدة التوريد والتعويضات:** تضمن بنداً جزائياً بـ **0.5%** فقط وهو أقل من معيار الصناعة البالغ **1.5%**.
+* **مستوى مخاطر المورد الإجمالي:** **متوسط (Yellow Rating)**. يوصى بإضافة شروط التحكيم الإقليمية.`
+                : `### ⚠️ Supply Chain Compliance & Contract Risk Assessment
+                
+* Screened proposed supplier framework and highlighted **3 potential policy friction areas**:
+  1. **Force Majeure Definition:** Fails to align with updated EU supply chain accountability rules.
+  2. **Late-Delivery Damages:** Set at **0.5%** weekly cap vs industry benchmark of **1.5%**.
+* **Overall Supplier Risk Score:** **Moderate (Yellow)**. Re-negotiation suggested for indemnity terms before physical onboarding.`;
+            }
+
+            // General text response based on language setting
+            return isAr ? `تلقى **B2BGO X** استفسارك المالي/التجاري بنجاح. 
+
+نحن نقوم الآن بمسح قواعد البيانات اللوجستية وهيكل الأسواق الحرة لتزويدك بأدق التحليلات. يمكنك تجربة الضغط على أزرار المهام السريعة بالأسفل (مثل *حساب تكاليف الشحن* أو *تحليل هوامش الفروق*) للحصول على جداول حقيقية فورية ونماذج كاملة.`
+            : `**B2BGO X** has logged your custom logistics and procurement query. 
+
+We are currently scanning dynamic indexes to fetch optimized rates. Try using our quick desk prompts below (like *Calculate Freight* or *Analyze Margins*) to generate complete trade models instantly.`;
+        }
+    </script>
+
+    <script>
+        // Render Chat Messages in DOM
+        function renderMessages() {
+            const container = document.getElementById('messages-container');
+            const welcomeScreen = document.getElementById('chat-welcome-screen');
+
+            if (state.messages.length === 0) {
+                container.classList.add('hidden');
+                welcomeScreen.classList.remove('hidden');
+                return;
+            }
+
+            welcomeScreen.classList.add('hidden');
+            container.classList.remove('hidden');
+
+            container.innerHTML = state.messages.map((msg, index) => {
+                const isUser = msg.sender === 'user';
+                const parsedText = formatMarkdown(msg.text);
+
+                return `
+                <div class="flex items-start gap-4 ${isUser ? 'justify-end' : 'justify-start'} animate-fade-in">
+                    <!-- Avatar -->
+                    ${!isUser ? `
+                    <div class="h-8 w-8 rounded-lg bg-gradient-to-tr from-brand-600 to-sky-400 text-white flex items-center justify-center text-xs shrink-0 font-bold shadow-md">
+                        B2
+                    </div>
+                    ` : ''}
+
+                    <!-- Bubble Content -->
+                    <div class="max-w-[85%] rounded-2xl px-4 py-3 text-xs md:text-sm ${
+                        isUser 
+                        ? 'bg-brand-600 text-white rounded-br-none shadow-sm font-medium' 
+                        : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-bl-none shadow-xs'
+                    }">
+                        <div class="prose dark:prose-invert leading-relaxed space-y-2">
+                            ${parsedText}
+                        </div>
+                        
+                        <!-- Actions on Message -->
+                        <div class="flex items-center gap-2 mt-2 pt-2 border-t ${isUser ? 'border-brand-500/30 justify-end' : 'border-slate-100 dark:border-slate-800 justify-start'} text-[10px] text-slate-400">
+                            <span>${new Date(msg.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                            ${!isUser ? `
+                            <button onclick="copyToClipboard(this, ${index})" class="hover:text-brand-500 flex items-center gap-1 ml-2">
+                                <i class="fa-solid fa-copy"></i>
+                                <span class="copy-lbl">Copy</span>
+                            </button>
+                            ` : ''}
+                        </div>
+                    </div>
+
+                    <!-- User Avatar -->
+                    ${isUser ? `
+                    <div class="h-8 w-8 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center text-xs shrink-0 font-bold border dark:border-slate-700">
+                        TR
+                    </div>
+                    ` : ''}
+                </div>
+                `;
+            }).join('');
+
+            // Scroll container to bottom
+            const chatMessagesDiv = document.getElementById('chat-messages');
+            chatMessagesDiv.scrollTop = chatMessagesDiv.scrollHeight;
+        }
+
+        // Minimalist custom markdown formatter for beautiful visual styling
+        function formatMarkdown(text) {
+            if (!text) return "";
+            return text
+                .replace(/\n/g, '<br>')
+                .replace(/### (.*?)(<br>|$)/g, '<h4 class="text-xs md:text-sm font-bold text-brand-600 dark:text-brand-400 mt-3 mb-1 flex items-center gap-2">$1</h4>')
+                .replace(/\* (.*?)(<br>|$)/g, '<li class="list-none flex items-start gap-1.5 ml-2 mt-1"><span class="text-brand-500 text-xs mt-0.5">•</span><span class="flex-1">$1</span></li>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900 dark:text-white">$1</strong>');
+        }
+
+        // Action Trigger for Preset Prompts (Arbitrage, Freight, Risk)
+        function sendPreset(type) {
+            const presets = {
+                arbitrage: state.lang === 'ar' ? 'حلل هوامش موازنة الأسعار الحالية لسبائك النحاس' : 'Analyze active arbitrage margin opportunities for Copper',
+                freight: state.lang === 'ar' ? 'أريد حساب ومقارنة تكلفة أجور الشحن البحري الحالية' : 'Calculate current ocean freight logistics spreads',
+                risk: state.lang === 'ar' ? 'قم بإجراء تقييم مخاطر وفحص عقود الموردين' : 'Perform supplier onboarding and compliance contract risk audit'
+            };
+            
+            const prompt = presets[type];
+            if (prompt) {
+                document.getElementById('chat-input').value = prompt;
+                triggerSendMessage();
+            }
+        }
+
+        // Handler for keypress (Enter to send, Shift+Enter for new line)
+        function handleInputKeyPress(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                triggerSendMessage();
+            }
+        }
+
+        // Action to send user prompt to Gemini/Simulation
+        async function triggerSendMessage() {
+            const inputEl = document.getElementById('chat-input');
+            const promptText = inputEl.value.trim();
+            if (!promptText || state.isGenerating) return;
+
+            // Clear input field
+            inputEl.value = "";
+
+            // Push User Message
+            state.messages.push({
+                sender: 'user',
+                text: promptText,
+                timestamp: new Date()
+            });
+
+            // Update workspace status in sidebar
+            const latestMsgEl = document.getElementById('workspace-latest-msg');
+            if (latestMsgEl) {
+                latestMsgEl.innerText = promptText;
+                latestMsgEl.className = "text-[11px] text-brand-500 dark:text-brand-400 mt-1 truncate max-w-[150px] font-semibold";
+            }
+
+            renderMessages();
+
+            // Set Generating Status
+            state.isGenerating = true;
+            document.getElementById('typing-indicator').classList.remove('hidden');
+
+            try {
+                // Call Gemini API / Fallback Logic
+                const response = await askGemini(promptText);
+                
+                state.messages.push({
+                    sender: 'b2bgo',
+                    text: response,
+                    timestamp: new Date()
+                });
+            } catch (err) {
+                state.messages.push({
+                    sender: 'b2bgo',
+                    text: state.lang === 'ar' ? 'عذراً، حدث خطأ أثناء فحص البيانات اللوجستية.' : 'Error contacting the B2B logistics routing gateway.',
+                    timestamp: new Date()
+                });
+            } finally {
+                state.isGenerating = false;
+                document.getElementById('typing-indicator').classList.add('hidden');
+                renderMessages();
+            }
+        }
+
+        // Populates simulated message templates for archived desks
+        function populateSimulatedMessages(deskId) {
+            const container = document.getElementById('messages-container');
+            const welcomeScreen = document.getElementById('chat-welcome-screen');
+            welcomeScreen.classList.add('hidden');
+            container.classList.remove('hidden');
+
+            const isAr = state.lang === 'ar';
+            let mockData = [];
+
+            if (deskId === 'desk-2') { // Copper Futures Hedging
+                mockData = [
+                    { sender: 'user', text: isAr ? 'تحليل محفظة التحوط للنحاس للربع القادم' : 'Analyze hedging portfolio for upcoming quarter copper intake', timestamp: new Date(Date.now() - 7200000) },
+                    { 
+                        sender: 'b2bgo', 
+                        text: isAr 
+                        ? '### 📈 خطة تحوط النحاس ومخاطر الفروق (LME/COMEX)\n* **المركز الحالي:** شراء عقود فروق بقيمة $8,400 للطن تغطي **60%** من الاحتياج الفعلي.\n* **أهداف التوصية:** نوصي بزيادة الشراء الآجل بنسبة **15%** بسبب توقع إمدادات منخفضة في بيرو وتشيلي.\n* **معدل الحماية الإجمالي للمحفظة:** **88%** ضد التقلبات العنيفة.' 
+                        : '### 📈 Copper Futures Hedging Strategy\n* **Current Position:** Long futures at $8,400/ton covering **60%** of expected aggregate demand.\n* **Forecast adjustments:** Increase allocation by **15%** due to lower mined production targets in Peru and Chile.\n* **Portfolio resilience index:** **88%** protection metric in case of standard deviation price anomalies.', 
+                        timestamp: new Date(Date.now() - 7100000) 
+                    }
+                ];
+            } else if (deskId === 'desk-3') { // Logistics Optimizer
+                mockData = [
+                    { sender: 'user', text: isAr ? 'ما هي تكلفة شحن خط شنغهاي روتردام اليوم؟' : 'Compare freight options from Shanghai to Rotterdam', timestamp: new Date(Date.now() - 86400000) },
+                    { 
+                        sender: 'b2bgo', 
+                        text: isAr 
+                        ? '### 🚢 مقارنة تكاليف وخطوط الشحن البحري الحية\n* **خيار 1 (الترانزيت السريع):** شحن مباشر عبر قناة السويس (للشركات المعتمدة فقط): **$4,100** لكل حاوية 40 قدم.\n* **خيار 2 (رأس الرجاء الصالح):** أمن ومستقر لكن بزيادة **11 يوماً** في زمن الرحلة: **$3,200** لكل حاوية.\n* **الترشيح المالي:** يفضل اختيار الخط البحري الطويل للحمولات غير المستعجلة لتوفير هامش فوري بقيمة **$900**.' 
+                        : '### 🚢 Global Ocean Routing Optimizer\n* **Option 1 (Fast Transit):** Direct via Suez Canal (Approved shippers only): **$4,100** / FEU.\n* **Option 2 (Standard Route):** Transiting via Cape of Good Hope (+11 Days transit deviation): **$3,200** / FEU.\n* **Strategic Margin Save:** Route non-essential capital inventories via Option 2 to unlock immediate **$900/container** profit margin.', 
+                        timestamp: new Date(Date.now() - 86300000) 
+                    }
+                ];
+            } else if (deskId === 'desk-4') { // Contract Risk Analyzer
+                mockData = [
+                    { sender: 'user', text: isAr ? 'افحص عقد التوريد للحديد المرفق' : 'Scan draft metal purchasing contract compliance', timestamp: new Date(Date.now() - 172800000) },
+                    { 
+                        sender: 'b2bgo', 
+                        text: isAr 
+                        ? '### ⚠️ مخرجات فحص العقد ومطابقة القوانين اللوجستية\n* **تحذير 1 (عالي الخطورة):** البند رقم 4 ينص على معيار قضائي غير معترف به في اللوائح التنظيمية للشركة.\n* **تعديل مقترح:** استبدال بند حل النزاعات ليخضع للغرفة التجارية الدولية بباريس (ICC).\n* **الخلاصة:** لا تشرع في التوقيع بدون تعديل فوري.' 
+                        : '### ⚠️ Contract Compliance & Audit Review\n* **Warning 1 (High):** Section 4 subjects execution laws to non-standard legal jurisdictions outside corporate framework guidelines.\n* **Remedy action:** Replace resolution clauses with standard Paris International Chamber of Commerce (ICC) rules.\n* **Compliance Status:** Pending Revision.', 
+                        timestamp: new Date(Date.now() - 172700000) 
+                    }
+                ];
+            }
+
+            state.messages = mockData;
+            renderMessages();
+        }
+
+        // Copy generated AI messages to clipboard
+        function copyToClipboard(button, index) {
+            const message = state.messages[index];
+            if (!message) return;
+
+            const tempInput = document.createElement("textarea");
+            tempInput.value = message.text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Quick tooltip response
+            const label = button.querySelector('.copy-lbl');
+            const originalText = label.innerText;
+            label.innerText = state.lang === 'ar' ? 'تم النسخ!' : 'Copied!';
+            button.classList.add('text-emerald-500');
+            setTimeout(() => {
+                label.innerText = originalText;
+                button.classList.remove('text-emerald-500');
+            }, 1500);
+        }
+
+        // Interactive dynamic simulated price tick emulator
+        function refreshData() {
+            // Randomly update values to simulate live trading Desk updates
+            const getPriceTick = (val, range) => (val + (Math.random() * range - range/2)).toFixed(2);
+            
+            const copperPrice = getPriceTick(8940, 50);
+            const steelPrice = getPriceTick(620, 10);
+            const oilPrice = getPriceTick(83.45, 1.5);
+            const freightPrice = getPriceTick(1720, 20);
+
+            document.getElementById('ticker-copper').innerText = `$${parseFloat(copperPrice).toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+            document.getElementById('ticker-steel').innerText = `$${parseFloat(steelPrice).toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+            document.getElementById('ticker-oil').innerText = `$${parseFloat(oilPrice).toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+            document.getElementById('ticker-freight').innerText = parseFloat(freightPrice).toLocaleString(undefined, {minimumFractionDigits: 0});
+
+            // Re-init chart for refreshed curves
+            if (state.activeTab === 'analytics') {
+                initChart();
+            }
+        }
+
+        // Initialize App on Window Load
+        window.onload = function() {
+            // Apply current dark/light system configurations
+            updateThemeOnHTML();
+            // Apply translation values
+            updateTranslations();
+            // Show welcome messages
+            renderMessages();
+
+            // Set up small periodic price refreshers
+            setInterval(refreshData, 8000);
+        }
+    </script>
+</body>
+</html>
