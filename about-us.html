@@ -1,0 +1,1365 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B GoX</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cloudflare.com">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1d4ed8', // Deep Blue
+                        primaryDark: '#1e3a8a',
+                        secondary: '#f97316', // Orange highlight (like Wolmart)
+                        textDark: '#333333',
+                        textLight: '#666666',
+                        borderGray: '#e5e7eb',
+                        bgGray: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; overflow-x: hidden; background-color: #f5f7fa; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #999; }
+        /* B2B Specific Styles */
+        .tier-price { font-size: 0.8rem; line-height: 1.2; }
+        .tier-price strong { font-size: 1.1rem; color: #333; }
+        .hover-primary:hover { color: #1d4ed8; transition: color 0.3s; }
+        .header-dropdown-shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    
+
+	
+	</style>
+</head>
+<body class="bg-[#fcfdff]"> 
+
+
+<!-- top nav start -->
+<div class="bg-gray-100 text-xs text-textLight py-2 border-gray-200 hidden md:block">
+    <div class="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+							<div class="flex items-center space-x-4">
+								<span>B2B GoX - Global Market Place!</span>
+							</div>
+     <div class="flex items-center space-x-6">
+                
+			
+       <span class="text-gray-300">|</span>
+
+				
+	<a href="become-supplier.html" style=" display: inline-flex; align-items: center; justify-content: center; background-color: #004d99; color: #ffffff; text-decoration: none; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; font-size: 12px; font-weight: 800; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.1px; white-space: nowrap; box-shadow: 0 2px 6px rgba(242, 101, 34, 0); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); " onmouseover=" this.style.backgroundColor='#e05313'; this.style.boxShadow='0 0 12px rgba(242, 101, 34, 0.7), 0 2px 8px rgba(242, 101, 34, 0.3)'; this.style.transform='translateY(-1px)'; " onmouseout=" this.style.backgroundColor='#f26522'; this.style.boxShadow='0 2px 6px rgba(242, 101, 34, 0)'; this.style.transform='translateY(0px)'; "> Be a Supplier </a>
+		
+
+
+<div class="relative group py-1">
+    <a href="help-center.html" class="hover-primary font-semibold text-textDark flex items-center">
+        <i class="far fa-question-circle mr-1"></i> Help Center
+    </a>            
+    
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 20px 40px;">
+        
+		
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+            
+            <div style="flex: 1; display: flex; gap: 20px; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🚢</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Supplier</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">List your product</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential buying leads</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Supplier centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; background: #eef5f0; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/BKqsVXjc/help2.jpg" alt="Supplier Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 1px; gap: 10px; background-color: #e5e7eb; align-self:stretch;"></div>
+
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Buyer</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Post buying request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/cStpprd3/help.jpg" alt="Buyer Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+	
+
+<li style="list-style: none; margin: 0; padding: 0; box-sizing: border-box;">
+
+    <nav style="position: sticky; top: 0; z-index: 50; width: 100%; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #f1f5f9; box-sizing: border-box;">
+        <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;">
+
+            <div></div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                
+                <div style="position: relative; display: inline-block;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #475569; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9';" onmouseout="this.style.backgroundColor='transparent';">
+                        <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="globe-dropdown-wrapper" 
+                     style="position: relative; display: inline-block;"
+                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.12)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.3)'; this.querySelector('.tall-oval-btn').style.transform='scale(1.03)';"
+                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.08)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.15)'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
+                    
+                    <script>
+                        window.tempLang = "EN";
+                        window.tempLangFlag = "https://flagcdn.com/w20/us.png";
+                        window.tempCurrency = "USD ($)";
+                    </script>
+
+                    <a href="javascript:void(0);" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <div class="tall-oval-btn" style="border-radius: 50% / 35%; aspect-ratio: 3 / 4; height: 50px; display: flex; align-items: center; justify-content: center; background-color: rgba(249, 115, 22, 0.08); border: 1.5px solid rgba(249, 115, 22, 0.15); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
+                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <i class="fas fa-chevron-down" style="font-size:10px; color:#94a3b8;"></i>
+                    </a>
+
+                    <div class="dropdown-panel" style="position: absolute; top: 100%; right: 0; margin-top: 10px; width: 400px; background-color: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.16); padding: 16px; box-sizing: border-box; z-index: 100; opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.97); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s, visibility 0.2s; pointer-events: none;">
+                        
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f8fafc;">
+                            <div style="text-align: left;">
+                                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: #0f172a; font-size: 14px; margin: 0 0 2px 0;">Regional Settings</h4>
+                                <p style="color: #64748b; font-size: 11px; margin: 0; line-height: 1.3;">Configure language & currency variables.</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 5px; background-color: #f1f5f9; padding: 4px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                                <img id="active-lang-flag" src="https://flagcdn.com/w20/us.png" style="width: 13px; height: 9px; object-fit: cover; border-radius: 1px;" alt="Flag">
+                                <span id="active-settings-badge" style="font-size: 10px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">EN / USD</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 14px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Language</label>
+                            
+                            <div class="lang-grid-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                                <div class="lang-card" data-lang="EN" data-flag="https://flagcdn.com/w20/us.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'EN'; window.tempLangFlag = 'https://flagcdn.com/w20/us.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: rgba(79, 70, 229, 0.04); border: 1.5px solid #4f46e5; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="English">
+                                    <span style="font-size: 12px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">English (US)</span>
+                                </div>
+                                <div class="lang-card" data-lang="AE" data-flag="https://flagcdn.com/w20/ae.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'AE'; window.tempLangFlag = 'https://flagcdn.com/w20/ae.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Arabic">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">العربية (AE)</span>
+                                </div >
+                                <div class="lang-card" data-lang="ES" data-flag="https://flagcdn.com/w20/es.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'ES'; window.tempLangFlag = 'https://flagcdn.com/w20/es.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/es.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Spanish">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Español (ES)</span>
+                                </div>
+                                <div class="lang-card" data-lang="FR" data-flag="https://flagcdn.com/w20/fr.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'FR'; window.tempLangFlag = 'https://flagcdn.com/w20/fr.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/fr.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="French">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Français (FR)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 16px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Currency</label>
+                            
+                            <div class="currency-scroll-list" style="max-height: 130px; overflow-y: auto; border: 1px solid #f1f5f9; border-radius: 10px; padding: 3px; box-sizing: border-box;">
+                                
+                                <div class="curr-row" data-curr="USD" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'USD ($)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background-color: rgba(79, 70, 229, 0.04); cursor: pointer; margin-bottom: 3px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="USA">
+                                        <span style="font-size: 12px; font-weight: 700; color: #475569; font-family: sans-serif;">United States</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 11px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">USD ($)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="AED" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'AED (د.إ)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UAE">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Arab Emirates</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">AED (د.إ)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="GBP" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'GBP (£)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/gb.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UK">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Kingdom</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">GBP (£)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="EUR" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'EUR (€)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/eu.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="EU">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Germany (Eurozone)</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">EUR (€)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="JPY" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'JPY (¥)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/jp.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Japan">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Japan</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">JPY (¥)</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 10px; border-top: 1px solid #f8fafc; width: 100%;">
+                            <button type="button" 
+                                    onclick="
+                                        document.getElementById('active-settings-badge').innerText = window.tempLang + ' / ' + window.tempCurrency.split(' ')[0];
+                                        document.getElementById('active-lang-flag').src = window.tempLangFlag;
+                                        alert('Settings saved successfully: ' + window.tempLang + ' and ' + window.tempCurrency);
+                                    " 
+                                    style="width: 100%; display: block; padding: 10px 16px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); transition: all 0.2s;" 
+                                    onmouseover="this.style.backgroundColor='#1e293b';" 
+                                    onmouseout="this.style.backgroundColor='#0f172a';">
+                                Save Changes
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</li>
+
+    <!-- globe and currency ends -->
+
+
+  <!-- sign card in start  -->		
+	   <!-- sign card in start  -->			
+ <a href="my-account.html" class="hover-primary"> </a>		
+              
+ <div class="relative group py-1">
+                    <a href="#" class="hover-primary font-semibold text-textDark flex items-center">
+                        <i class="far fa-user mr-1"> </i> Sign In
+                    </a>			
+                    
+<div class="dropdown-card absolute right-0 top-full mt-1 w-[250px] bg-white border border-red-200 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm">
+                        
+						
+						
+						
+                        <div class="absolute -top-1.5 right-4 w-3 h-3 bg-white border-t border-l border-red-200 transform rotate-45"></div>
+
+                        <div class="p-4 border-b border-gray-100 ">
+                            <a href="signin.html" class="block w-full bg-[#008000] text-white text-base font-semibold py-2 rounded-full text-center hover:bg-primaryDark transition mb-3">Sign in</a>
+                            
+                            <div class="p-4 py-2 flex justify-center items-center space-x-4 mb-4">
+     <a href="https://accounts.google.com" target="_blank" class="w-9 h-9 border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition duration-200" title="Sign in with Google">
+                    <svg viewBox="0 0 24 24" class="w-4.5 h-4.5"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22l.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1C7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                </a>
+	
+	
+    <a href="https://www.facebook.com/login" target="_blank" class="transform hover:scale-110 transition duration-200" title="Sign in with Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="w-6 h-6 rounded-full">
+    </a>
+    <a href="https://x.com/i/flow/login" target="_blank" class="w-8 h-8 rounded-full bg-[#f6ab2e] flex items-center justify-center text-white text-xl font-bold transform hover:scale-110 transition duration-200" title="Sign in with X">X</a>
+    <a href="https://www.linkedin.com/login" target="_blank" class="w-8 h-8 rounded-full bg-[#3077b5] flex items-center justify-center text-white text-lg font-bold transform hover:scale-110 transition duration-200" title="Sign in with LinkedIn">in</a>
+</div>
+
+                <p class="text-xs text-textLight text-center mb-3">By clicking Sign in the <a href="#" class="text-textLight underline">Privacy Policy</a> .</p>
+                            
+                            <div class="relative flex py-2 items-center">
+                                <div class="flex-grow border-t border-gray-200"></div>
+                                <span class="flex-shrink mx-3 text-xs text-textLight">OR</span>
+                                <div class="flex-grow border-t border-gray-200"></div>
+                            </div>              
+ <a href="register.html" class="block w-full text-white text-sm font-semibold py-3 bg-[#FF4500] rounded-full text-center hover:bg-[#00008B] transition">
+    Register for free
+</a>
+                        </div>
+
+                        <ul class="py-2 text-textDark text-[15px] font-medium">
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">Buyer Center</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Inquires</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My RFQ</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Messages</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Orders</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Cart</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Account</a></li>
+                        </ul>
+                    </div>
+					
+					
+					
+</div>
+		  
+		  
+            </div>
+        </div>
+</div>
+
+   <!-- sign in card ends -->	   
+
+   <!-- sign in card ends -->
+   
+   
+ <!-- top nav ends -->
+	
+	
+	
+	
+	
+	
+
+	
+
+<header class="py-2 border-b border-gray-200 sticky top-0 bg-white z-40">
+    <div class="container mx-auto px-4 flex items-center justify-between max-w-7xl w-full">
+        
+        <div class="flex items-center flex-shrink-0">
+            <button class="md:hidden text-2xl mr-4" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="index.html" class="flex items-center"> 
+                <img src="https://i.ibb.co/8npYHX01/logo2-copy.png" alt="B2B GoX" class="h-10 lg:h-16 w-auto object-contain">  
+            </a> 
+        </div>
+
+        <div class="flex-1 hidden md:flex mx-6 lg:mx-12 border-2 border-primary rounded-full overflow-hidden h-11 items-center">
+            <select class="bg-gray-50 text-sm px-3 border-r border-gray-200 outline-none text-gray-600 font-medium cursor-pointer h-full flex-shrink-0">
+                <option>Products</option>
+                <option>Suppliers</option>
+                <option>Categories</option>
+            </select>
+            <input type="text" placeholder="What are you looking for..." class="w-full px-4 outline-none text-sm h-full">
+            <button class="bg-white text-gray-500 hover:text-primary px-5 h-full transition duration-300">
+                <i class="fas fa-search text-base"></i>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-6 flex-shrink-0">
+
+            <a href="videocard.html" style="display: flex; align-items: center; gap: 8px; background: linear-gradient(to right, #ff0000, #ff2b2b); color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 30px; box-shadow: 0 3px 10px rgba(255, 0, 0, .25); transition: all .3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px rgba(214, 0, 0, .3)';" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 3px 10px rgba(255, 0, 0, .25)';">
+                <div style="width: 22px; height: 22px; background: #fff; color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px;">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <img src="https://i.ibb.co/rK2M1mCr/x.png" alt="X" style="height: 24px; width: auto; object-fit: contain;">
+            </a>
+
+            
+			
+			
+<!-- Wrapper Div: Set to block to seamlessly link the icon hover zone directly with the mega-menu grid boundary -->
+<div class="sms-trigger-wrapper"
+     style="display: block;"
+     onmouseenter="this.querySelector('.msg-mega-dropdown').style.display='block'"
+     onmouseleave="this.querySelector('.msg-mega-dropdown').style.display='none'">
+
+    <!-- Icon Trigger Link Context Container -->
+    <a href="my-inbox.html" class="group flex flex-col items-center text-center no-underline transition duration-200" style="transform: scale(1.05); display: inline-flex; padding: 10px 16px; margin-bottom: 0;">
+        <i class="fas fa-envelope text-2xl transition duration-200 group-hover:text-gray-700" style="color: #2563eb;"></i>
+        <span style="font-size: 10px; font-weight: 700; margin-top: 3px; color: #1e3a8a; letter-spacing: 0.3px;">SMS</span>
+    </a>
+
+    <!-- FULL DESKTOP WIDTH MEGA DROPDOWN PANEL -->
+    <!-- Removed 100vw to prevent screen spill. Added seamless top anchoring so there is absolute zero gap -->
+    <div class="msg-mega-dropdown" style="display: none; position: absolute; left: 0; right: 0; width: 100%; background: #ffffff; border-bottom: 2px solid #e2e8f0; border-top: 1px solid #f1f5f9; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12); z-index: 9999; padding: 24px 0; margin-top: 0; box-sizing: border-box;">
+        
+        <!-- Hover Bridge: Guarantees your mouse never loses focus transitioning onto the component items -->
+        <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: transparent;"></div>
+        
+        <div class="container mx-auto px-4 max-w-7xl">
+            
+            <!-- 4-Column Responsive Messaging Grid System -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                
+             <!-- COLUMN 1: Inquiry Messages Box -->
+<div onclick="window.location.href='message.html';"
+     style="
+     display:flex;
+     flex-direction:column;
+     background:linear-gradient(135deg,#eff6ff,#dbeafe);
+     border:1px solid #bfdbfe;
+     border-radius:20px;
+     padding:0;
+     cursor:pointer;
+     transition:all 0.25s ease;
+     overflow:hidden;
+     "
+
+     onmouseover="
+     this.style.background='linear-gradient(135deg,#e0f2fe,#bfdbfe)';
+     this.style.borderColor='#3b82f6';
+     this.style.boxShadow='0 12px 25px rgba(59,130,246,0.15)';
+     "
+
+     onmouseout="
+     this.style.background='linear-gradient(135deg,#eff6ff,#dbeafe)';
+     this.style.borderColor='#bfdbfe';
+     this.style.boxShadow='none';
+     ">
+
+    <!-- HEADER -->
+    <div style="
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:18px 16px;
+        background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+        border-radius:20px 20px 0 0;
+    ">
+        <span style="
+            font-family:sans-serif;
+            font-size:15px;
+            font-weight:800;
+            color:#1d4ed8;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        ">
+            📩 Inquiry Messages
+        </span>
+
+        <span style="
+            background:#bfdbfe;
+            color:#1d4ed8;
+            font-size:11px;
+            font-weight:700;
+            padding:3px 10px;
+            border-radius:20px;
+        ">
+            Active
+        </span>
+    </div>
+
+    <!-- ICON -->
+    <div style="
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:25px 0;
+    ">
+        <i class="fa-solid fa-envelope" style="
+            width:144px;
+            height:144px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:50%;
+            background:linear-gradient(135deg,#2563eb,#60a5fa);
+            color:#ffffff;
+            font-size:60px;
+            box-shadow:0 15px 35px rgba(37,99,235,0.25);
+        "></i>
+    </div>
+
+    <!-- TEXT -->
+    <p style="
+        font-family:sans-serif;
+        font-size:12px;
+        color:#1e3a8a;
+        margin:0;
+        line-height:1.4;
+        padding:0 16px 18px 16px;
+    ">
+        Review pricing offers, corporate product inquiries,<br>
+        and custom specifications sheet logs.
+    </p>
+
+</div>
+
+                <!-- COLUMN 2: RFQ Messages Box -->
+<a href="rfq.html"
+   style="
+   display:flex;
+   flex-direction:column;
+   background:linear-gradient(135deg,#fff7ed,#ffedd5);
+   border:1px solid #fed7aa;
+   border-radius:20px 20px 0 0;
+   cursor:pointer;
+   transition:all 0.25s ease;
+   text-decoration:none;
+   overflow:hidden;
+   "
+   onmouseover="
+   this.style.background='linear-gradient(135deg,#fff1e6,#ffe4c2)';
+   this.style.borderColor='#fb923c';
+   this.style.boxShadow='0 12px 25px rgba(249,115,22,0.15)';
+   "
+   onmouseout="
+   this.style.background='linear-gradient(135deg,#fff7ed,#ffedd5)';
+   this.style.borderColor='#fed7aa';
+   this.style.boxShadow='none';
+   ">
+
+    <!-- Header -->
+    <div style="
+        background:linear-gradient(135deg,#ffedd5,#fed7aa);
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:18px 16px;
+        border-radius:20px 20px 0 0;
+    ">
+        <span style="
+            font-family:sans-serif;
+            font-size:15px;
+            font-weight:800;
+            color:#9a3412;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        ">
+            📄 RFQ Messages
+        </span>
+
+        <span style="
+            background:#fdba74;
+            color:#7c2d12;
+            font-size:11px;
+            font-weight:700;
+            padding:3px 10px;
+            border-radius:20px;
+        ">
+            Quotes
+        </span>
+    </div>
+
+    <!-- Icon -->
+<div style=" width:100%; display:flex; align-items:center; justify-content:center; margin:20px 0; "> <i class="fa-solid fa-file-signature" style=" width:144px; height:144px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:linear-gradient(135deg,#ff8a00,#ff5e00); color:#ffffff; font-size:60px; box-shadow:0 12px 30px rgba(255,138,0,.25); "></i> 
+</div>
+
+    <!-- Text -->
+    <p style="
+        font-size:12px;
+        color:#7c2d12;
+        margin:0;
+        line-height:1.4;
+         padding:0 16px 18px 16px;
+    ">
+        Track current Request for Quotes,<br>
+        manage direct supplier bids, and view estimates.
+    </p>
+
+</a>
+                <!-- COLUMN 3: Chat Messages Box -->
+  <div onclick="window.location.href='chat.html';"
+     style="display:flex; flex-direction:column; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; cursor:pointer; transition:all 0.25s ease;"
+     onmouseover="this.style.background='#ffffff'; this.style.borderColor='#0891b2'; this.style.boxShadow='0 10px 20px rgba(8,145,178,0.10)';"
+     onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+
+    <div style="width:100%; background:linear-gradient(135deg,#dcfce7,#bbf7d0); display:flex; align-items:center; justify-content:space-between; padding:20px; border-radius:12px 12px 0 0;">
+
+        <span style="font-size:15px; font-weight:800; color:#0f172a;">
+            💬 Chat Messages
+        </span>
+
+        <span style="background:linear-gradient(135deg,#10b981,#059669); font-size:11px; font-weight:700; padding:2px 8px; border-radius:20px;">
+            Live Chat
+        </span>
+
+    </div>
+
+    <div style="width:100%; display:flex; align-items:center; justify-content:center; margin:20px 0;">
+
+        <i class="fa-solid fa-comments" style="
+            width:144px;
+            height:144px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:50%;
+            background:linear-gradient(135deg,#00b050,#008000);
+    color:#ffffff;
+            font-size:60px;
+            box-shadow:0 12px 30px rgba(8,145,178,.30);
+        "></i>
+
+    </div>
+
+    <p style="font-family:sans-serif; font-size:12px; color:#64748b;  padding:0 16px 18px 16px; line-height:1.4;">
+        Connect in real-time instantly with verified regional
+        <br>logistics partners and global support channels.
+    </p>
+
+</div>
+
+                <!-- COLUMN 4: System Notifications Box -->
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+			
+			
+		
+		
+			
+			
+
+        </div>
+    </div>
+</header>
+
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- About US section -->
+	
+	
+	
+	
+	
+	
+	<div id="welcome-container" style="position: relative; max-width:1280px; margin: 0 auto; width: 100%; height: 80vh; display: flex; overflow: hidden; border-radius: 0  0 20px 20px;">
+        
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; z-index: 10; display: flex; flex-direction: column; justify-content: flex-start; padding-top:100px; padding-left: 10%; padding-right: 5%;">
+            <h1 style="color: #ffffff; font-size: 3rem; font-weight: 800; line-height: 1.5; text-transform: uppercase; margin: 0 0 12px 0; letter-spacing: 1px;">
+                Welcome To<br>B2BGoX.Com 
+            </h1>
+            <p style="color: #ffffff; font-size: 1.5rem; font-weight: 700; margin: 0 0 40px 0; letter-spacing: 1px;">
+                Largest Wholesale Platform
+            </p>
+
+        </div>
+
+        <div id="carousel-slides" style="position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: 1;">
+            
+            <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center; opacity: 1; transition: opacity 1s ease-in-out;"></div>
+            
+            <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease-in-out;"></div>
+     
+            
+        </div>
+
+        <div style="position: absolute; bottom: 40px; left: 28%; z-index: 20; display: flex; gap: 10px;">
+            <span class="dot" onclick="manualSlide(0)" style="width: 32px; height: 12px; background-color: #ffffff; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;"></span>
+            <span class="dot" onclick="manualSlide(1)" style="width: 12px; height: 12px; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></span>
+            <span class="dot" onclick="manualSlide(2)" style="width: 12px; height: 12px; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></span>
+        </div>
+
+    </div>
+
+    <script>
+        let currentIdx = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const slideInterval = 4000; // 4 seconds delay
+
+        function changeSlide(nextIdx) {
+            // Hide old slide and revert old dot state inline
+            slides[currentIdx].style.opacity = "0";
+            dots[currentIdx].style.width = "12px";
+            dots[currentIdx].style.borderRadius = "50%";
+            dots[currentIdx].style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+
+            // Update current index
+            currentIdx = (nextIdx + slides.length) % slides.length;
+
+            // Show new active slide and style active dot inline
+            slides[currentIdx].style.opacity = "1";
+            dots[currentIdx].style.width = "32px";
+            dots[currentIdx].style.borderRadius = "10px";
+            dots[currentIdx].style.backgroundColor = "#ffffff";
+        }
+
+        function autoPlay() {
+            changeSlide(currentIdx + 1);
+        }
+
+        // Handle manual clicks on navigation dots
+        function manualSlide(targetIdx) {
+            clearInterval(timer);
+            changeSlide(targetIdx);
+            timer = setInterval(autoPlay, slideInterval);
+        }
+
+        // Initialize Carousel Auto Slider
+        let timer = setInterval(autoPlay, slideInterval);
+    </script>
+	
+	
+	
+	
+	
+	
+	<section id="welcome" style="padding:30px 0 30px 0; border-bottom: 1px solid #e2e8f0; background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 70%); min-height: 100vh; display: flex; align-items: center;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  align-items: center;">
+            <div>
+                <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.1; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Welcome to B2BGoX.com</h1>
+                <p style="font-size: 1.4rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">The definitive global engine for international commercial exchange, modern enterprise networking, and end-to-end supply chain integration.</p>
+                <a href="#contact" style="display: inline-block; padding: 16px 36px; background-color: #2563eb; color: #ffffff; font-weight: 600; border-radius: 8px; text-decoration: none;">Explore Global Hub</a>
+            </div>
+            <div>
+                <div style="width: 100%; height: 100%; min-height: 450px; background: #cbd5e1 url('https://i.ibb.co/mCGZBSy0/w2.png') center/cover no-repeat; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 600; font-size: 1.2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" style="padding:30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px; align-items: center;">
+            <div>
+                <div style="width: 100%; height: 100%; min-height: 450px; background: #cbd5e1 url('https://i.ibb.co/fGtzfRcD/ms2.png') center/cover no-repeat; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 600; font-size: 1.2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+           
+                </div>
+            </div>
+            <div>
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Our Mission</h2>
+                <p style="font-size: 1.15rem; margin: 0 0 20px 0; color: #334155;">To fundamentally democratize access to international cross-border trade systems, lowering structural entry barriers for businesses of all scales, segments, and operational capabilities across emerging market economies.</p>
+                <p style="font-size: 1.15rem; margin: 0; color: #334155;">Through robust digital frameworks, infrastructure tools, and automated logistics networks, we transform fragmented supply pathways into integrated pipelines of scalable commercial output.</p>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	 <section id="our-work" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+        <div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Our Vision*</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;"> Vision operations executing across complex industrial spaces daily.</p>
+            
+       <div style=" width:100%; min-height:500px; margin-bottom:40px; background-color:#cbd5e1; background-image:url('https://i.ibb.co/tTwz2DhT/vis2.png'); background-position:center; background-size:cover; background-repeat:no-repeat; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-weight:600; font-size:1.2rem; box-shadow:0 20px 40px rgba(0,0,0,0.05); "> </div>
+            
+           
+        </div>
+    </section>
+	
+
+    <section id="vision" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px; align-items: center;">
+            <div>
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Our Vision</h2>
+                <p style="font-size: 1.15rem; margin: 0 0 20px 0; color: #334155;">To cultivate an unalterable, transparent ecosystem optimized for intelligent transactions, building a universe where real-time procurement logistics, predictive demand management, and sovereign security protocols interact flawlessly.</p>
+                <p style="font-size: 1.15rem; margin: 0; color: #334155;">We envision a landscape without friction, operating globally, continuously evolving to connect enterprise ambition directly with immediate international scalability.</p>
+            </div>
+            <div>
+                <div style="width: 100%; height: 100%; min-height: 450px; background: #cbd5e1 url('https://i.ibb.co/3m7kBG1H/vs3.png') center/contain no-repeat; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 600; font-size: 1.2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="our-work" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+        <div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Global Infrastructure</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">A comprehensive breakdown of architectural operations executing across complex industrial spaces daily.</p>
+            
+       <div style=" width:100%; min-height:500px; margin-bottom:40px; background-color:#cbd5e1; background-image:url('https://i.ibb.co/VWyphMZJ/gb.png'); background-position:center; background-size:cover; background-repeat:no-repeat; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-weight:600; font-size:1.2rem; box-shadow:0 20px 40px rgba(0,0,0,0.05); "> </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 40px;">
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid #e2e8f0;">
+                    <div style="width: 100%; min-height: 250px; background: #cbd5e1 url('https://picsum.photos/400/300?random=5') center/cover no-repeat; display: flex; align-items: center; justify-content: center; color: #fff;"></div>
+                    <div style="padding: 30px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Custom Clearance Engine</h3>
+                        <p style="margin: 0; color: #64748b;">Streamlining jurisdictional policy workflows into digitized entry checkpoints.</p>
+                    </div>
+                </div>
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid #e2e8f0;">
+                    <div style="width: 100%; min-height: 250px; background: #cbd5e1 url('https://picsum.photos/400/300?random=6') center/cover no-repeat; display: flex; align-items: center; justify-content: center; color: #fff;"></div>
+                    <div style="padding: 30px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Dynamic Match-Making</h3>
+                        <p style="margin: 0; color: #64748b;">Algorithmic sourcing modules linking exact purchase inquiries with optimal factories.</p>
+                    </div>
+                </div>
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid #e2e8f0;">
+                    <div style="width: 100%; min-height: 250px; background: #cbd5e1 url('https://picsum.photos/400/300?random=7') center/cover no-repeat; display: flex; align-items: center; justify-content: center; color: #fff;"></div>
+                    <div style="padding: 30px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Liquidity Protocols</h3>
+                        <p style="margin: 0; color: #64748b;">Secure milestone guarantees keeping capital completely protected during transits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section id="stats" style="padding:30px 0;">
+    <div style="
+        max-width:1300px;
+        margin:0 auto;
+        padding:30px 20px;
+        background:#f8fafc;
+        color:#fff;
+        border-radius:16px;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:40px;
+        text-align:center;
+    ">
+       <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
+            <div>
+                <div style="font-size: 4.1rem; font-weight: 800; color: #3b82f6; margin-bottom: 10px;">8 Million+</div>
+                <div style="font-size: 1.25rem; color: #94a3b8; font-weight: 500;">Active Buyers Globally</div>
+            </div>
+            <div>
+                <div style="font-size: 4.1rem; font-weight: 800; color: #3b82f6; margin-bottom: 10px;">7 Million+</div>
+                <div style="font-size: 1.25rem; color: #94a3b8; font-weight: 500;">Active Suppliers Globally</div>
+            </div>
+            <div>
+                <div style="font-size: 4.1rem; font-weight: 800; color: #3b82f6; margin-bottom: 10px;">24 Million+</div>
+                <div style="font-size: 1.2rem; color: #94a3b8; font-weight: 500;">Product Listings Evaluated</div>
+            </div>
+        </div>
+    </div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		 <section id="our-work" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+        <div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 0 0; letter-spacing: -0.02em;">Meet with Our Team </h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;"> Vision operations executing across complex industrial spaces daily.</p>
+            
+       <div style=" width:100%; min-height:500px; margin-bottom:40px; background-color:#cbd5e1; background-image:url('https://i.ibb.co/xt7sYG65/mt.png'); background-position:center; background-size:cover; background-repeat:no-repeat; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-weight:600; font-size:1.2rem; box-shadow:0 20px 40px rgba(0,0,0,0.05); "> </div>
+            
+           
+        </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <section id="pillars" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Core Execution Frameworks</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">The protocols governing systemic efficiency and structural accountability for multi-party international transactions.</p>
+            
+            <div style="width: 100%; min-height: 400px; margin-bottom: 60px; background: #cbd5e1 url('https://picsum.photos/1200/500?random=8') center/cover no-repeat; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 600; font-size: 1.2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                [ Data Integrity, Validation Protocols & Control Grid Image ]
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div style="background: #ffffff; padding: 40px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                    <div style="font-size: 2.5rem; margin-bottom: 20px; color: #2563eb;">🛡️</div>
+                    <h3 style="margin: 0; font-size: 1.5rem;">Transparency & Efficiency</h3>
+                    <p style="margin: 15px 0 0 0; color: #475569;">Tradewheel ensures the transparency and security of the trade by deploying efficient digital tools & strategies engineered to protect multi-tiered liquidity positions.</p>
+                </div>
+                <div style="background: #ffffff; padding: 40px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                    <div style="font-size: 2.5rem; margin-bottom: 20px; color: #2563eb;">🤝</div>
+                    <h3 style="margin: 0; font-size: 1.5rem;">Customer’s Support</h3>
+                    <p style="margin: 15px 0 0 0; color: #475569;">Our team of experts supports you throughout your journey. From your initial configuration onboarding to a distinct roadmap for sustained expansion, we remain beside you.</p>
+                </div>
+                <div style="background: #ffffff; padding: 40px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                    <div style="font-size: 2.5rem; margin-bottom: 20px; color: #2563eb;">✅</div>
+                    <h3 style="margin: 0; font-size: 1.5rem;">Trusted & Verified</h3>
+                    <p style="margin: 15px 0 0 0; color: #475569;">Tradewheel strictly abides by its protocol of verified-only access, ensuring complete legal verification through corporate structural email validations, cellular access nodes, and alternative communication streams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+
+    <section id="why-us" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #f1f5f9;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Why B2BGoX.com?</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">A deep look into the structural competitive advantages separating our core framework from legacy solutions.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+                <div style="display: flex; gap: 20px; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.01);">
+                    <div style="font-size: 2rem;">⚡</div>
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; font-size: 1.2rem;">Real-Time Velocity Engine</h4>
+                        <p style="margin: 0; color: #475569;">Eliminate processing buffers with immediate response architecture coordinating requests immediately.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 20px; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.01);">
+                    <div style="font-size: 2rem;">📊</div>
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; font-size: 1.2rem;">Deep Market Analytics</h4>
+                        <p style="margin: 0; color: #475569;">Receive comprehensive, high-granularity trade ledger indexing to maximize procurement positioning.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 20px; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.01);">
+                    <div style="font-size: 2rem;">🌐</div>
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; font-size: 1.2rem;">Sovereign Corridor Routing</h4>
+                        <p style="margin: 0; color: #475569;">Pre-cleared logistic configurations removing legal complexities across multiple continents simultaneously.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 20px; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.01);">
+                    <div style="font-size: 2rem;">💎</div>
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; font-size: 1.2rem;">Tier-1 Quality Validation</h4>
+                        <p style="margin: 0; color: #475569;">Physical quality checkpoints matching digital certifications before transport cycles engage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Global Exhibition Partners</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">We partner with international trade forums and export associations globally to coordinate physical validations.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                <div style="height: 120px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #64748b;">EuroTrade Expo Alliance</div>
+                <div style="height: 120px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #64748b;">Pan-Pacific Import Forum</div>
+                <div style="height: 120px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #64748b;">Global Tech Sourcing Summit</div>
+                <div style="height: 120px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #64748b;">Americas Manufacturing Union</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stories" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Success Stories</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">Real metrics, direct verification, and case outcomes achieved by scaling operations globally.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 50px;">
+                <div style="background: #f8fafc; padding: 50px; border-radius: 20px; border-left: 6px solid #2563eb; box-shadow: 0 4px 15px rgba(0,0,0,0.01);">
+                    <h4 style="margin: 0; font-size: 1.4rem; color: #0f172a;">"Scaled Manufacturing output by 310% inside 11 months"</h4>
+                    <p style="margin: 15px 0 0 0; font-style: italic; color: #475569;">"Transitioning our full raw component acquisition pipeline onto B2BGoX cleared communication friction. The transparency features ensured zero processing deviations."</p>
+                    <p style="margin: 20px 0 0 0; font-weight: 700; color: #1e293b;">- Apex Industrial Conglomerates</p>
+                </div>
+                <div style="background: #f8fafc; padding: 50px; border-radius: 20px; border-left: 6px solid #2563eb; box-shadow: 0 4px 15px rgba(0,0,0,0.01);">
+                    <h4 style="margin: 0; font-size: 1.4rem; color: #0f172a;">"Unlocked friction-free cross border liquidity tracking"</h4>
+                    <p style="margin: 15px 0 0 0; font-style: italic; color: #475569;">"The custom verification strategies allowed us to screen international partners seamlessly. Exceptional client support structures across timezones."</p>
+                    <p style="margin: 20px 0 0 0; font-weight: 700; color: #1e293b;">- Nexus Distribution Network</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" style="padding: 30px 0; border-bottom: 1px solid #e2e8f0; background: #ffffff;">
+        <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin: 0 0 24px 0; letter-spacing: -0.02em;">Corporate Leadership Team</h2>
+            <p style="font-size: 1.25rem; color: #64748b; margin: 0 0 60px 0; max-width: 700px;">The executive minds guiding structural operations, engineering, and macroeconomic partnerships.</p>
+            
+            <div style="background: #f8fafc; padding: 60px; border-radius: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 60px; align-items: center; margin-bottom: 80px; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                <div>
+                    <div style="width: 100%; height: 100%; min-height: 400px; background: #cbd5e1 url('https://i.ibb.co/0RFHH15z/1769750940703.png') center/cover no-repeat; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 600; font-size: 1.2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                     
+                    </div>
+                </div>
+                <div>
+                    <span style="color: #2563eb; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem;">Executive Office</span>
+                    <h3 style="font-size: 2.5rem; margin: 10px 0 20px 0; color: #0f172a; font-weight: 800;">Founder, Chairperson & CEO</h3>
+                    <p style="font-size: 1.2rem; color: #334155; margin: 0 0 20px 0;">Establishing the organizational parameters, long-range technological visions, and sovereign-level trade network alliances that power B2BGoX.com worldwide.</p>
+                    <p style="color: #64748b; margin: 0;">With over two decades driving scalable architecture across institutional trading platforms, they focus on transforming traditional validation channels into automated, cloud-based ecosystems.</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                <div style="text-align: center;">
+                    <div style="width: 100%; min-height: 300px; background: #cbd5e1 url('https://picsum.photos/400/500?random=10') center/cover no-repeat; border-radius: 12px; margin-bottom: 15px;"></div>
+                    <h4 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Chief Operating Officer</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 100%; min-height: 300px; background: #cbd5e1 url('https://picsum.photos/400/500?random=11') center/cover no-repeat; border-radius: 12px; margin-bottom: 15px;"></div>
+                    <h4 style="margin: 0; font-size: 1.15rem; color: #0f172a;">VP of Security Protocols</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 100%; min-height: 300px; background: #cbd5e1 url('https://picsum.photos/400/500?random=12') center/cover no-repeat; border-radius: 12px; margin-bottom: 15px;"></div>
+                    <h4 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Head of Supplier Relations</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 100%; min-height: 300px; background: #cbd5e1 url('https://picsum.photos/400/500?random=13') center/cover no-repeat; border-radius: 12px; margin-bottom: 15px;"></div>
+                    <h4 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Director of Global Logistics</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" style="padding: 60px 0; background-color: #20B2AA; color: #ffffff;">
+    <div style="width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 80px; align-items: center;">
+        
+        <div>
+            <h2 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin: 0 0 24px 0; letter-spacing: -0.02em;">Connect with a Trade Desk Advisor</h2>
+            <p style="color: #e0f2fe; margin: 0 0 40px 0; font-size: 1.15rem; line-height: 1.6;">Initiate an operational audit or open institutional-tier merchant parameters. Submit your systemic logistical documentation below.</p>
+            
+            <div style="margin-bottom: 30px;">
+                <p style="font-weight: 700; color: #0f172a; margin: 0 0 5px 0; font-size: 1.1rem;">Global Inquiries Division:</p>
+                <p style="color: #ffffff; margin: 0; font-size: 1.05rem;">corporate-desk@b2bgox.com</p>
+            </div>
+            <div>
+                <p style="font-weight: 700; color: #0f172a; margin: 0 0 5px 0; font-size: 1.1rem;">Operational Network Switchboard:</p>
+                <p style="color: #ffffff; margin: 0; font-size: 1.05rem;">+1 (800) 555-GOX-DATA</p>
+            </div>
+        </div>
+        
+        <div style="background: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);">
+            <form onsubmit="event.preventDefault(); alert('Transmission Successful.');">
+                
+                <div style="margin-bottom: 24px;">
+                    <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600; color: #0f172a;">Legal Corporate Entity Name</label>
+                    <input type="text" id="name" style="width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; background: #f8fafc; color: #0f172a; outline: none;" required>
+                </div>
+                
+                <div style="margin-bottom: 24px;">
+                    <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600; color: #0f172a;">Institutional Validation Email</label>
+                    <input type="email" id="email" style="width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; background: #f8fafc; color: #0f172a; outline: none;" required>
+                </div>
+                
+                <div style="margin-bottom: 24px;">
+                    <label for="volume" style="display: block; margin-bottom: 8px; font-weight: 600; color: #0f172a;">Annual Transaction Volume Estimate</label>
+                    <select id="volume" style="width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; background: #f8fafc; color: #0f172a; outline: none; appearance: auto;">
+                        <option>&lt; $1M USD</option>
+                        <option>$1M - $10M USD</option>
+                        <option>$10M - $100M USD</option>
+                        <option>$100M+ USD</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 24px;">
+                    <label for="msg" style="display: block; margin-bottom: 8px; font-weight: 600; color: #0f172a;">Scope of Sourcing Intentions</label>
+                    <textarea id="msg" rows="4" style="width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; background: #f8fafc; color: #0f172a; resize: vertical; outline: none;" required></textarea>
+                </div>
+                
+                <button type="submit" style="display: inline-block; width: 100%; padding: 16px 36px; background-color: #2563eb; color: #ffffff; font-weight: 700; font-size: 1.05rem; border-radius: 8px; border: none; cursor: pointer; transition: background 0.2s ease-in-out; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);">Establish Secure Link</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+	
+	
+	
+   
+   
+   
+   
+
+                   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- footer-->
+	
+
+    <footer class="bg-white border-t border-gray-200 mt-16 pt-10">
+        <!-- Newsletter Bar -->
+        <div class="bg-[#2b5d8c] text-white py-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="far fa-envelope-open text-4xl mr-4 opacity-80"></i>
+                    <div>
+                        <h4 class="font-bold text-lg">SUBSCRIBE TO B2B NEWSLETTER</h4>
+                        <p class="text-sm text-blue-200">Get the latest info on global trends, trade shows and bulk offers.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 flex">
+                    <input type="email" placeholder="Your E-mail Address" class="w-full px-4 py-3 text-sm text-gray-700 outline-none">
+                    <button class="bg-[#333] hover:bg-black text-white px-6 py-3 text-sm font-bold uppercase transition flex items-center space-x-2">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="bg-bgGray py-16">
+            <div class="container mx-auto px-4 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Brand Info -->
+                <div>
+                   <a href="/"> <img src="https://i.ibb.co/5WrVC3q3/logoo.png" alt="B2B GoX"class="h-16 lg:h-20 w-auto object-contain"> </a>
+                    <p class="text-sm text-gray-500 mb-6 leading-relaxed">Your premier gateway for global wholesale trade. Connect with verified suppliers, secure transactions, and scale your business effortlessly.</p>
+                    <div class="mb-4 text-sm text-gray-500">
+                        <p>Got Questions? Call us 24/7 B2B Support</p>
+                        <p class="text-2xl font-bold text-textDark mt-1"> +9714-800-570-xxx</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1da1f2] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#bd081c] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+						<a href="#" class="w-8 h-8 rounded-full bg-[#fffc00] text-black flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-snapchat-ghost text-sm"></i>
+</a>
+
+<a href="#" class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-tiktok text-sm"></i>
+</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+					
+					
+                </div>
+				
+				
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">About Platform</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">About B2B GoX.com</a></li>
+                        <li><a href="career.html" class="hover-primary">Careers</a></li>
+                        <li><a href="contact.html" class="hover-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover-primary">News & Blog</a></li>
+                        <li><a href="#" class="hover-primary">Trade Shows</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Suppliers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="register.html" class="hover-primary">Become a Supplier</a></li>
+                        <li><a href="#" class="hover-primary">Supplier Memberships</a></li>
+                        <li><a href="#" class="hover-primary">Training Center</a></li>
+                        <li><a href="#" class="hover-primary">Logistics Services</a></li>
+                        <li><a href="#" class="hover-primary">Payment & Escrow</a></li>
+						   <li><a href="package.html" class="hover-primary">Packages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Buyers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Sourcing Guide</a></li>
+                        <li><a href="#" class="hover-primary">Post an RFQ</a></li>
+                        <li><a href="#" class="hover-primary">Trade Assurance Protection</a></li>
+                        <li><a href="#" class="hover-primary">Track Order</a></li>
+                        <li><a href="#" class="hover-primary">Return Policy</a></li>
+						<li><a href="my-account.html" class="hover-primary">My Account</a></li>
+						  
+                    </ul>
+                </div>
+            </div>
+			
+			
+			
+
+            <!-- Categories Tags Bottom -->
+            <div class="container mx-auto px-4 max-w-7xl mt-12 border-t border-gray-200 pt-8 hidden md:block">
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Consumer Electric:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">TV Television</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Air Condition</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Refrigerator</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Washing Machine</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Audio Speaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Security Camera</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Clothing & Apparel:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Men T-shirt</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Dresses</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Men's Sneaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Leather Backpack</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Machinery:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Packaging Machines</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Laser Cutters</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">CNC Routers</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Textile Machinery</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-bgGray pb-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
+                <p>Copyright © 2026 B2B GoX.com. All Rights Reserved.</p>
+                <div class="flex items-center space-x-2 mt-4 md:mt-0">
+                    <span>We're using safe payment for</span>
+                    <!-- Simulated Payment Badges -->
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">VISA</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">MC</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">TT</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">L/C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            // In a full implementation, this would open a side drawer
+            // For this single file demo, we just show an alert or toggle a class
+            alert('Mobile menu navigation would open here.');
+        });
+    </script>
+</body>
+</html>
