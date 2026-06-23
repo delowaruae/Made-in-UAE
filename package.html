@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Sources - Advanced Multi-Channel Supplier Onboarding Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; color: #111111; margin: 0; padding: 0; }
+        .info-text-secondary { text-align: left; color: #666666; font-size: 13px; font-weight: 400; margin-top: 2px; }
+        .en-text { direction: ltr; text-align: left; color: #222222; font-size: 14px; font-weight: 600; }
+        
+        /* The Original Flagship 4-Tier Package Cards Styling */
+        .pkg-card { border: 1px solid #dddddd; background: #ffffff; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; position: relative; cursor: pointer; transition: all 0.2s ease-in-out; }
+        .pkg-card:hover { border-color: #ff6600; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .pkg-card.active { border-color: #ff6600; box-shadow: 0 4px 20px rgba(255,102,0,0.12); background-color: #fffbf9; }
+        
+        /* Structural Matrix Groups */
+        .matrix-container { background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 4px; padding: 30px; margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.01); }
+        .matrix-title { font-size: 16px; font-weight: 800; color: #111111; border-bottom: 2px solid #111111; padding-bottom: 8px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* Dense Enterprise Form Fields */
+        .form-block { background-color: #fafafa; padding: 15px; border: 1px solid #eeeeee; border-radius: 3px; }
+        .form-input { width: 100%; padding: 10px 12px; font-size: 13px; border: 1px solid #cccccc; border-radius: 3px; box-sizing: border-box; font-family: inherit; margin-top: 6px; }
+        .form-input:focus { border-color: #ff6600; outline: none; background-color: #ffffff; }
+        .grid-half { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        
+        /* Dynamic Multi-Channel Cascade Layouts */
+        .dynamic-field { display: none; }
+        .dynamic-field.visible { display: block; }
+        
+        .badge-step { background-color: #ff6600; color: #fff; padding: 3px 10px; font-size: 11px; font-weight: 700; border-radius: 2px; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Security Ribbon -->
+    <div style="background-color: #111111; color: #ffffff; padding: 8px 40px; display: flex; justify-content: space-between; align-items: center; font-size: 12px;">
+        <div style="display: flex; gap: 20px; align-items: center;">
+            <span style="color: #ff6600; font-weight: 700;">Global Sources Verified Supplier Network</span>
+            <span style="color: #999;">|</span>
+            <span style="color: #ccc;">Compliance Standard: 2026 Export Verification Framework</span>
+        </div>
+        <div style="color: #aaa;">Secure Environment: All synchronization data is encrypted under global protection standards</div>
+    </div>
+
+    <!-- Corporate Branding Header -->
+    <header style="background-color: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 30px;">
+            <div style="font-size: 26px; font-weight: 800; color: #111111; letter-spacing: -1px;">
+                global<span style="color: #ff6600;">sources</span><span style="font-size: 14px; font-weight: 500; color: #666;">®</span>
+            </div>
+            <div style="width: 1px; height: 25px; background-color: #ddd;"></div>
+            <div>
+                <div class="en-text" style="font-size: 15px; font-weight: 700;">Supplier Onboarding & O2O Booth Allocation</div>
+                <div class="info-text-secondary" style="color: #ff6600; font-weight: 600;">Digital Registration for Virtual Tiers and Physical Exhibition Spaces</div>
+            </div>
+        </div>
+    </header>
+
+   
+   <!-- Main Dynamic Workspace Container -->
+    <main style="max-width: 1280px; margin: 35px auto; padding: 0 24px; box-sizing: border-box;">
+
+        <!-- STEP 1: THE ORIGINAL 4-TIER MULTI-CHANNEL PACKAGES -->
+        <div style="margin-bottom: 40px;">
+            <div style="border-left: 5px solid #ff6600; padding-left: 15px; margin-bottom: 25px;">
+                <h2 style="font-size: 20px; font-weight: 800; margin: 0; color: #111111;">Step 1: Choose Your Global Multi-Channel B2B Package</h2>
+                <h3 class="info-text-secondary" style="font-size: 14px; font-weight: 600; color: #666;">Select the multichannel export framework optimized for your organizational scale</h3>
+            </div>
+
+            <!-- Original 4-Column Design Row Integration with Functional Toggles -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                
+                <!-- Package 1: Free Entry Level -->
+                
+				
+				
+				
+				
+				
+				
+				<!-- Package 1: Free Entry Level -->
+<div class="pkg-card active"
+     id="card-free"
+     onclick="switchPackage('free')"
+     style="position:relative; overflow:hidden; min-height:450px; border-radius:6px; overflow:hidden; ">
+    <!-- Full Card Image -->
+    <img src="https://i.ibb.co/Z6TbjJh8/pp.jpg"  alt=""  style="width:100%; height:100%;   object-fit:contain; position:absolute; top:0; left:0; z-index:1;">
+	<!-- Optional dark overlay --> <div style=" position:absolute; inset:0; background:rgba(0,0,0,0.0); z-index:2; "></div>
+    <!-- Select Free Account Overlay -->
+    <div style="position:absolute; bottom:20px; left:20px; right:20px; z-index:2;">
+        <label style="display:block; text-align:center; background-color:
+ #ccccff; padding:10px; font-weight:700; font-size:13px; border-radius:25px; cursor:pointer;">
+            <input type="radio"
+                   name="source_package"
+                   id="radio-free"
+                   value="free"
+                   checked
+                   style="margin-right:8px; accent-color:#111;">
+            Select Free Account
+        </label>
+    </div>
+</div>
+				
+			
+				
+				
+				
+				
+				
+
+				
+				
+				
+
+                <!-- Package 2: Silver Exporter -->
+                <!-- Package 2: Silver Exporter -->
+<div class="pkg-card"
+     id="card-silver"
+     onclick="switchPackage('silver')"
+     style="position:relative; overflow:hidden; ">
+
+    <!-- Full Card Image -->
+    <img src="https://i.ibb.co/BHNxvHFR/ps1-2.jpg"
+         alt=""
+         style="width:100%; height:100%;   object-fit:contain; position:absolute; top:0; left:0;">
+
+    <!-- Select Silver Tier Overlay -->
+    <div style="position:absolute; bottom:20px; left:20px; right:20px; z-index:2;">
+        <label style="display:block; text-align:center; background-color:#0099cc;  color:#111; padding:10px; font-weight:700; font-size:13px; border-radius:25px; cursor:pointer;">
+            <input type="radio"
+                   name="source_package"
+                   id="radio-silver"
+                   value="silver"
+                   style="margin-right:8px; accent-color:#ff6600;">
+            Select Silver 
+        </label>
+    </div>
+
+</div>
+				
+				
+				
+				
+				
+
+                <!-- Package 3: Gold Star O2O -->
+                <!-- Package 3: Gold Star O2O -->
+<div class="pkg-card"
+     id="card-gold"
+     onclick="switchPackage('gold')"
+     style="position:relative; overflow:hidden; border-width:2px;">
+
+    <!-- Full Card Image -->
+    <img src="https://i.ibb.co/F4tzNY1h/gp1.jpg"
+         alt=""
+         style="width:100%; height:100%;   object-fit:contain; position:absolute; top:0; left:0;">
+
+    <!-- Select Gold Flagship Overlay -->
+    <div style="position:absolute; bottom:18px; left:20px; right:20px; z-index:2;">
+        <label style="display:block; text-align:center; background-color:#B8860B;  color:#ffffff; padding:10px; font-weight:700; font-size:13px; border-radius:25px; cursor:pointer;">
+            <input type="radio"
+                   name="source_package"
+                   id="radio-gold"
+                   value="gold"
+                   style="margin-right:8px; accent-color:#ffffff;">
+            Select Gold 
+        </label>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+                <!-- Package 4: Diamond Pavilion Industrial -->
+                <!-- Package 4: Diamond Pavilion Industrial -->
+<div class="pkg-card"
+     id="card-diamond"
+     onclick="switchPackage('diamond')"
+     style="position:relative; overflow:hidden; ">
+
+    <!-- Full Card Image -->
+    <img src="https://i.ibb.co/mrsGB8Vr/pd1.jpg"
+         alt=""
+         style="width:100%; height:100%;   object-fit:contain; position:absolute; top:0; left:0;">
+
+    <!-- Select Diamond Tier Overlay -->
+    <div style="position:absolute; bottom:20px; left:20px; right:20px; z-index:2;">
+        <label style="display:block; text-align:center; background-color: #000066; color:#ffffff; padding:10px; font-weight:700; font-size:13px; border-radius:25px; cursor:pointer;">
+            <input type="radio"
+                   name="source_package"
+                   id="radio-diamond"
+                   value="diamond"
+                   style="margin-right:8px; accent-color:#ff6600;">
+            Select Diamond 
+        </label>
+    </div>
+
+</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+            </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        <!-- STEP 2: EXPANDED ENHANCED AUDITING SECTIONS -->
+        <form onsubmit="event.preventDefault(); alert('All structural audit modules parsed and synchronized successfully.');">
+            
+            <!-- SECTION A: LEGAL CORPORATE INFORMATION -->
+            <div class="matrix-container">
+                <div class="matrix-title">
+                    <span>A. Legal Corporate Information</span>
+                    <span class="badge-step">Module A</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <!-- Base Fields (All Tiers) -->
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Registered Company Name (English) *</span><span class="info-text-secondary">Official Name</span></div>
+                        <input type="text" required class="form-input" placeholder="Legal name matching incorporation certificate">
+                    </div>
+                    
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Registered Company Name (Local Language) *</span><span class="info-text-secondary">Native Legal Script</span></div>
+                        <input type="text" required class="form-input" placeholder="Enter company name exactly as written in local corporate registries">
+                    </div>
+
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Corporate Tax Identification Code *</span><span class="info-text-secondary">Unified Fiscal Reference</span></div>
+                        <input type="text" required class="form-input" placeholder="Tax File / VAT / EORI Number">
+                    </div>
+
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Primary Sourcing Category *</span><span class="info-text-secondary">Core Industry Segment</span></div>
+                        <select required class="form-input">
+                            <option value="">Select industry category...</option>
+                            <option value="elec">Consumer Electronics</option>
+                            <option value="ind">Industrial Machinery</option>
+                            <option value="auto">Automotive Hardware</option>
+                        </select>
+                    </div>
+
+                    <!-- Silver+ Level Fields -->
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Legal Corporate Structure Status *</span><span class="info-text-secondary">Entity Operational Type</span></div>
+                        <select class="form-input" id="req-a-silver-1">
+                            <option value="">Select legal form...</option>
+                            <option value="ltd">Private Limited Company (Ltd)</option>
+                            <option value="inc">Joint-Stock Conglomerate</option>
+                            <option value="state">State-Owned Trading House</option>
+                        </select>
+                    </div>
+
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Government Export License Code *</span><span class="info-text-secondary">Customs Clearing Key</span></div>
+                        <input type="text" class="form-input" id="req-a-silver-2" placeholder="Official Customs Registration Key">
+                    </div>
+
+                    <!-- Gold+ Level Fields -->
+                    <div class="form-block dynamic-field tier-gold tier-diamond" style="grid-column: span 2;">
+                        <div class="grid-half"><span class="en-text">International Registered Trademarks / Patents *</span><span class="info-text-secondary">Global IP Registrations</span></div>
+                        <input type="text" class="form-input" id="req-a-gold-1" placeholder="List active Global IP Registry references or registered brands">
+                    </div>
+
+                    <!-- Diamond Level Fields -->
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">Audited Parent Holding Network *</span><span class="info-text-secondary">Group Ownership Matrix</span></div>
+                        <input type="text" class="form-input" id="req-a-diamond-1" placeholder="Specify global group ownership details">
+                    </div>
+
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">Listed Stock Exchange Ticker *</span><span class="info-text-secondary">Public Market Equities Identifier</span></div>
+                        <input type="text" class="form-input" id="req-a-diamond-2" placeholder="e.g., SEHK: 0000, NASDAQ, NYSE listing code">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION B: DOCUMENT EVIDENCE UPLOAD -->
+            <div class="matrix-container">
+                <div class="matrix-title">
+                    <span>B. Document Evidence Upload</span>
+                    <span class="badge-step" style="background-color: #4b5563;">Module B</span>
+                </div>
+                
+                <div style="background-color: #fff9f5; border: 1px dashed #e05300; padding: 15px; border-radius: 3px; font-size: 12px; margin-bottom: 20px; color: #b45309;">
+                    <b>Compliance Notice 2026:</b> All uploaded documents must be clearly scanned, show active validation periods, and not exceed 15MB per file block.
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <!-- Base Document (All Tiers) -->
+                    <div class="form-block" style="grid-column: span 2;">
+                        <div class="grid-half"><span class="en-text">Valid Business Registration Certificate (CR) *</span><span class="info-text-secondary">Active Operating License</span></div>
+                        <input type="file" required style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <!-- Silver+ Level Documents -->
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Official Bank Account Verification Letter *</span><span class="info-text-secondary">Corporate Account Confirmation</span></div>
+                        <input type="file" class="form-input-file" id="req-b-silver-1" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Customs Clearance Authorization Document *</span><span class="info-text-secondary">Export Regulatory Mandate</span></div>
+                        <input type="file" class="form-input-file" id="req-b-silver-2" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <!-- Gold+ Level Documents -->
+                    <div class="form-block dynamic-field tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Factory ISO 9001 / ISO 14001 Certificates *</span><span class="info-text-secondary">Quality Management Systems</span></div>
+                        <input type="file" class="form-input-file" id="req-b-gold-1" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <div class="form-block dynamic-field tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Third-Party Manufacturing Plant Audit Report *</span><span class="info-text-secondary">Independent Line Inspection</span></div>
+                        <input type="file" class="form-input-file" id="req-b-gold-2" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <!-- Diamond Level Documents -->
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">Audited Comprehensive Financial Balance Sheet (Prior Year) *</span><span class="info-text-secondary">Certified Annual Financials</span></div>
+                        <input type="file" class="form-input-file" id="req-b-diamond-1" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">International Product Safety Lab Test Reports (SGS / TUV) *</span><span class="info-text-secondary">Laboratory Product Clearance</span></div>
+                        <input type="file" class="form-input-file" id="req-b-diamond-2" style="margin-top: 8px; font-size: 12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION C: OPERATIONAL SCALE & PRODUCTION METRICS -->
+            <div class="matrix-container">
+                <div class="matrix-title">
+                    <span>C. Operational Scale & Production Metrics</span>
+                    <span class="badge-step" style="background-color: #1e3a8a;">Module C</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <!-- Base Fields (All Tiers) -->
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Estimated Minimum Order Quantity (MOQ) *</span><span class="info-text-secondary">Baseline Order Threshold</span></div>
+                        <input type="text" required class="form-input" placeholder="e.g., 500 units or 1 batch segment">
+                    </div>
+
+                    <div class="form-block">
+                        <div class="grid-half"><span class="en-text">Target Regional Delivery Markets *</span><span class="info-text-secondary">Primary Logistics Zones</span></div>
+                        <input type="text" required class="form-input" placeholder="e.g., Middle East, Europe, North America">
+                    </div>
+
+                    <!-- Silver+ Level Fields -->
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Total Facility Staff & Assembly Operators *</span><span class="info-text-secondary">Personnel Headcount Bandwidth</span></div>
+                        <select class="form-input" id="req-c-silver-1">
+                            <option value="">Select staff bandwidth...</option>
+                            <option value="s1">Under 50 personnel</option>
+                            <option value="s2">51 to 250 skilled specialists</option>
+                            <option value="s3">Exceeding 250 industrial staff</option>
+                        </select>
+                    </div>
+
+                    <div class="form-block dynamic-field tier-silver tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Active Manufacturing / Workshop Floor Area *</span><span class="info-text-secondary">Industrial Footprint Size</span></div>
+                        <input type="text" class="form-input" id="req-c-silver-2" placeholder="e.g., 8,500 square meters">
+                    </div>
+
+                    <!-- Gold+ Level Fields -->
+                    <div class="form-block dynamic-field tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Total Active Automated Production Lines *</span><span class="info-text-secondary">Smart Machinery Operations</span></div>
+                        <input type="number" class="form-input" id="req-c-gold-1" placeholder="e.g., 6 automated tracks">
+                    </div>
+
+                    <div class="form-block dynamic-field tier-gold tier-diamond">
+                        <div class="grid-half"><span class="en-text">Dedicated Research & Development Engineer Volume *</span><span class="info-text-secondary">R&D Engineering Allocation</span></div>
+                        <input type="number" class="form-input" id="req-c-gold-2" placeholder="Number of system engineers">
+                    </div>
+
+                    <!-- Diamond Level Fields -->
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">Audited Annual Export Turnover (USD Millions) *</span><span class="info-text-secondary">Documented Export Revenue</span></div>
+                        <select class="form-input" id="req-c-diamond-1">
+                            <option value="">Select revenue tier...</option>
+                            <option value="r1">$1M - $5M USD</option>
+                            <option value="r2">$5M - $20M USD</option>
+                            <option value="r3">Above $20M USD Annualized</option>
+                        </select>
+                    </div>
+
+                    <div class="form-block dynamic-field tier-diamond">
+                        <div class="grid-half"><span class="en-text">Hong Kong Expo Pavilion Block Allocation *</span><span class="info-text-secondary">Physical Exhibition Space Target</span></div>
+                        <select class="form-input" id="req-c-diamond-2">
+                            <option value="">Select target floor hall...</option>
+                            <option value="h1">Hall 1 - Consumer Smart Tech & Appliances</option>
+                            <option value="h3">Hall 3 - Core Electronic & Heavy Components</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Command Control Row -->
+            <div style="border-top: 1px solid #e5e7eb; padding-top: 25px; display: flex; justify-content: flex-end; align-items: center; gap: 15px;">
+                <button type="button" style="background-color: #ffffff; border: 1px solid #cccccc; color: #444444; padding: 12px 30px; font-size: 13px; font-weight: 600; border-radius: 3px; cursor: pointer; font-family: inherit;">
+                    Save Compliance Progress
+                </button>
+                <button type="submit" style="background-color: #ff6600; border: 1px solid #ff6600; color: #ffffff; padding: 12px 45px; font-size: 13px; font-weight: 700; border-radius: 3px; cursor: pointer; font-family: inherit;">
+                    Submit Verification Dossier
+                </button>
+            </div>
+            
+        </form>
+
+    </main>
+
+    <!-- Corporate Architecture Footer -->
+    <footer style="margin-top: 100px; background-color: #111111; color: #888888; padding: 45px 40px; font-size: 12px; border-top: 4px solid #ff6600;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; line-height: 1.8;">
+            <div>
+                <p style="margin: 0 0 8px 0; color: #ffffff; font-weight: 700; font-size: 13px;">Global Sources Multi-Channel Quality Integration Protocol © 2026 Global Sources. All rights reserved.</p>
+                <p style="margin: 0;">All uploaded enterprise information, documents, and production metrics are stored securely under institutional compliance regulations.</p>
+            </div>
+            <div style="text-align: right;">
+                <p style="margin: 0 0 8px 0; color: #ffffff; font-weight: 700; font-size: 13px;">Global Unified Supplier Network - 2026 Edition</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE PROGRESSIVE CASCADING CONTROLLER -->
+    <script>
+        function switchPackage(tier) {
+            // 1. Synchronize visual selected states on original premium 4 cards
+            document.getElementById('card-free').classList.remove('active');
+            document.getElementById('card-silver').classList.remove('active');
+            document.getElementById('card-gold').classList.remove('active');
+            document.getElementById('card-diamond').classList.remove('active');
+            
+            document.getElementById('radio-' + tier).checked = true;
+            document.getElementById('card-' + tier).classList.add('active');
+            
+            // 2. Query all elements across the 3 structural modules (A, B, C)
+            var dynamicFields = document.querySelectorAll('.dynamic-field');
+            
+            // 3. Loop through fields to isolate visibilities matching target tier
+            dynamicFields.forEach(function(field) {
+                if (field.classList.contains('tier-' + tier)) {
+                    field.classList.add('visible');
+                } else {
+                    field.classList.remove('visible');
+                }
+            });
+            
+            // 4. Update field validations natively
+            processValidationAttributes(tier);
+        }
+
+        function processValidationAttributes(tier) {
+            // Reset everything first
+            setRequiredState(['req-a-silver-1', 'req-a-silver-2', 'req-b-silver-1', 'req-b-silver-2', 'req-c-silver-1', 'req-c-silver-2'], false);
+            setRequiredState(['req-a-gold-1', 'req-b-gold-1', 'req-b-gold-2', 'req-c-gold-1', 'req-c-gold-2'], false);
+            setRequiredState(['req-a-diamond-1', 'req-a-diamond-2', 'req-b-diamond-1', 'req-b-diamond-2', 'req-c-diamond-1', 'req-c-diamond-2'], false);
+
+            // Progressive required allocation logic based on global rank tier
+            if (tier === 'silver') {
+                setRequiredState(['req-a-silver-1', 'req-a-silver-2', 'req-b-silver-1', 'req-b-silver-2', 'req-c-silver-1', 'req-c-silver-2'], true);
+            } 
+            else if (tier === 'gold') {
+                setRequiredState(['req-a-silver-1', 'req-a-silver-2', 'req-b-silver-1', 'req-b-silver-2', 'req-c-silver-1', 'req-c-silver-2'], true);
+                setRequiredState(['req-a-gold-1', 'req-b-gold-1', 'req-b-gold-2', 'req-c-gold-1', 'req-c-gold-2'], true);
+            } 
+            else if (tier === 'diamond') {
+                setRequiredState(['req-a-silver-1', 'req-a-silver-2', 'req-b-silver-1', 'req-b-silver-2', 'req-c-silver-1', 'req-c-silver-2'], true);
+                setRequiredState(['req-a-gold-1', 'req-b-gold-1', 'req-b-gold-2', 'req-c-gold-1', 'req-c-gold-2'], true);
+                setRequiredState(['req-a-diamond-1', 'req-a-diamond-2', 'req-b-diamond-1', 'req-b-diamond-2', 'req-c-diamond-1', 'req-c-diamond-2'], true);
+            }
+        }
+
+        function setRequiredState(fieldIds, status) {
+            fieldIds.forEach(function(id) {
+                var targetEl = document.getElementById(id);
+                if (targetEl) {
+                    if (status) {
+                        targetEl.setAttribute('required', 'required');
+                    } else {
+                        targetEl.removeAttribute('required');
+                    }
+                }
+            });
+        }
+
+        // Initialize state configuration on frame load
+        window.onload = function() {
+            switchPackage('free');
+        };
+    </script>
+
+</body>
+</html>
