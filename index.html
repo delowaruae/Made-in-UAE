@@ -699,8 +699,8 @@
 </header>
 
 
-    <main class="container max-w-[1280px] w-full mx-auto px-5 py-12 z-10 flex-grow pt-4">
-        <div class="flex flex-col lg:flex-row gap-4">
+<main class="container max-w-[1280px] w-full mx-auto px-5 py-2 z-10 flex-grow">
+    <div class="flex flex-col lg:flex-row gap-4">
             
             <!-- Sidebar Navigation (Browse Categories) -->
             <div class="hidden lg:block w-1/4 flex-shrink-0 relative z-30">
@@ -748,6 +748,7 @@
                     </ul>
                 </div>
             </div>
+<!-- category ends-->
 
 
 
@@ -1382,7 +1383,96 @@
    
    
    
-   
+   	
+<section style="max-width:1282px;margin:0 auto;text-align:center;overflow:hidden;  border-radius:18px;">
+    <div> <a href="/"> <img id="promoBanner" src="https://i.ibb.co/zhP4C07K/mega-sale.png" alt="ads" style="width:100%;height:auto;display:block; border-radius:18px;"> </a> </div>
+</section>
+
+<style>
+#promoBanner{
+    width:100%;
+    height:auto;
+    display:block;
+    animation-duration:1s;
+    animation-fill-mode:both;
+}
+
+/* Left */
+@keyframes slideLeft{
+    from{opacity:0;transform:translateX(-200px);}
+    to{opacity:1;transform:translateX(0);}
+}
+
+/* Right */
+@keyframes slideRight{
+    from{opacity:0;transform:translateX(200px);}
+    to{opacity:1;transform:translateX(0);}
+}
+
+/* Top */
+@keyframes slideTop{
+    from{opacity:0;transform:translateY(-150px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* Bottom */
+@keyframes slideBottom{
+    from{opacity:0;transform:translateY(150px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* Zoom */
+@keyframes zoomIn{
+    from{opacity:0;transform:scale(.6);}
+    to{opacity:1;transform:scale(1);}
+}
+
+/* Rotate */
+@keyframes rotateIn{
+    from{opacity:0;transform:rotate(-10deg) scale(.8);}
+    to{opacity:1;transform:rotate(0deg) scale(1);}
+}
+
+/* Flip */
+@keyframes flipIn{
+    from{opacity:0;transform:perspective(800px) rotateY(90deg);}
+    to{opacity:1;transform:perspective(800px) rotateY(0);}
+}
+
+/* Bounce */
+@keyframes bounceIn{
+    0%{opacity:0;transform:scale(.5);}
+    60%{opacity:1;transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+</style>
+
+<script>
+const img=document.getElementById("promoBanner");
+
+const animations=[
+"slideLeft",
+"slideRight",
+"slideTop",
+"slideBottom",
+"zoomIn",
+"rotateIn",
+"flipIn",
+"bounceIn"
+];
+
+function animateBanner(){
+    img.style.animation="none";
+    img.offsetHeight;
+    const random=animations[Math.floor(Math.random()*animations.length)];
+    img.style.animation=random+" 1s ease";
+}
+
+animateBanner();
+
+// Change animation every 4 seconds
+setInterval(animateBanner,4000);
+</script>
    
    
    
@@ -1392,7 +1482,7 @@
    
    
 <!-- Recommended For You (8 items) -->	
-    <section class="container bg-white max-w-[1280px] w-full mx-auto px-5 py-12 z-10 flex-grow pt-4">
+<section class="container bg-white max-w-[1280px] w-full mx-auto my-10 px-5 py-12 z-10 flex-grow pt-4">
         <div class="flex justify-between items-end mb-6 border-b border-gray-100 pb-2">
             <h2 class="text-2xl font-extrabold text-textDark">Recommended For You</h2>
             <a href="supplier-order.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
@@ -5302,12 +5392,12 @@
 	
 	
 
-    <section style="max-width: 1280px; margin: 0 auto;  text-align: center; animation: fadeInUp 0.8s ease-out forwards;">
+    <section style="max-width: 1280px; margin: 30px auto;  text-align: center; animation: fadeInUp 0.8s ease-out forwards;">
         
            
        
 
-        <h1 style="font-size: 24px; font-weight: 800; color: #2563eb; margin: 10px 0;">Popular Items</h1>
+        <h1 style="font-size: 26px; font-weight: 800; color: #2563eb; margin: 10px 0;">Popular Items</h1>
 		 <h3 style="text-transform: uppercase; font-size: 14px; letter-spacing: 2px; color: #1e293b; margin-bottom: 5px; font-weight: 700;">Explore & Discover</h3>
         
         <div style="display: flex; align-items: center; justify-content: center; margin: 10px 0;">
@@ -5452,8 +5542,443 @@
     </style>
     </section>
 	
-	
-	
+
+
+
+
+<section style="max-width:1280px;margin:20px auto;text-align:center;overflow:hidden;position:relative;"> <a href="/" style="display:block;"> <img id="b2bxHeroBanner" src="https://i.ibb.co/9k20f6J7/emmar.png" alt="Mega Sale" style=" width:100%; height:auto; display:block; border-radius:18px; transition:transform .45s ease, box-shadow .45s ease; animation:b2bxFloating 6s ease-in-out infinite, b2bxKenBurns 14s ease-in-out infinite alternate, b2bxShadowPulse 3s ease-in-out infinite; "> </a> 
+</section>
+
+<style>
+
+/* ========= FLOAT ========= */
+
+@keyframes b2bxFloating{
+    0%,100%{transform:translateY(0px);}
+    50%{transform:translateY(-8px);}
+}
+
+/* ========= KEN BURNS ========= */
+
+@keyframes b2bxKenBurns{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.03);
+    }
+}
+
+/* ========= SHADOW ========= */
+
+@keyframes b2bxShadowPulse{
+
+    0%,100%{
+        filter:drop-shadow(0 12px 20px rgba(0,0,0,.12));
+    }
+
+    50%{
+        filter:drop-shadow(0 22px 35px rgba(0,0,0,.20));
+    }
+
+}
+
+/* ========= RANDOM ENTRANCE ========= */
+
+@keyframes b2bxFromLeft{
+from{
+opacity:0;
+transform:translateX(-250px) scale(.95);
+}
+to{
+opacity:1;
+transform:translateX(0) scale(1);
+}
+}
+
+@keyframes b2bxFromRight{
+from{
+opacity:0;
+transform:translateX(250px) scale(.95);
+}
+to{
+opacity:1;
+transform:translateX(0) scale(1);
+}
+}
+
+@keyframes b2bxFromTop{
+from{
+opacity:0;
+transform:translateY(-180px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes b2bxFromBottom{
+from{
+opacity:0;
+transform:translateY(180px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes b2bxZoomFade{
+
+0%{
+opacity:0;
+transform:scale(.82);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+@keyframes b2bxRotateFade{
+
+0%{
+opacity:0;
+transform:rotate(-8deg) scale(.9);
+}
+
+100%{
+opacity:1;
+transform:rotate(0deg) scale(1);
+}
+
+}
+
+@keyframes b2bxFlipFade{
+
+0%{
+opacity:0;
+transform:perspective(1200px) rotateY(90deg);
+}
+
+100%{
+opacity:1;
+transform:perspective(1200px) rotateY(0deg);
+}
+
+}
+
+/* ========= PREMIUM HOVER ========= */
+
+#b2bxHeroBanner:hover{
+
+transform:
+scale(1.02)
+rotateX(2deg)
+rotateY(-2deg);
+
+box-shadow:
+0 30px 60px rgba(0,0,0,.22);
+
+cursor:pointer;
+
+}
+
+</style>
+
+<script>
+
+const b2bxHero=document.getElementById("b2bxHeroBanner");
+
+const b2bxEffects=[
+
+"b2bxFromLeft",
+"b2bxFromRight",
+"b2bxFromTop",
+"b2bxFromBottom",
+"b2bxZoomFade",
+"b2bxRotateFade",
+"b2bxFlipFade"
+
+];
+
+function b2bxPlayBannerEffect(){
+
+const pick=b2bxEffects[Math.floor(Math.random()*b2bxEffects.length)];
+
+b2bxHero.style.animation="none";
+
+void b2bxHero.offsetWidth;
+
+b2bxHero.style.animation=
+pick+" .9s ease,"+
+"b2bxFloating 6s ease-in-out infinite,"+
+"b2bxKenBurns 14s ease-in-out infinite alternate,"+
+"b2bxShadowPulse 3s ease-in-out infinite";
+
+}
+
+b2bxPlayBannerEffect();
+
+setInterval(b2bxPlayBannerEffect,5000);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section style="max-width:1280px; margin:30px auto;text-align:center;overflow:hidden;">
+    <div> <a href="/"> <img id="dibAdsBanner" src="https://i.ibb.co/4R2VM4yz/dib2.png" alt="DIB Ads" style="width:100%;height:auto;display:block;  border-radius:18px; "> </a> </div>
+</section>
+
+<style>
+
+#dibAdsBanner{
+    width:100%;
+    height:auto;
+    display:block;
+    transform-origin:center;
+    animation-duration:1.2s;
+    animation-fill-mode:both;
+}
+
+/* Diagonal Left */
+
+@keyframes dibAdsDiagonalLeft{
+    from{
+        opacity:0;
+        transform:translate(-180px,-120px) rotate(-8deg);
+    }
+    to{
+        opacity:1;
+        transform:translate(0,0) rotate(0);
+    }
+}
+
+/* Diagonal Right */
+
+@keyframes dibAdsDiagonalRight{
+    from{
+        opacity:0;
+        transform:translate(180px,120px) rotate(8deg);
+    }
+    to{
+        opacity:1;
+        transform:translate(0,0) rotate(0);
+    }
+}
+
+/* Swing */
+
+@keyframes dibAdsSwing{
+
+0%{
+opacity:0;
+transform:rotate(-18deg);
+}
+
+40%{
+transform:rotate(12deg);
+}
+
+70%{
+transform:rotate(-6deg);
+}
+
+100%{
+opacity:1;
+transform:rotate(0);
+}
+
+}
+
+/* Pop */
+
+@keyframes dibAdsPop{
+
+0%{
+opacity:0;
+transform:scale(.3);
+}
+
+70%{
+transform:scale(1.08);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* Blur */
+
+@keyframes dibAdsBlur{
+
+0%{
+opacity:0;
+filter:blur(12px);
+transform:scale(.9);
+}
+
+100%{
+opacity:1;
+filter:blur(0);
+transform:scale(1);
+}
+
+}
+
+/* Flip X */
+
+@keyframes dibAdsFlipX{
+
+0%{
+opacity:0;
+transform:perspective(1000px) rotateX(90deg);
+}
+
+100%{
+opacity:1;
+transform:perspective(1000px) rotateX(0);
+}
+
+}
+
+/* Elastic */
+
+@keyframes dibAdsElastic{
+
+0%{
+opacity:0;
+transform:scale(.5);
+}
+
+40%{
+transform:scale(1.12);
+}
+
+60%{
+transform:scale(.92);
+}
+
+80%{
+transform:scale(1.04);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* Wobble */
+
+@keyframes dibAdsWobble{
+
+0%{
+opacity:0;
+transform:translateX(-120px);
+}
+
+20%{
+transform:translateX(40px);
+}
+
+40%{
+transform:translateX(-20px);
+}
+
+60%{
+transform:translateX(10px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/* Rotate Zoom */
+
+@keyframes dibAdsRotateZoom{
+
+0%{
+opacity:0;
+transform:scale(.7) rotate(-15deg);
+}
+
+100%{
+opacity:1;
+transform:scale(1) rotate(0deg);
+}
+
+}
+
+</style>
+
+<script>
+
+const dibAdsImage=document.getElementById("dibAdsBanner");
+
+const dibAdsEffects=[
+
+"dibAdsDiagonalLeft",
+"dibAdsDiagonalRight",
+"dibAdsSwing",
+"dibAdsPop",
+"dibAdsBlur",
+"dibAdsFlipX",
+"dibAdsElastic",
+"dibAdsWobble",
+"dibAdsRotateZoom"
+
+];
+
+function dibAdsAnimate(){
+
+dibAdsImage.style.animation="none";
+
+void dibAdsImage.offsetWidth;
+
+const randomEffect=dibAdsEffects[Math.floor(Math.random()*dibAdsEffects.length)];
+
+dibAdsImage.style.animation=randomEffect+" 1.2s cubic-bezier(.22,1,.36,1)";
+
+}
+
+dibAdsAnimate();
+
+setInterval(dibAdsAnimate,4500);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	<!-- footer-->
 	
