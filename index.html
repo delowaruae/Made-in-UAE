@@ -1383,6 +1383,9 @@
    
    
    
+   
+
+<!-- script in down-->   
    	
 <section style="max-width:1282px;margin:0 auto;text-align:center;overflow:hidden;  border-radius:18px;">
     <div> <a href="/"> <img id="promoBanner" src="https://i.ibb.co/zhP4C07K/mega-sale.png" alt="ads" style="width:100%;height:auto;display:block; border-radius:18px;"> </a> </div>
@@ -1447,33 +1450,6 @@
 }
 </style>
 
-<script>
-const img=document.getElementById("promoBanner");
-
-const animations=[
-"slideLeft",
-"slideRight",
-"slideTop",
-"slideBottom",
-"zoomIn",
-"rotateIn",
-"flipIn",
-"bounceIn"
-];
-
-function animateBanner(){
-    img.style.animation="none";
-    img.offsetHeight;
-    const random=animations[Math.floor(Math.random()*animations.length)];
-    img.style.animation=random+" 1s ease";
-}
-
-animateBanner();
-
-// Change animation every 4 seconds
-setInterval(animateBanner,4000);
-</script>
-   
    
    
    
@@ -5689,44 +5665,6 @@ cursor:pointer;
 
 </style>
 
-<script>
-
-const b2bxHero=document.getElementById("b2bxHeroBanner");
-
-const b2bxEffects=[
-
-"b2bxFromLeft",
-"b2bxFromRight",
-"b2bxFromTop",
-"b2bxFromBottom",
-"b2bxZoomFade",
-"b2bxRotateFade",
-"b2bxFlipFade"
-
-];
-
-function b2bxPlayBannerEffect(){
-
-const pick=b2bxEffects[Math.floor(Math.random()*b2bxEffects.length)];
-
-b2bxHero.style.animation="none";
-
-void b2bxHero.offsetWidth;
-
-b2bxHero.style.animation=
-pick+" .9s ease,"+
-"b2bxFloating 6s ease-in-out infinite,"+
-"b2bxKenBurns 14s ease-in-out infinite alternate,"+
-"b2bxShadowPulse 3s ease-in-out infinite";
-
-}
-
-b2bxPlayBannerEffect();
-
-setInterval(b2bxPlayBannerEffect,5000);
-
-</script>
-
 
 
 
@@ -5932,41 +5870,7 @@ transform:scale(1) rotate(0deg);
 
 </style>
 
-<script>
 
-const dibAdsImage=document.getElementById("dibAdsBanner");
-
-const dibAdsEffects=[
-
-"dibAdsDiagonalLeft",
-"dibAdsDiagonalRight",
-"dibAdsSwing",
-"dibAdsPop",
-"dibAdsBlur",
-"dibAdsFlipX",
-"dibAdsElastic",
-"dibAdsWobble",
-"dibAdsRotateZoom"
-
-];
-
-function dibAdsAnimate(){
-
-dibAdsImage.style.animation="none";
-
-void dibAdsImage.offsetWidth;
-
-const randomEffect=dibAdsEffects[Math.floor(Math.random()*dibAdsEffects.length)];
-
-dibAdsImage.style.animation=randomEffect+" 1.2s cubic-bezier(.22,1,.36,1)";
-
-}
-
-dibAdsAnimate();
-
-setInterval(dibAdsAnimate,4500);
-
-</script>
 
 
 
@@ -6130,5 +6034,123 @@ setInterval(dibAdsAnimate,4500);
             alert('Mobile menu navigation would open here.');
         });
     </script>
+	
+	
+	<!-- script for dib-->
+	<script>
+
+const dibAdsImage=document.getElementById("dibAdsBanner");
+
+const dibAdsEffects=[
+
+"dibAdsDiagonalLeft",
+"dibAdsDiagonalRight",
+"dibAdsSwing",
+"dibAdsPop",
+"dibAdsBlur",
+"dibAdsFlipX",
+"dibAdsElastic",
+"dibAdsWobble",
+"dibAdsRotateZoom"
+
+];
+
+function dibAdsAnimate(){
+
+dibAdsImage.style.animation="none";
+
+void dibAdsImage.offsetWidth;
+
+const randomEffect=dibAdsEffects[Math.floor(Math.random()*dibAdsEffects.length)];
+
+dibAdsImage.style.animation=randomEffect+" 1.2s cubic-bezier(.22,1,.36,1)";
+
+}
+
+dibAdsAnimate();
+
+setInterval(dibAdsAnimate,4500);
+
+</script>
+
+<!-- script for emmar-->
+
+<script>
+
+const b2bxHero=document.getElementById("b2bxHeroBanner");
+
+const b2bxEffects=[
+
+"b2bxFromLeft",
+"b2bxFromRight",
+"b2bxFromTop",
+"b2bxFromBottom",
+"b2bxZoomFade",
+"b2bxRotateFade",
+"b2bxFlipFade"
+
+];
+
+function b2bxPlayBannerEffect(){
+
+const pick=b2bxEffects[Math.floor(Math.random()*b2bxEffects.length)];
+
+b2bxHero.style.animation="none";
+
+void b2bxHero.offsetWidth;
+
+b2bxHero.style.animation=
+pick+" .9s ease,"+
+"b2bxFloating 6s ease-in-out infinite,"+
+"b2bxKenBurns 14s ease-in-out infinite alternate,"+
+"b2bxShadowPulse 3s ease-in-out infinite";
+
+}
+
+b2bxPlayBannerEffect();
+
+setInterval(b2bxPlayBannerEffect,5000);
+
+</script>
+
+
+
+
+
+
+
+
+
+<!--script for mega sale-->
+
+<script>
+const img=document.getElementById("promoBanner");
+
+const animations=[
+"slideLeft",
+"slideRight",
+"slideTop",
+"slideBottom",
+"zoomIn",
+"rotateIn",
+"flipIn",
+"bounceIn"
+];
+
+function animateBanner(){
+    img.style.animation="none";
+    img.offsetHeight;
+    const random=animations[Math.floor(Math.random()*animations.length)];
+    img.style.animation=random+" 1s ease";
+}
+
+animateBanner();
+
+// Change animation every 4 seconds
+setInterval(animateBanner,4000);
+</script>
+   
+
+	
 </body>
 </html>
