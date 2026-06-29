@@ -145,7 +145,6 @@ onmouseover=" this.style.background='#e05313'; this.style.boxShadow='0 0 15px rg
 
 
 	
-
 <li style="list-style: none; margin: 0; padding: 0; box-sizing: border-box;">
 
     <nav style="position: sticky; top: 0; z-index: 50; width: 100%; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #f1f5f9; box-sizing: border-box;">
@@ -167,8 +166,8 @@ onmouseover=" this.style.background='#e05313'; this.style.boxShadow='0 0 15px rg
 
                 <div class="globe-dropdown-wrapper" 
                      style="position: relative; display: inline-block;"
-                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.12)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.3)'; this.querySelector('.tall-oval-btn').style.transform='scale(1.03)';"
-                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.08)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.15)'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
+                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn svg').style.color='#ff4a00'; this.querySelector('.tall-oval-btn').style.transform='scale(1.05)';"
+                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn svg').style.color='#ea580c'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
                     
                     <script>
                         window.tempLang = "EN";
@@ -177,8 +176,8 @@ onmouseover=" this.style.background='#e05313'; this.style.boxShadow='0 0 15px rg
                     </script>
 
                     <a href="javascript:void(0);" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-                        <div class="tall-oval-btn" style="border-radius: 50% / 35%; aspect-ratio: 3 / 4; height: 50px; display: flex; align-items: center; justify-content: center; background-color: rgba(249, 115, 22, 0.08); border: 1.5px solid rgba(249, 115, 22, 0.15); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
-                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <div class="tall-oval-btn" style="display: flex; align-items: center; justify-content: center; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
+                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0; transition: color 0.2s;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                                 <path d="M2 12h20"></path>
@@ -221,7 +220,7 @@ onmouseover=" this.style.background='#e05313'; this.style.boxShadow='0 0 15px rg
                                 " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
                                     <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Arabic">
                                     <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">العربية (AE)</span>
-                                </div >
+                                </div>
                                 <div class="lang-card" data-lang="ES" data-flag="https://flagcdn.com/w20/es.png" onclick="
                                     let items = this.parentNode.querySelectorAll('.lang-card');
                                     items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
