@@ -701,53 +701,1180 @@
 
 <main class="container max-w-[1280px] w-full mx-auto px-5 py-2 z-10 flex-grow">
     <div class="flex flex-col lg:flex-row gap-4">
+   
+
+
+   
+<!-- Sidebar Navigation (Browse Categories) -->
+<div class="hidden lg:block w-1/4 flex-shrink-0 relative z-30 parent-menu-container">
+    <div class="border border-borderGray rounded-lg shadow-sm bg-white h-[460px]">
+        <div class="bg-gray-50 py-1 px-2 font-bold text-textDark border-b border-borderGray flex items-center justify-between">
+            <span><i class="fas fa-list-ul mr-1 text-primary"></i>CATEGORIES</span>
+            <i class="fas fa-chevron-down text-xs text-gray-400"></i>
+        </div>
+        
+        <ul class="py-1 text-sm text-gray-600 font-medium">
             
-            <!-- Sidebar Navigation (Browse Categories) -->
-            <div class="hidden lg:block w-1/4 flex-shrink-0 relative z-30">
-                <div class="border border-borderGray rounded-lg shadow-sm bg-white overflow-hidden">
-                    <div class="bg-gray-50 py-4 px-5 font-bold text-textDark border-b border-borderGray flex items-center justify-between">
-                        <span><i class="fas fa-list-ul mr-2 text-primary"></i>CATEGORIES</span>
-                        <i class="fas fa-chevron-down text-xs text-gray-400"></i>
+            <li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+                <span><i class="fas fa-tshirt w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Fashion and Clothes </span>
+                <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+                <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+				
+				
+              
+                    <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Men's Clothing</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">T-Shirts & Tanks</li>
+                                <li class="hover:text-primary">Shirts & Polos</li>
+                                <li class="hover:text-primary">Jeans & Pants</li>
+                                <!-- <li class="hover:text-primary">Jackets & Coats</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Women's Clothing</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Dresses & Skirts</li>
+                                <li class="hover:text-primary">Blouses & Tops</li>
+                                <li class="hover:text-primary">Leggings & Pants</li>
+                                <!-- <li class="hover:text-primary">Sweaters</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Footwear</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Sneakers</li>
+                                <li class="hover:text-primary">Formal Shoes</li>
+                                <li class="hover:text-primary">Boots</li>
+                                <!-- <li class="hover:text-primary">Sandals</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Bags & Luggage</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Backpacks</li>
+                                <li class="hover:text-primary">Handbags</li>
+                                <li class="hover:text-primary">Travel Suitcases</li>
+                                <!-- <li class="hover:text-primary">Wallets</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Accessories</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Belts & Ties</li>
+                                <li class="hover:text-primary">Sunglasses</li>
+                                <li class="hover:text-primary">Hats & Caps</li>
+                                <!-- <li class="hover:text-primary">Scarves</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Jewelry</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Necklaces</li>
+                                <li class="hover:text-primary">Rings</li>
+                                <li class="hover:text-primary">Bracelets</li>
+                                <!-- <li class="hover:text-primary">Earrings</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Watches</h4>
+                            <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                <li class="hover:text-primary">Digital Watches</li>
+                                <li class="hover:text-primary">Analog Watches</li>
+                                <li class="hover:text-primary">Smartwatches</li>
+                                <!-- <li class="hover:text-primary">Sports Watches</li> -->
+                            </ul>
+                        </div>
+                        <div class="space-y-1 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Kids Fashion</h4>
+                                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                                    <li class="hover:text-primary">Baby Clothing</li>
+                                    <li class="hover:text-primary">Boys Outfits</li>
+                                    <li class="hover:text-primary">Girls Dresses</li>
+                                    <!-- <li class="hover:text-primary">Kids Shoes</li> -->
+                                </ul>
+                            </div>
+                           
+                        </div>
+						   <div class="col-span-3 pt-1 h-[100px]">
+                                <img src="https://i.ibb.co/R4gfmSfD/fc.png" alt="Promo" class="rounded object-cover border border-gray-100 w-full h-full">
+                            </div>
                     </div>
-                    <ul class="py-2 text-sm text-gray-600 font-medium">
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-tshirt w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Apparel & Accessories</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-industry w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Machinery & Industrial</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-microchip w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Consumer Electronics</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-seedling w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Agriculture & Food</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-tools w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Hardware & Tools</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-box w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Packaging & Printing</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-car w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Vehicles & Accessories</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-3 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
-                            <span><i class="fas fa-couch w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Home, Lights & Construction</span>
-                            <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
-                        </li>
-                        <li class="px-5 py-2 text-primary text-xs font-bold hover:underline cursor-pointer">
-                            VIEW ALL CATEGORIES <i class="fas fa-chevron-right text-[8px] ml-1"></i>
-                        </li>
-                    </ul>
+
+
+                    <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <img src="https://i.ibb.co/Tq8NBqKf/f10.png" alt="Category Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+                        </div>
+                    </div>
                 </div>
+            </li>
+			
+			
+			
+			
+			
+			
+			
+			<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-microchip w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Consumer Electronics</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Smartphones & Tablets</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Android Phones</li>
+                    <li class="hover:text-primary">iPhones (iOS)</li>
+                    <li class="hover:text-primary">Tablets & iPads</li>
+                    <!-- <li class="hover:text-primary">Power Banks & Cables</li> -->
+                </ul>
             </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Laptops & Computers</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Gaming Laptops</li>
+                    <li class="hover:text-primary">MacBooks & PCs</li>
+                    <li class="hover:text-primary">Monitors & Displays</li>
+                    <!-- <li class="hover:text-primary">Computer Components</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Audio & Sound</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Wireless Earbuds</li>
+                    <li class="hover:text-primary">Headphones</li>
+                    <li class="hover:text-primary">Bluetooth Speakers</li>
+                    <!-- <li class="hover:text-primary">Soundbars & Theater</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Smart Home Devices</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Smart Speakers</li>
+                    <li class="hover:text-primary">Security Cameras</li>
+                    <li class="hover:text-primary">Smart Lighting</li>
+                    <!-- <li class="hover:text-primary">Robot Vacuums</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Cameras & Optics</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">DSLR & Mirrorless</li>
+                    <li class="hover:text-primary">Action Cameras</li>
+                    <li class="hover:text-primary">Drones & Quadcopters</li>
+                    <!-- <li class="hover:text-primary">Lenses & Tripods</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Gaming & Consoles</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">PlayStation & Xbox</li>
+                    <li class="hover:text-primary">Nintendo Switch</li>
+                    <li class="hover:text-primary">Gaming Controllers</li>
+                    <!-- <li class="hover:text-primary">VR Headsets</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Wearable Tech</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Smartwatches</li>
+                    <li class="hover:text-primary">Fitness Trackers</li>
+                    <li class="hover:text-primary">Smart Rings</li>
+                    <!-- <li class="hover:text-primary">Accessories & Bands</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">TV & Video</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">4K Smart TVs</li>
+                    <li class="hover:text-primary">Projectors</li>
+                    <li class="hover:text-primary">Streaming Sticks</li>
+                    <!-- <li class="hover:text-primary">TV Mounts & Stands</li> -->
+                </ul>
+            </div>
+
+            <div></div>
+
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/Zp2GDBn6/el.png" alt="Electronics Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://i.ibb.co/XfrJCS4H/ell.png" alt="Electronics Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-shoe-prints w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Shoes & Accessories</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Men's Shoes</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Formal Leather Shoes</li>
+                    <li class="hover:text-primary">Casual Loafers</li>
+                    <li class="hover:text-primary">Boots & High-Tops</li>
+                    <!-- <li class="hover:text-primary">Sandals & Slippers</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Women's Shoes</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">High Heels & Pumps</li>
+                    <li class="hover:text-primary">Flats & Ballerinas</li>
+                    <li class="hover:text-primary">Ankle Boots</li>
+                    <!-- <li class="hover:text-primary">Wedges & Platforms</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Athletic & Sports</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Running Shoes</li>
+                    <li class="hover:text-primary">Sneakers & Streetwear</li>
+                    <li class="hover:text-primary">Football & Gym Boots</li>
+                    <!-- <li class="hover:text-primary">Outdoor Hiking Shoes</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Bags & Backpacks</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Leather Handbags</li>
+                    <li class="hover:text-primary">Travel Luggage</li>
+                    <li class="hover:text-primary">Laptop Backpacks</li>
+                    <!-- <li class="hover:text-primary">Clutches & Evening Bags</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Small Leather Goods</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Men's Wallets</li>
+                    <li class="hover:text-primary">Card Holders</li>
+                    <li class="hover:text-primary">Leather Belts</li>
+                    <!-- <li class="hover:text-primary">Key Organizers</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Travel Accessories</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Passport Covers</li>
+                    <li class="hover:text-primary">Luggage Tags</li>
+                    <li class="hover:text-primary">Toiletry Kits</li>
+                    <!-- <li class="hover:text-primary">Travel Pillows</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Shoe Care & Utilities</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Polishes & Creams</li>
+                    <li class="hover:text-primary">Premium Shoe Horns</li>
+                    <li class="hover:text-primary">Cleaning Brushes</li>
+                    <!-- <li class="hover:text-primary">Insoles & Comfort Pads</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Seasonal Essentials</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Winter Gloves</li>
+                    <li class="hover:text-primary">Summer Sun Hats</li>
+                    <li class="hover:text-primary">Rain Umbrellas</li>
+                    <!-- <li class="hover:text-primary">Woolen Scarves</li> -->
+                </ul>
+            </div>
+
+            <div></div>
+
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/0j5v3JQr/shoes-bags.webp" alt="Shoes Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=800" alt="Shoes Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-lightbulb w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Lights & Lighting</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Indoor Lighting</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Ceiling Chandeliers</li>
+                    <li class="hover:text-primary">Recessed Downlights</li>
+                    <li class="hover:text-primary">Track Lighting Systems</li>
+                    <!-- <li class="hover:text-primary">Wall Sconces</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Outdoor Lighting</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Solar Garden Lights</li>
+                    <li class="hover:text-primary">LED Floodlights</li>
+                    <li class="hover:text-primary">Street & Path Lights</li>
+                    <!-- <li class="hover:text-primary">Wall Mounted Lanterns</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">LED Bulbs & Tubes</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Smart LED Bulbs</li>
+                    <li class="hover:text-primary">Filament Edison Bulbs</li>
+                    <li class="hover:text-primary">T8/T5 LED Tubes</li>
+                    <!-- <li class="hover:text-primary">Dimmable Spotlights</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Commercial Lighting</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Office Panel Lights</li>
+                    <li class="hover:text-primary">High Bay Industrial Lights</li>
+                    <li class="hover:text-primary">Emergency Exit Signs</li>
+                    <!-- <li class="hover:text-primary">Stage & Studio Lights</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Decorative Lighting</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">LED Strip Lights</li>
+                    <li class="hover:text-primary">Fairy & Holiday Lights</li>
+                    <li class="hover:text-primary">Neon Sign Boards</li>
+                    <!-- <li class="hover:text-primary">Lava & Novelty Lamps</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Smart & Accent</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">RGB Cabinet Lighting</li>
+                    <li class="hover:text-primary">Sensor Night Lights</li>
+                    <li class="hover:text-primary">Motion Flood Sensors</li>
+                    <!-- <li class="hover:text-primary">App-Controlled Panels</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Lamps & Shades</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">LED Desk Lamps</li>
+                    <li class="hover:text-primary">Floor Reading Lamps</li>
+                    <li class="hover:text-primary">Bedside Nightstands</li>
+                    <!-- <li class="hover:text-primary">Replacement Shades</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Accessories & Parts</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Light Dimmers & Switches</li>
+                    <li class="hover:text-primary">LED Drivers & Ballasts</li>
+                    <li class="hover:text-primary">Lamp Bases & Sockets</li>
+                    <!-- <li class="hover:text-primary">Smart Automation Hubs</li> -->
+                </ul>
+            </div>
+
+            <div></div>
+
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/qF0LRL3V/ll.png" alt="Lighting Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.pexels.com/photos/36669458/pexels-photo-36669458.jpeg" alt="Lighting Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-couch w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Furniture</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Living Room</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Sofas & Sectionals</li>
+                    <li class="hover:text-primary">Coffee Tables</li>
+                    <li class="hover:text-primary">TV Stands & Consoles</li>
+                    <!-- <li class="hover:text-primary">Recliners & Armchairs</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Bedroom</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Beds & Headboards</li>
+                    <li class="hover:text-primary">Mattresses</li>
+                    <li class="hover:text-primary">Nightstands</li>
+                    <!-- <li class="hover:text-primary">Dressers & Chests</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Dining & Kitchen</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Dining Table Sets</li>
+                    <li class="hover:text-primary">Bar Stools & Chairs</li>
+                    <li class="hover:text-primary">Sideboards & Buffets</li>
+                    <!-- <li class="hover:text-primary">Kitchen Islands</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Office Furniture</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Ergonomic Chairs</li>
+                    <li class="hover:text-primary">Computer Desks</li>
+                    <li class="hover:text-primary">Filing Cabinets</li>
+                    <!-- <li class="hover:text-primary">Bookcases & Shelves</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Outdoor & Patio</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Patio Dining Sets</li>
+                    <li class="hover:text-primary">Outdoor Sofas</li>
+                    <li class="hover:text-primary">Sun Loungers</li>
+                    <!-- <li class="hover:text-primary">Hammocks & Swings</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Kids & Nursery</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Cribs & Toddler Beds</li>
+                    <li class="hover:text-primary">Toy Organizers</li>
+                    <li class="hover:text-primary">Study Desks</li>
+                    <!-- <li class="hover:text-primary">Kids Bean Bags</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Entryway & Hall</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Shoe Cabinets & Racks</li>
+                    <li class="hover:text-primary">Console Tables</li>
+                    <li class="hover:text-primary">Coat Racks & Hooks</li>
+                    <!-- <li class="hover:text-primary">Wall Mirrors</li> -->
+                </ul>
+            </div>
+
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Storage & Accents</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Wardrobes & Closets</li>
+                    <li class="hover:text-primary">Storage Ottomans</li>
+                    <li class="hover:text-primary">Display Cabinets</li>
+                    <!-- <li class="hover:text-primary">Side Tables</li> -->
+                </ul>
+            </div>
+
+            <div> </div>
+
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/fzFG9YMH/f.png" alt="Furniture Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900" alt="Furniture Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+		
+			
+			
+			
+			
+			
+			
+<!-- Category Item: Home & Garden -->
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span> <i class="fas fa-home w-5 text-gray-400 group-hover:text-primary text-center mr-2"> </i> Home & Garden</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <!-- Mega Menu Flyout Container (Anchored to top of the master sidebar) -->
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <!-- LEFT & MIDDLE SECTION: Grid containing 8 home & garden blocks + Full Width Promo -->
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <!-- Item 1 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Kitchen & Dining</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Cookware & Pots</li>
+                    <li class="hover:text-primary">Dinnerware Sets</li>
+                    <li class="hover:text-primary">Kitchen Gadgets</li>
+                    <!-- <li class="hover:text-primary">Bakeware</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Home Decor</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Wall Art & Frames</li>
+                    <li class="hover:text-primary">Vases & Ornaments</li>
+                    <li class="hover:text-primary">Candles & Holders</li>
+                    <!-- <li class="hover:text-primary">Decorative Pillows</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Bedding & Bath</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Bedsheets & Comforters</li>
+                    <li class="hover:text-primary">Pillows & Blankets</li>
+                    <li class="hover:text-primary">Premium Towels</li>
+                    <!-- <li class="hover:text-primary">Bathroom Accessories</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Garden & Outdoor</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Plant Pots & Planters</li>
+                    <li class="hover:text-primary">Gardening Tools</li>
+                    <li class="hover:text-primary">Watering Hoses & Sprays</li>
+                    <!-- <li class="hover:text-primary">Outdoor Ornaments</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Home Storage</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Storage Boxes & Bins</li>
+                    <li class="hover:text-primary">Cloth Organizers</li>
+                    <li class="hover:text-primary">Laundry Baskets</li>
+                    <!-- <li class="hover:text-primary">Shelving Units</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Household Essentials</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Cleaning Supplies</li>
+                    <li class="hover:text-primary">Trash Cans & Liners</li>
+                    <li class="hover:text-primary">Mops & Brooms</li>
+                    <!-- <li class="hover:text-primary">Air Fresheners</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Pet Supplies</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Dog & Cat Beds</li>
+                    <li class="hover:text-primary">Feeding Bowls</li>
+                    <li class="hover:text-primary">Pet Toys</li>
+                    <!-- <li class="hover:text-primary">Grooming Kits</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Window & Floor</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Curtains & Drapes</li>
+                    <li class="hover:text-primary">Area Rugs & Carpets</li>
+                    <li class="hover:text-primary">Door Mats</li>
+                    <!-- <li class="hover:text-primary">Blinds & Shades</li> -->
+                </ul>
+            </div>
+
+            <!-- Blank filler space to keep the 3-column layout grid calculations clean -->
+            <div></div>
+
+            <!-- Horizontal Bottom Promo Grid Image (Covers full first three column widths) -->
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/k6K1MfCd/hg.png" alt="Home Garden Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE SECTION: Category Related Large Image Panel -->
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1200" alt="Home Garden Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+
+
+<!-- Category Item: Makeup and Beauty -->
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span> <i class="fas fa-female w-5 text-gray-400 group-hover:text-primary text-center mr-2"> </i> Makeup and Beauty</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <!-- Mega Menu Flyout Container (Anchored to top of the master sidebar) -->
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <!-- LEFT & MIDDLE SECTION: Grid containing 8 beauty blocks + Full Width Promo -->
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <!-- Item 1 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Face Makeup</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Foundations & BB Creams</li>
+                    <li class="hover:text-primary">Concealers & Primers</li>
+                    <li class="hover:text-primary">Blush & Highlighters</li>
+                    <!-- <li class="hover:text-primary">Setting Powders & Sprays</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Eye Makeup</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Eyeshadow Palettes</li>
+                    <li class="hover:text-primary">Eyeliners & Kajal</li>
+                    <li class="hover:text-primary">Mascaras</li>
+                    <!-- <li class="hover:text-primary">Brows & Lash Serums</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Lip Products</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Matte & Liquid Lipsticks</li>
+                    <li class="hover:text-primary">Lip Glosses & Oils</li>
+                    <li class="hover:text-primary">Lip Liners</li>
+                    <!-- <li class="hover:text-primary">Hydrating Lip Balms</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Skin Care</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Cleansers & Facewashes</li>
+                    <li class="hover:text-primary">Serums & Face Oils</li>
+                    <li class="hover:text-primary">Moisturizers & Creams</li>
+                    <!-- <li class="hover:text-primary">Sunscreen & UV Protection</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Hair Care</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Shampoos & Conditioners</li>
+                    <li class="hover:text-primary">Hair Masks & Treatments</li>
+                    <li class="hover:text-primary">Styling Gels & Sprays</li>
+                    <!-- <li class="hover:text-primary">Hair Growth Oils</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Fragrances</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Perfumes (EDP/EDT)</li>
+                    <li class="hover:text-primary">Body Mists & Sprays</li>
+                    <li class="hover:text-primary">Colognes & Aftershaves</li>
+                    <!-- <li class="hover:text-primary">Pocket Perfumes</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Tools & Brushes</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Makeup Brush Sets</li>
+                    <li class="hover:text-primary">Blending Sponges</li>
+                    <li class="hover:text-primary">Eyelash Curlers</li>
+                    <!-- <li class="hover:text-primary">Mirrors & Organizers</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Nail Care</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Nail Polishes & Gel</li>
+                    <li class="hover:text-primary">Polish Removers</li>
+                    <li class="hover:text-primary">Manicure & Pedicure Kits</li>
+                    <!-- <li class="hover:text-primary">Nail Art Stickers</li> -->
+                </ul>
+            </div>
+
+            <!-- Blank filler space to keep the 3-column layout grid calculations clean -->
+            <div></div>
+
+            <!-- Horizontal Bottom Promo Grid Image (Covers full first three column widths) -->
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/nqkjbRYx/mb.png" alt="Beauty Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE SECTION: Category Related Large Image Panel -->
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://i.ibb.co/RpSKkfBw/pb2.jpg" alt="Beauty Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+
+
+<!-- Category Item: Luggage & Bags -->
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-suitcase w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Luggage, Bags</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <!-- Mega Menu Flyout Container (Anchored to top of the master sidebar) -->
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <!-- LEFT & MIDDLE SECTION: Grid containing 8 bag blocks + Full Width Promo -->
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <!-- Item 1 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Travel Luggage</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Hard Shell Suitcases</li>
+                    <li class="hover:text-primary">Soft Side Spinners</li>
+                    <li class="hover:text-primary">Carry-On Hand Bags</li>
+                    <!-- <li class="hover:text-primary">Luggage Sets</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Backpacks</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Laptop Backpacks</li>
+                    <li class="hover:text-primary">School & College Bags</li>
+                    <li class="hover:text-primary">Hiking & Outdoor Packs</li>
+                    <!-- <li class="hover:text-primary">Anti-Theft Backpacks</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Women's Handbags</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Tote & Shoulder Bags</li>
+                    <li class="hover:text-primary">Crossbody Bags</li>
+                    <li class="hover:text-primary">Clutches & Evening Bags</li>
+                    <!-- <li class="hover:text-primary">Satchels & Top-Handles</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Business & Briefcases</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Leather Briefcases</li>
+                    <li class="hover:text-primary">Messenger Bags</li>
+                    <li class="hover:text-primary">Attaché Cases</li>
+                    <!-- <li class="hover:text-primary">Portfolio Folders</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Sports & Duffles</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Gym Duffle Bags</li>
+                    <li class="hover:text-primary">Travel Weekenders</li>
+                    <li class="hover:text-primary">Wheeled Duffle Bags</li>
+                    <!-- <li class="hover:text-primary">Shoe Utility Bags</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Wallets & Wristlets</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Men's Bifold Wallets</li>
+                    <li class="hover:text-primary">RFID Blocking Wallets</li>
+                    <li class="hover:text-primary">Women's Long Wallets</li>
+                    <!-- <li class="hover:text-primary">Coin Purses & Pouches</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Functional Pouches</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Toiletry & Cosmetic Bags</li>
+                    <li class="hover:text-primary">Fanny Packs & Waist Bags</li>
+                    <li class="hover:text-primary">Cable & Tech Organizers</li>
+                    <!-- <li class="hover:text-primary">Passport & Travel Pouches</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Kids Bags</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Cartoon School Bags</li>
+                    <li class="hover:text-primary">Lunch Boxes & Bags</li>
+                    <li class="hover:text-primary">Kids Trolley Cases</li>
+                    <!-- <li class="hover:text-primary">Cute Animal Pouches</li> -->
+                </ul>
+            </div>
+
+            <!-- Blank filler space to keep the 3-column layout grid calculations clean -->
+            <div></div>
+
+            <!-- Horizontal Bottom Promo Grid Image (Covers full first three column widths) -->
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/qYnTK5r2/lb.png" alt="Bags Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE SECTION: Category Related Large Image Panel -->
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=1200" alt="Bags Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+
+<!-- Category Item: Industrial Machinery -->
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-industry w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Industrial Machinery</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <!-- Mega Menu Flyout Container (Anchored to top of the master sidebar) -->
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <!-- LEFT & MIDDLE SECTION: Grid containing 8 machinery blocks + Full Width Promo -->
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <!-- Item 1 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Manufacturing</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">CNC Laser Cutters</li>
+                    <li class="hover:text-primary">Plastic Injection Molds</li>
+                    <li class="hover:text-primary">Industrial 3D Printers</li>
+                    <!-- <li class="hover:text-primary">Stamping Presses</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Metalworking</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Lathe & Milling Tools</li>
+                    <li class="hover:text-primary">MIG & TIG Welders</li>
+                    <li class="hover:text-primary">Bending Machines</li>
+                    <!-- <li class="hover:text-primary">Grinding & Polishing</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Material Handling</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Electric Forklifts</li>
+                    <li class="hover:text-primary">Conveyor Systems</li>
+                    <li class="hover:text-primary">Pallet Jacks & Lifts</li>
+                    <!-- <li class="hover:text-primary">Hoist & Crane Equipment</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Packaging & Logistics</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Automatic Liquid Fillers</li>
+                    <li class="hover:text-primary">Vacuum Sealing Machines</li>
+                    <li class="hover:text-primary">Box Labeling Systems</li>
+                    <!-- <li class="hover:text-primary">Shrink Wrap Tunnels</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Construction</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Concrete Mixers</li>
+                    <li class="hover:text-primary">Mini Excavators</li>
+                    <li class="hover:text-primary">Vibratory Compactors</li>
+                    <!-- <li class="hover:text-primary">Scaffolding Systems</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Pumps & Compressors</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Rotary Screw Compressors</li>
+                    <li class="hover:text-primary">Centrifugal Water Pumps</li>
+                    <li class="hover:text-primary">Hydraulic Power Units</li>
+                    <!-- <li class="hover:text-primary">Pneumatic Valve Fittings</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Woodworking</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Industrial Table Saws</li>
+                    <li class="hover:text-primary">Thickness Planers</li>
+                    <li class="hover:text-primary">Edge Banding Equipment</li>
+                    <!-- <li class="hover:text-primary">Dust Collection Units</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Food Processing</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Commercial Dough Mixers</li>
+                    <li class="hover:text-primary">Dehydration Ovens</li>
+                    <li class="hover:text-primary">Meat Grinding Plants</li>
+                    <!-- <li class="hover:text-primary">Sterilization Retorts</li> -->
+                </ul>
+            </div>
+
+            <!-- Blank filler space to keep the 3-column layout grid calculations clean -->
+            <div></div>
+
+            <!-- Horizontal Bottom Promo Grid Image (Covers full first three column widths) -->
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/fGKyF1St/im.png" alt="Machinery Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE SECTION: Category Related Large Image Panel -->
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=1200" alt="Machinery Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+<!-- Category Item: Electrical Equipment & Supplies -->
+<li class="px-3 py-2 border-b border-gray-100 hover:bg-gray-50 hover:text-primary cursor-pointer flex justify-between items-center group">
+    <span><i class="fas fa-plug w-5 text-gray-400 group-hover:text-primary text-center mr-2"></i> Electrical Equipment & Supplies</span>
+    <i class="fas fa-chevron-right text-[10px] text-gray-300"></i>
+
+    <!-- Mega Menu Flyout Container (Anchored to top of the master sidebar) -->
+    <div class="hidden group-hover:grid grid-cols-4 absolute left-full top-0 w-[350%] h-[458px] bg-white border border-gray-200 shadow-xl rounded-r-lg z-50 p-6 text-gray-700">
+        
+        <!-- LEFT & MIDDLE SECTION: Grid containing 8 equipment blocks + Full Width Promo -->
+        <div class="col-span-3 grid grid-cols-3 gap-x-3 gap-y-2 pr-2 overflow-y-auto max-h-[410px]">
+            
+            <!-- Item 1 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Wires & Cables</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Copper Building Wires</li>
+                    <li class="hover:text-primary">Armored Power Cables</li>
+                    <li class="hover:text-primary">Coaxial & Data Cables</li>
+                    <!-- <li class="hover:text-primary">Cable Sleeves & Ties</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Circuit Protection</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Miniature Circuit Breakers</li>
+                    <li class="hover:text-primary">Molded Case Breakers (MCCB)</li>
+                    <li class="hover:text-primary">Residual Current Devices (RCD)</li>
+                    <!-- <li class="hover:text-primary">Industrial Fuses</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Switches & Sockets</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Wall Light Switches</li>
+                    <li class="hover:text-primary">Universal Power Sockets</li>
+                    <li class="hover:text-primary">Industrial Plug & Sockets</li>
+                    <!-- <li class="hover:text-primary">Dimmer Switches</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Power Supplies</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Voltage Stabilizers</li>
+                    <li class="hover:text-primary">Uninterruptible Power (UPS)</li>
+                    <li class="hover:text-primary">Switching Power Supplies</li>
+                    <!-- <li class="hover:text-primary">Step-Down Transformers</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Distribution Boards</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Consumer Units</li>
+                    <li class="hover:text-primary">Metal Enclosure Boxes</li>
+                    <li class="hover:text-primary">Busbar Chambers</li>
+                    <!-- <li class="hover:text-primary">Terminal Blocks</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Control & Relays</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">AC Contactors</li>
+                    <li class="hover:text-primary">Thermal Overload Relays</li>
+                    <li class="hover:text-primary">Digital Time Switches</li>
+                    <!-- <li class="hover:text-primary">Push Button Stations</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Solar & Renewable</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">Solar Inverters</li>
+                    <li class="hover:text-primary">PV DC Combiner Boxes</li>
+                    <li class="hover:text-primary">Charge Controllers</li>
+                    <!-- <li class="hover:text-primary">Surge Protection (SPD)</li> -->
+                </ul>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="space-y-1">
+                <h4 class="font-bold text-textDark border-b pb-1 mb-2 hover:text-primary text-xs tracking-wide uppercase">Conduits & Fittings</h4>
+                <ul class="text-xs space-y-2 text-gray-500 font-normal">
+                    <li class="hover:text-primary">PVC Flexible Conduits</li>
+                    <li class="hover:text-primary">Galvanized Steel Pipes</li>
+                    <li class="hover:text-primary">Junction & Box Connectors</li>
+                    <!-- <li class="hover:text-primary">Wall Cable Trunking</li> -->
+                </ul>
+            </div>
+
+            <!-- Blank filler space to keep the 3-column layout grid calculations clean -->
+            <div></div>
+
+            <!-- Horizontal Bottom Promo Grid Image (Covers full first three column widths) -->
+            <div class="col-span-3 pt-1 h-[100px]">
+                <img src="https://i.ibb.co/dsTpvkZC/es.png" alt="Electrical Supplies Promo" class="rounded object-cover border border-gray-100 w-full h-full shadow-sm">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE SECTION: Category Related Large Image Panel -->
+        <div class="col-span-1 flex flex-col justify-between items-end border-l border-gray-100 pl-2 h-full">
+            <div class="w-full h-full flex items-center justify-center">
+                <img src="https://i.ibb.co/Tq8NBqKf/f10.png" alt="Electrical Supplies Banner" class="w-full h-full max-h-[410px] object-cover rounded-md shadow-sm">
+            </div>
+        </div>
+
+    </div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <li class="px-3 py-2 text-primary text-xs font-bold hover:underline cursor-pointer">
+                VIEW ALL CATEGORIES <i class="fas fa-chevron-right text-[8px] ml-1"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+            
+			
+			
 <!-- category ends-->
 
 
@@ -1386,70 +2513,92 @@
    
 
 <!-- script in down-->   
-   	
-<section style="max-width:1282px;margin:0 auto;text-align:center;overflow:hidden;  border-radius:18px;">
-    <div> <a href="mega-sale.html"> <img id="promoBanner" src="https://i.ibb.co/zhP4C07K/mega-sale.png" alt="ads" style="width:100%;height:auto;display:block; border-radius:18px;"> </a> </div>
+<section 
+    style="max-width: 1282px; margin: 0 auto; text-align: center; overflow: hidden; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px;"
+>
+    <style>
+        /* Original 8 Animations */
+        @keyframes slideLeft{ from{opacity:0;transform:translateX(-200px);} to{opacity:1;transform:translateX(0);} }
+        @keyframes slideRight{ from{opacity:0;transform:translateX(200px);} to{opacity:1;transform:translateX(0);} }
+        @keyframes slideTop{ from{opacity:0;transform:translateY(-150px);} to{opacity:1;transform:translateY(0);} }
+        @keyframes slideBottom{ from{opacity:0;transform:translateY(150px);} to{opacity:1;transform:translateY(0);} }
+        @keyframes zoomIn{ from{opacity:0;transform:scale(.6);} to{opacity:1;transform:scale(1);} }
+        @keyframes rotateIn{ from{opacity:0;transform:rotate(-10deg) scale(.8);} to{opacity:1;transform:rotate(0deg) scale(1);} }
+        @keyframes flipIn{ from{opacity:0;transform:perspective(800px) rotateY(90deg);} to{opacity:1;transform:perspective(800px) rotateY(0);} }
+        @keyframes bounceIn{ 0%{opacity:0;transform:scale(.5);} 60%{opacity:1;transform:scale(1.08);} 100%{transform:scale(1);} }
+
+        /* New 8 Additional Animations */
+        @keyframes elasticPop {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.1); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+        @keyframes twistZoom {
+            from { opacity: 0; transform: rotate(-45deg) scale(0.5); filter: blur(4px); }
+            to { opacity: 1; transform: rotate(0deg) scale(1); filter: blur(0); }
+        }
+        @keyframes perspectiveDrop {
+            from { opacity: 0; transform: perspective(1000px) translateZ(300px) translateY(-100px); }
+            to { opacity: 1; transform: perspective(1000px) translateZ(0) translateY(0); }
+        }
+        @keyframes flipHorizontal {
+            from { opacity: 0; transform: perspective(800px) rotateX(90deg); }
+            to { opacity: 1; transform: perspective(800px) rotateX(0deg); }
+        }
+        @keyframes rollInLeft {
+            from { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
+            to { opacity: 1; transform: translateX(0px) rotate(0deg); }
+        }
+        @keyframes cinematicFade {
+            from { opacity: 0; filter: brightness(3) blur(8px); transform: scale(1.03); }
+            to { opacity: 1; filter: brightness(1) blur(0); transform: scale(1); }
+        }
+        @keyframes skewSlide {
+            from { opacity: 0; transform: translateX(150px) skewX(-15deg); }
+            to { opacity: 1; transform: translateX(0) skewX(0deg); }
+        }
+        @keyframes smoothReveal {
+            from { opacity: 0; transform: scale(0.95) translateY(10px); clip-path: inset(10% 10% 10% 10%); }
+            to { opacity: 1; transform: scale(1) translateY(0); clip-path: inset(0% 0% 0% 0%); }
+        }
+    </style>
+
+    <div style="border-radius: 18px; overflow: hidden;"> 
+        <a href="mega-sale.html" style="display: block; border-radius: 18px; overflow: hidden;"> 
+            <img 
+                id="promoBanner" 
+                src="https://i.ibb.co/zhP4C07K/mega-sale.png" 
+                alt="ads" 
+                style="width: 100%; height: auto; display: block; border-radius: 18px; -webkit-border-radius: 18px; animation-duration: 1s; animation-fill-mode: both;"
+            > 
+        </a> 
+    </div>
+
+    <script>
+        (function() {
+            const img = document.getElementById("promoBanner");
+            
+            // Comprehensive selection list containing all 16 distinct styles
+            const animations = [
+                "slideLeft", "slideRight", "slideTop", "slideBottom", 
+                "zoomIn", "rotateIn", "flipIn", "bounceIn",
+                "elasticPop", "twistZoom", "perspectiveDrop", "flipHorizontal",
+                "rollInLeft", "cinematicFade", "skewSlide", "smoothReveal"
+            ];
+
+            function animateBanner(){
+                img.style.animation = "none";
+                img.offsetHeight; // Triggers reflow logic execution setup
+                const random = animations[Math.floor(Math.random() * animations.length)];
+                img.style.animation = random + " 1s cubic-bezier(0.25, 1, 0.5, 1) both";
+            }
+
+            animateBanner();
+            setInterval(animateBanner, 4000);
+        })();
+    </script>
 </section>
-
-<style>
-#promoBanner{
-    width:100%;
-    height:auto;
-    display:block;
-    animation-duration:1s;
-    animation-fill-mode:both;
-}
-
-/* Left */
-@keyframes slideLeft{
-    from{opacity:0;transform:translateX(-200px);}
-    to{opacity:1;transform:translateX(0);}
-}
-
-/* Right */
-@keyframes slideRight{
-    from{opacity:0;transform:translateX(200px);}
-    to{opacity:1;transform:translateX(0);}
-}
-
-/* Top */
-@keyframes slideTop{
-    from{opacity:0;transform:translateY(-150px);}
-    to{opacity:1;transform:translateY(0);}
-}
-
-/* Bottom */
-@keyframes slideBottom{
-    from{opacity:0;transform:translateY(150px);}
-    to{opacity:1;transform:translateY(0);}
-}
-
-/* Zoom */
-@keyframes zoomIn{
-    from{opacity:0;transform:scale(.6);}
-    to{opacity:1;transform:scale(1);}
-}
-
-/* Rotate */
-@keyframes rotateIn{
-    from{opacity:0;transform:rotate(-10deg) scale(.8);}
-    to{opacity:1;transform:rotate(0deg) scale(1);}
-}
-
-/* Flip */
-@keyframes flipIn{
-    from{opacity:0;transform:perspective(800px) rotateY(90deg);}
-    to{opacity:1;transform:perspective(800px) rotateY(0);}
-}
-
-/* Bounce */
-@keyframes bounceIn{
-    0%{opacity:0;transform:scale(.5);}
-    60%{opacity:1;transform:scale(1.08);}
-    100%{transform:scale(1);}
-}
-</style>
-
    
    
    
@@ -1461,108 +2610,48 @@
 <section class="container bg-white max-w-[1280px] w-full mx-auto my-10 px-5 py-12 z-10 flex-grow pt-4">
         <div class="flex justify-between items-end mb-6 border-b border-gray-100 pb-2">
             <h2 class="text-2xl font-extrabold text-textDark">Recommended For You</h2>
-            <a href="supplier-order.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
+            <a href="all-product.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
         </div>
 
         <!-- Product Grid (8 items) -->
         <div class=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-8">
             
             <!-- Standard B2B Product Card Function -->
-            
-			<!-- Card 1 -->
-          <!-- Product Card 1-->
-<div class="group relative bg-white border border-gray-100 rounded-2xl p-3 overflow-hidden
-            shadow-sm hover:shadow-xl hover:shadow-gray-200/60
-            hover:-translate-y-1 transition-all duration-500 ease-out">
 
+<!-- Product Card 1-->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
     <!-- Image Area -->
-    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square 
-                flex items-center justify-center mb-4 rounded-xl overflow-hidden">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
 
-        <img
-            src="https://i.ibb.co/KxWRMc7f/lap3.jpg"
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-            alt="Product">
-
+        <img src="https://i.ibb.co/KxWRMc7f/lap3.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
 
         <!-- Wishlist -->
-        <div class="absolute top-3 right-3 opacity-0 translate-y-2
-                    group-hover:opacity-100 group-hover:translate-y-0
-                    transition-all duration-300">
-
-            <button class="w-9 h-9 bg-white rounded-full shadow-md
-                           flex items-center justify-center
-                           text-gray-600 hover:text-red-500 transition">
-
-                <i class="far fa-heart"></i>
-
-            </button>
-
-        </div>
-
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500 transition">
+                <i class="far fa-heart"></i></button> </div>
     </div>
-
 
     <!-- Content -->
     <div class="text-center px-2">
-
         <!-- Title -->
-        <a href="product.html"
-           class="block text-sm font-semibold text-gray-800
-                  hover:text-blue-600 transition-colors duration-300
-                  line-clamp-2 min-h-[40px]">
-
-            Classic Wool Fedora Hat Wholesale
-
-        </a>
-
-
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 line-clamp-2 min-h-[40px]">
+           Dell Inspiration Laptop  </a>
         <!-- Rating -->
-        <div class="flex justify-center items-center gap-1 
-                    text-yellow-400 text-xs my-2">
-
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-
-            <span class="text-gray-400 ml-1">
-                (4 Reviews)
-            </span>
-
+            <span class="text-gray-400 ml-1">   (4 Reviews)  </span>
         </div>
-
-
         <!-- Price -->
-        <div class="text-lg font-bold text-gray-900 mb-1">
-
-            $5.00 - $8.00
-
-        </div>
-
-
+        <div class="text-lg font-bold text-gray-900 mb-1"> $5.00-$8.00 </div>
         <!-- MOQ -->
-        <div class="inline-block px-3 py-1 mb-4
-                    text-xs font-medium
-                    bg-blue-50 text-blue-700 rounded-full">
-
-            MOQ: 50 Pieces
-
-        </div>
-
-
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-medium bg-blue-50 text-blue-700 rounded-full"> MOQ: 50 Pieces </div>
         <!-- Button -->
-        <a href="supplier-order.html" class="mt-2 inline-flex items-center justify-center w-full
-                  bg-[#2f5bb7] text-white text-sm font-semibold
-                  py-2.5 rounded-xl
-                  shadow-sm hover:shadow-md
-                  hover:bg-[#23489a]
-                  transition-all duration-300">
-
-            <i class="fas fa-comments mr-2"></i>  Contact Supplier </a>
-    </div>
-
+        <a href="supplier-order.html" class="mt-2 inline-flex items-center justify-center w-full  bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i>  Contact Supplier </a>  
+	</div>
 </div>
 
 
@@ -1570,221 +2659,27 @@
 
 
 
-<!-- Product Card 2 -->
-<div class="group relative bg-white border border-gray-100 rounded-2xl p-3 overflow-hidden
-            shadow-sm hover:shadow-xl hover:shadow-gray-200/60
-            hover:-translate-y-1 transition-all duration-500 ease-out">
-
-
-    <!-- Image Area -->
-    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square 
-                flex items-center justify-center mb-4 rounded-xl overflow-hidden">
-
-        <img
-            src="https://i.ibb.co/KxWRMc7f/lap3.jpg"
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-            alt="Product">
-
-
-        <!-- Wishlist -->
-        <div class="absolute top-3 right-3 opacity-0 translate-y-2
-                    group-hover:opacity-100 group-hover:translate-y-0
-                    transition-all duration-300">
-
-            <button class="w-9 h-9 bg-white rounded-full shadow-md
-                           flex items-center justify-center
-                           text-gray-600 hover:text-red-500">
-
-                <i class="far fa-heart"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- Content -->
-    <div class="text-center px-2">
-
-
-        <!-- Title -->
-        <a href="product.html"
-           class="block text-sm font-semibold text-gray-800
-                  hover:text-blue-600 transition-colors
-                  line-clamp-2 min-h-[40px]">
-
-            Classic Wool Fedora Hat Wholesale
-
-        </a>
-
-
-
-        <!-- Rating -->
-        <div class="flex justify-center items-center gap-1 
-                    text-yellow-400 text-xs my-2">
-
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-
-            <span class="text-gray-400 ml-1">
-                (4 Reviews)
-            </span>
-
-        </div>
-
-
-
-        <!-- Price + Pieces -->
-        <div class="flex items-center justify-center gap-3 mb-3">
-            <!-- Price -->
-            <div class="text-lg font-bold text-gray-900">
-                $5.00 - $8.00
-            </div>
-            <!-- Divider -->
-            <div class="h-5 w-px bg-gray-200"></div>
-            <!-- Pieces -->
-            <div class="text-xs font-medium 
-                        bg-blue-50 text-blue-700
-                        px-3 py-1 rounded-full">
-
-                50 Pieces
-            </div>
-        </div>
-        <!-- Button -->
-        <a href="supplier-order.html"
-           class="inline-flex items-center justify-center w-full
-                  bg-[#2f5bb7] text-white text-sm font-semibold
-                  py-2.5 rounded-xl
-                  shadow-sm hover:shadow-md
-                  hover:bg-[#23489a]
-                  transition-all duration-300">
-
-            <i class="fas fa-comments mr-2"></i>
-
-            Contact Supplier
-        </a>
-    </div>
+<!-- Product Card 2 --> 
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/KxWRMc7f/lap3.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Think Pad Laptop </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
 </div>
 
 
 
 
-
-<!-- Product Card -->
-<div class="group relative bg-white border border-gray-100 rounded-2xl p-2 overflow-hidden
-            shadow-sm hover:shadow-xl hover:shadow-gray-200/60
-            hover:-translate-y-1 transition-all duration-500 ease-out">
-
-
-    <!-- Image Area -->
-    <div class="relative bg-gray-50 h-48 
-                flex items-center justify-center rounded-xl overflow-hidden">
-
-        <img
-            src="https://i.ibb.co/KxWRMc7f/lap3.jpg"
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-            alt="Product">
-
-
-        <!-- Wishlist -->
-        <div class="absolute top-2 right-2 opacity-0 translate-y-2
-                    group-hover:opacity-100 group-hover:translate-y-0
-                    transition-all duration-300">
-
-            <button class="w-8 h-8 bg-white rounded-full shadow
-                           flex items-center justify-center
-                           text-gray-600 hover:text-red-500">
-
-                <i class="far fa-heart"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- Content -->
-    <div class="text-center px-1 pt-2">
-
-
-        <!-- Title -->
-        <a href="product.html"
-           class="block text-sm font-semibold text-gray-800
-                  hover:text-blue-600 transition-colors
-                  line-clamp-1">
-
-            Classic Wool Fedora Hat Wholesale
-
-        </a>
-
-
-
-        <!-- Rating -->
-        <div class="flex justify-center items-center gap-1 
-                    text-yellow-400 text-xs mt-1">
-
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-
-            <span class="text-gray-400 ml-1">
-                (4)
-            </span>
-
-        </div>
-
-
-
-        <!-- Price + Pieces -->
-        <div class="flex items-center justify-center gap-2 mt-2 mb-2">
-
-
-            <div class="text-base font-bold text-gray-900">
-                $5.00 - $8.00
-            </div>
-
-
-            <div class="h-4 w-px bg-gray-200"></div>
-
-
-            <div class="text-[11px] font-medium
-                        bg-blue-50 text-blue-700
-                        px-2 py-1 rounded-full">
-
-                50 pcs
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- Button -->
-        <a href="supplier-order.html"
-           class="inline-flex items-center justify-center w-full
-                  bg-[#2f5bb7] text-white text-sm font-semibold
-                  py-2 rounded-lg
-                  hover:bg-[#23489a]
-                  transition-all duration-300">
-
-            <i class="fas fa-comments mr-2"></i>
-            Contact Supplier
-
-        </a>
-
-
-    </div>
-
+<!-- Product Card 3-->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/tTqCnpPS/wat4.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Think Pad Laptop </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
 </div>
 
 
@@ -1794,35 +2689,30 @@
 
 
 
+<!-- Card 4 --> 
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/5ftpmsk/trolly.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Travelling Leather  </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
+</div>
 
 
 
 
-            <!-- Card 2 -->
-
-
-            <!-- Card 3 -->   
             <!-- Card 5 to 8 (Replicating pattern for grid completion) -->
             <!-- Just inserting placeholder blocks to match the screenshot density -->
-            <div class="group relative bg-white border border-transparent hover:border-borderGray hover:shadow-lg transition duration-300 p-2 rounded"><div class="relative bg-gray-50 aspect-square flex items-center justify-center mb-4 rounded"><img
-  src="https://i.ibb.co/tTqCnpPS/wat4.jpg"
-  class="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition duration-500"
-  alt="Product"> </div><div class="text-center px-2"><a href="product.html" class="text-sm text-textDark font-medium hover-primary line-clamp-1 mb-1">Rich Watch</a><div class="font-bold text-textDark mb-1">$35.00</div><div class="text-xs text-gray-500">MOQ:50 Sets</div> 
-  
-  <a href="supplier-order.html"
-   class="inline-flex items-center justify-center w-full bg-white text-[#2f5bb7] text-sm font-semibold py-2 px-4 rounded-md border border-[#2f5bb7] transition-all duration-300 shadow-sm hover:bg-blue-600 hover:border-green-600 hover:text-white hover:shadow-lg transform hover:-translate-y-0.5">
-    <i class="fas fa-comments mr-2"></i>
-    Contact Supplier
-</a>
 
-</div></div>
             
 
            
-            
+   
+   
 
 </div>
-
+  <!-- Product card ends -->
 
 
         <!-- Large Bottom Banners (Screenshot 3 bottom) -->
@@ -1859,7 +2749,7 @@
 
 <!-- gird view starts -->
     <!-- trending Columns -->
-<div id="main-layout" class="bg-white rounded-xl p-6 shadow-lg" style="max-width: 1280px; margin: 10px auto; --cards-per-row: 4; ">
+<div id="main-layout" class="bg-white rounded-xl p-6 shadow-lg" style="max-width: 1280px; margin:30px auto; --cards-per-row: 4; ">
         
    <div style=" background: white; color: #004080; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-radius: 10px; margin-bottom: 25px; gap: 15px;  "> <h1 style=" margin: 0; font-size: 24px; font-weight: 800;  text-transform: uppercase; letter-spacing: 0.5px; "> Category Trends Grid </h1>
 
@@ -1874,13 +2764,18 @@
 	<!-- 4 Columns -->     <a href="#"        title="4 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','4'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ⠿     </a>      
 	<!-- 6 Columns -->     <a href="#"        title="6 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','6'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ⣿     </a>      
 	<!-- 8 Columns -->     <a href="#"        title="8 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','8'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ▦     </a>
+	
+	<a href="all-product.html"
+       style="background:#004080; color:white; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:.3s;">
+        See More →
+    </a>
 
 	</div>
 		
 			
     </div>
 
-<section style=" display: flex; flex-direction: row; align-items: stretch; gap: 20px; background: white; padding: 20px; border-radius: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.04); margin-bottom: 30px; ">
+<section style=" display: flex; flex-direction: row; align-items: stretch; gap: 20px; background: white; padding: 20px; border-radius: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.04); ">
         
        <div style=" background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)), url('https://i.ibb.co/5gYpwZ0g/beautypp.jpg'); width: 100%; max-width: 220px; flex: 0 0 280px; height: auto; position: relative; border-radius: 10px; overflow: hidden; background-size: cover; background-position: center; display: flex; align-items: flex-start; padding: 30px; box-sizing: border-box; "> <h2 style="color: white; margin: 0; font-size: 24px; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.5); line-height: 1.3;">Beauty &<br>Personal Care</h2> </div>
 	   
@@ -2192,7 +3087,6 @@
             <a href="#c1-p4" style="position: absolute; right: 8px; z-index: 10; background: white; border: 1px solid #ddd; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.15);">&gt;</a>
         </div>
     </section>
-
 </div>
 
    <!-- gird view ends -->
@@ -2352,7 +3246,7 @@
     <section class="container bg-white max-w-[1280px] w-full mx-auto px-5 py-12 z-10 flex-grow pt-4">
         <div class="flex justify-between items-end mb-6 border-b border-gray-100 pb-2">
             <h2 class="text-2xl font-extrabold text-textDark">Trending Wholesale Products</h2>
-            <a href="supplier-order.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
+            <a href="all-product.html" class="text-sm font-semibold text-textDark hover-primary">More Products <i class="fas fa-arrow-right ml-1"></i></a>
         </div>
 
         <!-- Product Grid (8 items) -->
@@ -2483,6 +3377,10 @@
 	<!-- 4 Columns -->     <a href="#"        title="4 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','4'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ⠿     </a>      
 	<!-- 6 Columns -->     <a href="#"        title="6 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','6'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ⣿     </a>      
 	<!-- 8 Columns -->     <a href="#"        title="8 Columns"        onclick="document.getElementById('main-layout').style.setProperty('--cards-per-row','8'); return false;"        style="background:#fff; color:#b30000; width:34px; height:34px; border-radius:6px; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:18px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,.1);">         ▦     </a>
+	<a href="all-product.html"
+       style="background:#004080; color:white; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:.3s;">
+        See More →
+    </a>
 
 	</div>
 		
@@ -2751,7 +3649,7 @@
   </style>
   
   
-<div class="showcase-container" style="width: 100%; max-width: 1280px;  margin:20px auto; background-color: #ffffff;  border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+<div class="showcase-container" style="width: 100%; max-width: 1280px;  margin:20px auto; background-color: #ffffff;   border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
     
     <div style="margin: 20px; background: white; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #d4af37; position: relative; overflow: hidden;">
       
@@ -2778,10 +3676,6 @@
           </div>
         </div>
       </div>
-	  <a href="supplier.html"
-   style="position:absolute;top:45px;right:70px;padding:8px 18px;background:#004080;color:#fff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:600;transition:.3s;">
-    See All →
-</a>
 	  
 	  
 
@@ -3076,13 +3970,21 @@
 	  
 	  
   
-	  
-	  
-	  
+
 	  
 
     </div>
+	
+<div class="relative pb-5 mb-10 overflow-visible">
 
+    <div class="grid">
+        <!-- cards -->
+    </div>
+
+    <a href="supplier.html" class="absolute left-1/2 bottom-[-20px] -translate-x-1/2 bg-[#1e3a8a] text-white font-semibold py-2 px-10 rounded-xl shadow-lg z-[999]"> 
+	See All → </a>
+
+</div>
   </div>
   
 
@@ -3108,17 +4010,10 @@
 
 
 
-<section id="trending-electronics"
-         class="container mx-auto px-4 max-w-[1280px] mt-16 mb-16 bg-gray-50 pt-6"
-         style="--view-cols: 4; --mobile-cols: 2; width: 100%;">
+<section id="trending-electronics" class="container mx-auto px-4 max-w-[1280px] mt-16 mb-16 bg-gray-50 pt-6" style="--view-cols: 4; --mobile-cols: 2; width: 100%;">
 
-
-
-    
     <div class="flex justify-between items-center mb-6 border-b border-gray-100 pb-4">
-        <div>
-            <h2 class="text-2xl font-extrabold text-[#2d3748]">Trending Electronics Products</h2>
-        </div>
+        <div> <h2 class="text-2xl font-extrabold text-[#2d3748]">Trending Electronics Products</h2> </div>
         
         <div class="flex items-center gap-2 bg-gray-50 p-1.5 rounded-lg border border-gray-200">
             <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider px-2 hidden sm:inline">
@@ -3144,6 +4039,10 @@
                     class="w-8 h-8 flex items-center justify-center bg-white border border-gray-200 rounded text-gray-700 hover:text-blue-600 hover:border-blue-500 transition shadow-sm" title="8 Cards Per Row">
                 <span class="font-bold text-xs">8</span>
             </button>
+			<a href="all-product.html"
+       style="background:#004080; color:white; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:.3s;">
+        See More →
+    </a>
         </div>
     </div>
 
@@ -3478,12 +4377,12 @@
             </button>
 
             <!-- Slider Container -->
-            <div id="supplier-slider" class="flex gap-6 overflow-x-auto scroll-smooth py-4 px-2 custom-scrollbar snap-x">
+            <div id="supplier-slider" class="flex gap-2 overflow-x-auto scroll-smooth py-4 px-2 custom-scrollbar snap-x">
                 
                 <!-- Card 1 (Jingjiang Fuji Technology) -->
-                <div class="supplier-card snap-start shrink-0 w-[310px] md:w-[340px] rounded-2xl bg-white border border-slate-200/80 hover:border-indigo-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="tech">
+                <div class="supplier-card snap-start shrink-0 w-[300px] md:w-[330px] rounded-xl bg-white border border-slate-200/80 hover:border-indigo-500/40 p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="tech">
                     <!-- Card Gradient Top bar -->
-                    <div class="h-2 w-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-4"></div>
+                    <div class="h-2 w-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-2"></div>
                     
                     <!-- Supplier Badges -->
                     <div class="flex items-center gap-2 mb-3 flex-wrap">
@@ -3739,6 +4638,81 @@
                         </svg>
                     </button>
                 </div>
+				
+				
+				
+				
+				
+				<!-- card 5-->
+				<div class="supplier-card snap-start shrink-0 w-[300px] md:w-[330px] rounded-xl bg-white border border-slate-200/80 hover:border-indigo-500/40 px-3 py-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50" data-category="tech">
+                    <div class="h-2 w-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-2"></div>
+                    
+                    <div class="flex items-center gap-1.5 mb-3 flex-wrap">
+                        <span class="inline-flex items-center gap-1 bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2 py-1 rounded-full font-bold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                            Verified Supplier
+                        </span>
+                        <span class="bg-amber-500/10 text-amber-700 border border-amber-500/20 text-[10px] px-2 py-1 rounded-full font-bold">
+                            Gold
+                        </span>
+                        <span class="bg-blue-500/10 text-blue-700 border border-blue-500/20 text-[10px] px-2 py-1 rounded-full font-bold">
+                            4 Yrs
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug hover:text-indigo-600 transition-colors cursor-pointer" onclick="openDetails(1)">
+                        Jingjiang Fuji Technology Co., Ltd.
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">High-Precision Industrial Gear & Parts Manufacturer</p>
+
+                    <div class="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                        <div class="flex items-center gap-1.5 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Shanghai, China</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-slate-600">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <span class="truncate">Main Products: weichai, diesel engine parts</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 mt-5">
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(1)">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=200" alt="Industrial machinery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 cursor-pointer" onclick="openDetails(1)">
+                            <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=200" alt="Engineering components" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-2 left-2 text-[9px] bg-white/95 text-slate-800 px-2 py-0.5 rounded-md font-bold shadow-sm">Negotiable</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openDetails(1)" class="w-full mt-4 py-2.5 rounded-xl bg-slate-50 hover:bg-indigo-600 text-xs font-semibold text-slate-700 hover:text-white border border-slate-200 hover:border-indigo-500 transition-all flex items-center justify-center gap-2">
+                        <span>View Details & Connect</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 
             </div>
 
@@ -4071,7 +5045,7 @@
 
         <div class="controls" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; width: 100%;">
             <div style="display: flex; flex-direction: column; align-items: flex-start; min-width: 200px;">
-                <h1 style="font-size: 22px; font-weight: 800; color: #0c1e36; margin: 0; letter-spacing: -0.5px;">Category</h1>
+                <h1 style="font-size: 22px; font-weight: 800; color: #0c1e36; margin: 0; letter-spacing: -0.5px;">Category View</h1>
                 <div style="display: flex; gap: 4px; margin-top: 8px; align-items: center;">
                     <div style="width: 16px; height: 2px; background-color: #2563eb; border-radius: 1px;"></div>
                     <div style="width: 4px; height: 4px; background-color: #2563eb; border-radius: 50%;"></div>
@@ -4088,13 +5062,11 @@
                 <label for="grid-8">8</label>
                 <label for="grid-16">16</label>
                 <label for="grid-32">32</label>
+				<a href="all-product.html" style="background:#004080; color:white; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:.3s;"> See More → </a>
             </div>
         </div>
 
-        <div class="see-all-wrapper" style="position:relative; width: 100%; height: 20px; margin-bottom: 10px;">
-            <label for="see-all-toggle" style="position:absolute; top:0; right:0; text-decoration:none; color:#007bff; font-weight:600; font-size:14px; cursor:pointer; user-select:none; background:none; box-shadow:none; padding:0; border-radius:0;">
-                </label>
-        </div>
+    
 
         <div id="category-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap:12px; width: 100%; box-sizing: border-box;">
             
@@ -4102,7 +5074,7 @@
                 <div style="width:100px; height:100px; margin:0 auto; border-radius:50%; overflow:hidden;"> 
                     <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800" alt="Electronics" style="width:100%; height:100%; object-fit:cover;"> 
                 </div> 
-                <h4 style="font-size:12px; font-weight:700; color:#333; margin:10px 0 0;">Electronics 1</h4> 
+                <h4 style="font-size:12px; font-weight:700; color:#333; margin:10px 0 0;">Electronics </h4> 
             </a>
 
 <!-- Electronics -->
@@ -4265,7 +5237,7 @@
 
 
 <div style="font-family: sans-serif; max-width: 1280px; margin: 40px auto 10px auto; padding: 0 15px;">
-    <h2 style="font-size: 24px; font-weight: 700; color: #222; margin: 0 0 5px 0;">Recommended for You</h2>
+    <h2 style="font-size: 24px; font-weight: 700; color: #222; margin: 0 0 5px 0;">Latest Recommended for You</h2>
     
     <div style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 10px 15px; border-radius: 10px; border: 1px solid #e2e8f0; margin-top: 15px;">
         <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #64748b; font-weight: 500;">
@@ -4329,6 +5301,7 @@
                     <div style="display: flex; gap: 2px;"><div style="width: 6px; height: 6px; background: #64748b; border-radius: 1px;"></div><div style="width: 6px; height: 6px; background: #64748b; border-radius: 1px;"></div></div>
                     <div style="display: flex; gap: 2px;"><div style="width: 6px; height: 6px; background: #64748b; border-radius: 1px;"></div><div style="width: 6px; height: 6px; background: #64748b; border-radius: 1px;"></div></div>
                 </button>
+				<a href="all-product.html" style="background:#004080; color:white; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:.3s;"> See More → </a>
             </div>
         </div>
     </div>
@@ -5069,7 +6042,7 @@
     <div class="left-info-panel" style="flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; background: #ffffff;">
       <div style="margin-bottom: 20px;">
         <div style="font-size: 28px; font-weight: 800; text-transform: uppercase; line-height: 1.1;">
-          <span style="color: #00112d;">Now REQUEST FOR </span> 
+          <span style="color: #00112d;">QUICK FOR </span> 
           <span style="color: #f97316;">QUOTATION</span>
         </div>
       </div>
@@ -5402,13 +6375,25 @@
             <div style="width: 40px; height: 2px; background-color: #f97316;"></div>
             <div style="width: 6px; height: 6px; background-color: #f97316; border-radius: 50%; margin: 0 5px;"></div>
             <div style="width: 40px; height: 2px; background-color: #f97316;"></div>
+			
+			
         </div>
         <p style="font-size: 16px; color: #64748b; margin-bottom:10px; font-weight: 500;">Find top categories and products from trusted global suppliers.</p>
 
-        <div style="display: flex; align-items: center; justify-content: center; margin-bottom:20px;">
-            <div style="width: 25px; height: 3px; background-color: #2563eb; border-radius: 2px;"></div>
-            <div style="width: 4px; height: 4px; background-color: #2563eb; border-radius: 50%; margin-left: 4px;"></div>
-        </div>
+        
+		
+	<div style="position:relative; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">
+    <!-- Middle decoration -->
+			<div style="display:flex; align-items:center;">
+			<div style="width:25px; height:3px; background-color:#2563eb; border-radius:2px;"></div>
+			<div style="width:4px; height:4px; background-color:#2563eb; border-radius:50%; margin-left:4px;"></div>
+		</div>
+    <!-- Right Corner Button -->
+		<a href="all-product.html" style="position:absolute; right:0; background:#1e3a8a; color:white; padding:8px 22px; border-radius:8px; text-decoration:none; font-size:14px; font-weight:700;">See All →</a>
+	</div>
+		
+		
+
 
         <div class="grid-container" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; align-items: stretch;">
             
@@ -5544,353 +6529,252 @@
 
 
 
-<section style="max-width:1280px;margin:20px auto;text-align:center;overflow:hidden;position:relative;"> <a href="/" style="display:block;"> <img id="b2bxHeroBanner" src="https://i.ibb.co/9k20f6J7/emmar.png" alt="Mega Sale" style=" width:100%; height:auto; display:block; border-radius:18px; transition:transform .45s ease, box-shadow .45s ease; animation:b2bxFloating 6s ease-in-out infinite, b2bxKenBurns 14s ease-in-out infinite alternate, b2bxShadowPulse 3s ease-in-out infinite; "> </a> 
+
+
+
+
+<!-- Emmar ads-->
+<section style="max-width:1280px; margin:20px auto; text-align:center; overflow:hidden; position:relative;">
+    
+    <style>
+        /* ========= AMBIENT/LOOP EFFECTS ========= */
+        @keyframes b2bxFloating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes b2bxKenBurns {
+            from { transform: scale(1); }
+            to { transform: scale(1.03); }
+        }
+        @keyframes b2bxShadowPulse {
+            0%, 100% { filter: drop-shadow(0 12px 20px rgba(0,0,0,.12)); }
+            50% { filter: drop-shadow(0 22px 35px rgba(0,0,0,.20)); }
+        }
+
+        /* ========= EXTRA ENTRANCE ANIMATIONS ========= */
+        @keyframes b2bxFromLeft { from { opacity:0; transform:translateX(-250px) scale(.95); } to { opacity:1; transform:translateX(0) scale(1); } }
+        @keyframes b2bxFromRight { from { opacity:0; transform:translateX(250px) scale(.95); } to { opacity:1; transform:translateX(0) scale(1); } }
+        @keyframes b2bxFromTop { from { opacity:0; transform:translateY(-180px); } to { opacity:1; transform:translateY(0); } }
+        @keyframes b2bxFromBottom { from { opacity:0; transform:translateY(180px); } to { opacity:1; transform:translateY(0); } }
+        @keyframes b2bxZoomFade { 0% { opacity:0; transform:scale(.82); } 100% { opacity:1; transform:scale(1); } }
+        @keyframes b2bxRotateFade { 0% { opacity:0; transform:rotate(-8deg) scale(.9); } 100% { opacity:1; transform:rotate(0deg) scale(1); } }
+        @keyframes b2bxFlipFade { 0% { opacity:0; transform:perspective(1200px) rotateY(90deg); } 100% { opacity:1; transform:perspective(1200px) rotateY(0deg); } }
+
+        /* ========= NEW REQUESTED STYLES ========= */
+        @keyframes b2bxPureFadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes b2bxPureFadeOut { from { opacity: 1; } to { opacity: 0; } }
+        @keyframes b2bxZoomInClean { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+        @keyframes b2bxZoomOutClean { from { opacity: 0; transform: scale(1.5); } to { opacity: 1; transform: scale(1); } }
+        @keyframes b2bxFlyInCinema { 0% { opacity: 0; transform: perspective(800px) translateZ(-400px) translateY(50px); } 100% { opacity: 1; transform: perspective(800px) translateZ(0) translateY(0); } }
+        @keyframes b2bxFlyOutCinema { 0% { opacity: 0; transform: perspective(800px) translateZ(400px) translateY(-50px); } 100% { opacity: 1; transform: perspective(800px) translateZ(0) translateY(0); } }
+
+        /* ========= HOVER EFFECTS ========= */
+        #b2bxHeroBanner:hover {
+            transform: scale(1.02) rotateX(2deg) rotateY(-2deg);
+            box-shadow: 0 30px 60px rgba(0,0,0,.22);
+            cursor: pointer;
+        }
+    </style>
+
+    <a href="/" style="display:block; border-radius:18px; overflow:hidden;"> 
+        <img 
+            id="b2bxHeroBanner" 
+            src="https://i.ibb.co/9k20f6J7/emmar.png" 
+            alt="Mega Sale" 
+            style="width:100%; height:auto; display:block; border-radius:18px; transition:transform .45s ease, box-shadow .45s ease; animation:b2bxFloating 6s ease-in-out infinite, b2bxKenBurns 14s ease-in-out infinite alternate, b2bxShadowPulse 3s ease-in-out infinite;"
+        > 
+    </a> 
+
+    <script>
+        (function() {
+            const b2bxHero = document.getElementById("b2bxHeroBanner");
+            
+            // Comprehensive effect array map tracking all 13 customized options
+            const b2bxEffects = [
+                "b2bxFromLeft", "b2bxFromRight", "b2bxFromTop", "b2bxFromBottom",
+                "b2bxZoomFade", "b2bxRotateFade", "b2bxFlipFade",
+                "b2bxPureFadeIn", "b2bxPureFadeOut", "b2bxZoomInClean", 
+                "b2bxZoomOutClean", "b2bxFlyInCinema", "b2bxFlyOutCinema"
+            ];
+
+            function b2bxPlayBannerEffect() {
+                const pick = b2bxEffects[Math.floor(Math.random() * b2bxEffects.length)];
+                
+                // Clear state configuration to enforce immediate trigger cycle recalculation
+                b2bxHero.style.animation = "none";
+                void b2bxHero.offsetWidth; // Reflow reset hook
+
+                // Apply randomized entrance transition safely combined alongside background loops
+                b2bxHero.style.animation = 
+                    pick + " .9s cubic-bezier(0.25, 1, 0.5, 1) both, " +
+                    "b2bxFloating 6s ease-in-out infinite, " +
+                    "b2bxKenBurns 14s ease-in-out infinite alternate, " +
+                    "b2bxShadowPulse 3s ease-in-out infinite";
+            }
+
+            // Initialize instantly and bind intervals safely
+            b2bxPlayBannerEffect();
+            setInterval(b2bxPlayBannerEffect, 5000);
+        })();
+    </script>
 </section>
 
-<style>
-
-/* ========= FLOAT ========= */
-
-@keyframes b2bxFloating{
-    0%,100%{transform:translateY(0px);}
-    50%{transform:translateY(-8px);}
-}
-
-/* ========= KEN BURNS ========= */
-
-@keyframes b2bxKenBurns{
-    from{
-        transform:scale(1);
-    }
-    to{
-        transform:scale(1.03);
-    }
-}
-
-/* ========= SHADOW ========= */
-
-@keyframes b2bxShadowPulse{
-
-    0%,100%{
-        filter:drop-shadow(0 12px 20px rgba(0,0,0,.12));
-    }
-
-    50%{
-        filter:drop-shadow(0 22px 35px rgba(0,0,0,.20));
-    }
-
-}
-
-/* ========= RANDOM ENTRANCE ========= */
-
-@keyframes b2bxFromLeft{
-from{
-opacity:0;
-transform:translateX(-250px) scale(.95);
-}
-to{
-opacity:1;
-transform:translateX(0) scale(1);
-}
-}
-
-@keyframes b2bxFromRight{
-from{
-opacity:0;
-transform:translateX(250px) scale(.95);
-}
-to{
-opacity:1;
-transform:translateX(0) scale(1);
-}
-}
-
-@keyframes b2bxFromTop{
-from{
-opacity:0;
-transform:translateY(-180px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes b2bxFromBottom{
-from{
-opacity:0;
-transform:translateY(180px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes b2bxZoomFade{
-
-0%{
-opacity:0;
-transform:scale(.82);
-}
-
-100%{
-opacity:1;
-transform:scale(1);
-}
-
-}
-
-@keyframes b2bxRotateFade{
-
-0%{
-opacity:0;
-transform:rotate(-8deg) scale(.9);
-}
-
-100%{
-opacity:1;
-transform:rotate(0deg) scale(1);
-}
-
-}
-
-@keyframes b2bxFlipFade{
-
-0%{
-opacity:0;
-transform:perspective(1200px) rotateY(90deg);
-}
-
-100%{
-opacity:1;
-transform:perspective(1200px) rotateY(0deg);
-}
-
-}
-
-/* ========= PREMIUM HOVER ========= */
-
-#b2bxHeroBanner:hover{
-
-transform:
-scale(1.02)
-rotateX(2deg)
-rotateY(-2deg);
-
-box-shadow:
-0 30px 60px rgba(0,0,0,.22);
-
-cursor:pointer;
-
-}
-
-</style>
 
 
 
 
 
+<!--dib ads-->
+<section style="max-width:1280px; margin:30px auto; text-align:center; overflow:hidden; border-radius:18px;">
+    
+    <style>
+        /* ========= ORIGINAL ANIMATIONS ========= */
+        @keyframes dibAdsDiagonalLeft {
+            from { opacity: 0; transform: translate(-180px,-120px) rotate(-8deg); }
+            to { opacity: 1; transform: translate(0,0) rotate(0); }
+        }
+        @keyframes dibAdsDiagonalRight {
+            from { opacity: 0; transform: translate(180px,120px) rotate(8deg); }
+            to { opacity: 1; transform: translate(0,0) rotate(0); }
+        }
+        @keyframes dibAdsSwing {
+            0% { opacity: 0; transform: rotate(-18deg); }
+            40% { transform: rotate(12deg); }
+            70% { transform: rotate(-6deg); }
+            100% { opacity: 1; transform: rotate(0); }
+        }
+        @keyframes dibAdsPop {
+            0% { opacity: 0; transform: scale(.3); }
+            70% { transform: scale(1.08); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes dibAdsBlur {
+            0% { opacity: 0; filter: blur(12px); transform: scale(.9); }
+            100% { opacity: 1; filter: blur(0); transform: scale(1); }
+        }
+        @keyframes dibAdsFlipX {
+            0% { opacity: 0; transform: perspective(1000px) rotateX(90deg); }
+            100% { opacity: 1; transform: perspective(1000px) rotateX(0); }
+        }
+        @keyframes dibAdsElastic {
+            0% { opacity: 0; transform: scale(.5); }
+            40% { transform: scale(1.12); }
+            60% { transform: scale(.92); }
+            80% { transform: scale(1.04); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes dibAdsWobble {
+            0% { opacity: 0; transform: translateX(-120px); }
+            20% { transform: translateX(40px); }
+            40% { transform: translateX(-20px); }
+            60% { transform: translateX(10px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes dibAdsRotateZoom {
+            0% { opacity: 0; transform: scale(.7) rotate(-15deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
 
+        /* ========= 10 NEW DYNAMIC TRANSITION ANIMATIONS ========= */
+        /* 1. Zoom In Clean */
+        @keyframes dibAdsZoomIn {
+            from { opacity: 0; transform: scale(0.4); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        /* 2. Zoom Out Clean */
+        @keyframes dibAdsZoomOut {
+            from { opacity: 0; transform: scale(1.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        /* 3. Fly In Deep */
+        @keyframes dibAdsFlyIn {
+            from { opacity: 0; transform: perspective(800px) translateZ(-500px) translateY(100px); }
+            to { opacity: 1; transform: perspective(800px) translateZ(0) translateY(0); }
+        }
+        /* 4. Fly Out Slide */
+        @keyframes dibAdsFlyOut {
+            from { opacity: 0; transform: perspective(800px) translateZ(400px) translateY(-100px); }
+            to { opacity: 1; transform: perspective(800px) translateZ(0) translateY(0); }
+        }
+        /* 5. Smooth Fade In */
+        @keyframes dibAdsFadeIn {
+            from { opacity: 0; filter: brightness(1.5); }
+            to { opacity: 1; filter: brightness(1); }
+        }
+        /* 6. Cinematic Fade Out Entry */
+        @keyframes dibAdsFadeOutReveal {
+            0% { opacity: 0; filter: contrast(2) brightness(0.2); }
+            100% { opacity: 1; filter: contrast(1) brightness(1); }
+        }
+        /* 7. Bounce Zoom Drop */
+        @keyframes dibAdsBounceZoom {
+            0% { opacity: 0; transform: scale(0.2); }
+            50% { opacity: 1; transform: scale(1.15); }
+            75% { transform: scale(0.93); }
+            100% { transform: scale(1); }
+        }
+        /* 8. 3D Twist Turn */
+        @keyframes dibAdsTwistRotate {
+            from { opacity: 0; transform: rotate(-35deg) scale(0.6); filter: blur(6px); }
+            to { opacity: 1; transform: rotate(0deg) scale(1); filter: blur(0); }
+        }
+        /* 9. Skew Slide Entrance */
+        @keyframes dibAdsSkewSlide {
+            from { opacity: 0; transform: translateX(200px) skewX(-20px); }
+            to { opacity: 1; transform: translateX(0) skewX(0deg); }
+        }
+        /* 10. Shutter Expand Reveal */
+        @keyframes dibAdsShutterExpand {
+            from { opacity: 0; clip-path: inset(30% 30% 30% 30%); transform: scale(0.95); }
+            to { opacity: 1; clip-path: inset(0% 0% 0% 0%); transform: scale(1); }
+        }
+    </style>
 
+    <div style="border-radius:18px; overflow:hidden;"> 
+        <a href="/" style="display:block;"> 
+            <img 
+                id="dibAdsBanner" 
+                src="https://i.ibb.co/4R2VM4yz/dib2.png" 
+                alt="DIB Ads" 
+                style="width:100%; height:auto; display:block; border-radius:18px; transform-origin:center; animation-duration:1.2s; animation-fill-mode:both;"
+            > 
+        </a> 
+    </div>
 
+    <script>
+        (function() {
+            const dibAdsImage = document.getElementById("dibAdsBanner");
+            
+            // Expanded array tracking all 19 animation styles seamlessly
+            const dibAdsEffects = [
+                "dibAdsDiagonalLeft", "dibAdsDiagonalRight", "dibAdsSwing", 
+                "dibAdsPop", "dibAdsBlur", "dibAdsFlipX", 
+                "dibAdsElastic", "dibAdsWobble", "dibAdsRotateZoom",
+                "dibAdsZoomIn", "dibAdsZoomOut", "dibAdsFlyIn", 
+                "dibAdsFlyOut", "dibAdsFadeIn", "dibAdsFadeOutReveal", 
+                "dibAdsBounceZoom", "dibAdsTwistRotate", "dibAdsSkewSlide", 
+                "dibAdsShutterExpand"
+            ];
 
+            function dibAdsAnimate() {
+                dibAdsImage.style.animation = "none";
+                void dibAdsImage.offsetWidth; // Forces execution of a DOM recalculation reflow hook
 
+                const randomEffect = dibAdsEffects[Math.floor(Math.random() * dibAdsEffects.length)];
+                dibAdsImage.style.animation = randomEffect + " 1.2s cubic-bezier(.25, 1, .5, 1) both";
+            }
 
-
-
-<section style="max-width:1280px; margin:30px auto;text-align:center;overflow:hidden;">
-    <div> <a href="/"> <img id="dibAdsBanner" src="https://i.ibb.co/4R2VM4yz/dib2.png" alt="DIB Ads" style="width:100%;height:auto;display:block;  border-radius:18px; "> </a> </div>
+            // Run instantly on load and cycle safely
+            dibAdsAnimate();
+            setInterval(dibAdsAnimate, 4500);
+        })();
+    </script>
 </section>
 
-<style>
 
-#dibAdsBanner{
-    width:100%;
-    height:auto;
-    display:block;
-    transform-origin:center;
-    animation-duration:1.2s;
-    animation-fill-mode:both;
-}
 
-/* Diagonal Left */
 
-@keyframes dibAdsDiagonalLeft{
-    from{
-        opacity:0;
-        transform:translate(-180px,-120px) rotate(-8deg);
-    }
-    to{
-        opacity:1;
-        transform:translate(0,0) rotate(0);
-    }
-}
 
-/* Diagonal Right */
-
-@keyframes dibAdsDiagonalRight{
-    from{
-        opacity:0;
-        transform:translate(180px,120px) rotate(8deg);
-    }
-    to{
-        opacity:1;
-        transform:translate(0,0) rotate(0);
-    }
-}
-
-/* Swing */
-
-@keyframes dibAdsSwing{
-
-0%{
-opacity:0;
-transform:rotate(-18deg);
-}
-
-40%{
-transform:rotate(12deg);
-}
-
-70%{
-transform:rotate(-6deg);
-}
-
-100%{
-opacity:1;
-transform:rotate(0);
-}
-
-}
-
-/* Pop */
-
-@keyframes dibAdsPop{
-
-0%{
-opacity:0;
-transform:scale(.3);
-}
-
-70%{
-transform:scale(1.08);
-}
-
-100%{
-opacity:1;
-transform:scale(1);
-}
-
-}
-
-/* Blur */
-
-@keyframes dibAdsBlur{
-
-0%{
-opacity:0;
-filter:blur(12px);
-transform:scale(.9);
-}
-
-100%{
-opacity:1;
-filter:blur(0);
-transform:scale(1);
-}
-
-}
-
-/* Flip X */
-
-@keyframes dibAdsFlipX{
-
-0%{
-opacity:0;
-transform:perspective(1000px) rotateX(90deg);
-}
-
-100%{
-opacity:1;
-transform:perspective(1000px) rotateX(0);
-}
-
-}
-
-/* Elastic */
-
-@keyframes dibAdsElastic{
-
-0%{
-opacity:0;
-transform:scale(.5);
-}
-
-40%{
-transform:scale(1.12);
-}
-
-60%{
-transform:scale(.92);
-}
-
-80%{
-transform:scale(1.04);
-}
-
-100%{
-opacity:1;
-transform:scale(1);
-}
-
-}
-
-/* Wobble */
-
-@keyframes dibAdsWobble{
-
-0%{
-opacity:0;
-transform:translateX(-120px);
-}
-
-20%{
-transform:translateX(40px);
-}
-
-40%{
-transform:translateX(-20px);
-}
-
-60%{
-transform:translateX(10px);
-}
-
-100%{
-opacity:1;
-transform:translateX(0);
-}
-
-}
-
-/* Rotate Zoom */
-
-@keyframes dibAdsRotateZoom{
-
-0%{
-opacity:0;
-transform:scale(.7) rotate(-15deg);
-}
-
-100%{
-opacity:1;
-transform:scale(1) rotate(0deg);
-}
-
-}
-
-</style>
 
 
 
@@ -6204,82 +7088,7 @@ transform:scale(1) rotate(0deg);
     </script>
 	
 	
-	<!-- script for dib-->
-	<script>
-
-const dibAdsImage=document.getElementById("dibAdsBanner");
-
-const dibAdsEffects=[
-
-"dibAdsDiagonalLeft",
-"dibAdsDiagonalRight",
-"dibAdsSwing",
-"dibAdsPop",
-"dibAdsBlur",
-"dibAdsFlipX",
-"dibAdsElastic",
-"dibAdsWobble",
-"dibAdsRotateZoom"
-
-];
-
-function dibAdsAnimate(){
-
-dibAdsImage.style.animation="none";
-
-void dibAdsImage.offsetWidth;
-
-const randomEffect=dibAdsEffects[Math.floor(Math.random()*dibAdsEffects.length)];
-
-dibAdsImage.style.animation=randomEffect+" 1.2s cubic-bezier(.22,1,.36,1)";
-
-}
-
-dibAdsAnimate();
-
-setInterval(dibAdsAnimate,4500);
-
-</script>
-
-<!-- script for emmar-->
-
-<script>
-
-const b2bxHero=document.getElementById("b2bxHeroBanner");
-
-const b2bxEffects=[
-
-"b2bxFromLeft",
-"b2bxFromRight",
-"b2bxFromTop",
-"b2bxFromBottom",
-"b2bxZoomFade",
-"b2bxRotateFade",
-"b2bxFlipFade"
-
-];
-
-function b2bxPlayBannerEffect(){
-
-const pick=b2bxEffects[Math.floor(Math.random()*b2bxEffects.length)];
-
-b2bxHero.style.animation="none";
-
-void b2bxHero.offsetWidth;
-
-b2bxHero.style.animation=
-pick+" .9s ease,"+
-"b2bxFloating 6s ease-in-out infinite,"+
-"b2bxKenBurns 14s ease-in-out infinite alternate,"+
-"b2bxShadowPulse 3s ease-in-out infinite";
-
-}
-
-b2bxPlayBannerEffect();
-
-setInterval(b2bxPlayBannerEffect,5000);
-
-</script>
+	
 
 
 
@@ -6289,34 +7098,9 @@ setInterval(b2bxPlayBannerEffect,5000);
 
 
 
-<!--script for mega sale-->
 
-<script>
-const img=document.getElementById("promoBanner");
 
-const animations=[
-"slideLeft",
-"slideRight",
-"slideTop",
-"slideBottom",
-"zoomIn",
-"rotateIn",
-"flipIn",
-"bounceIn"
-];
 
-function animateBanner(){
-    img.style.animation="none";
-    img.offsetHeight;
-    const random=animations[Math.floor(Math.random()*animations.length)];
-    img.style.animation=random+" 1s ease";
-}
-
-animateBanner();
-
-// Change animation every 4 seconds
-setInterval(animateBanner,4000);
-</script>
    
 
 	

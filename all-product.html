@@ -1,0 +1,1658 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B GoX</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cloudflare.com">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1d4ed8', // Deep Blue
+                        primaryDark: '#1e3a8a',
+                        secondary: '#f97316', // Orange highlight (like Wolmart)
+                        textDark: '#333333',
+                        textLight: '#666666',
+                        borderGray: '#e5e7eb',
+                        bgGray: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; overflow-x: hidden; background-color: #f5f7fa; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #999; }
+        /* B2B Specific Styles */
+        .tier-price { font-size: 0.8rem; line-height: 1.2; }
+        .tier-price strong { font-size: 1.1rem; color: #333; }
+        .hover-primary:hover { color: #1d4ed8; transition: color 0.3s; }
+        .header-dropdown-shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    
+
+	
+	</style>
+</head>
+<body class="bg-[#fcfdff]"> 
+
+
+<!-- top nav start -->
+<div class="bg-gray-100 text-xs text-textLight py-2 border-gray-200 hidden md:block">
+    <div class="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+							<div class="flex items-center space-x-4">
+								<span>B2B GoX - Global Market Place!</span>
+							</div>
+     <div class="flex items-center space-x-6">
+                
+			
+       <span class="text-gray-300">|</span>
+
+				
+	<a href="become-supplier.html" style=" display: inline-flex; align-items: center; justify-content: center; background-color: #004d99; color: #ffffff; text-decoration: none; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; font-size: 12px; font-weight: 800; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.1px; white-space: nowrap; box-shadow: 0 2px 6px rgba(242, 101, 34, 0); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); " onmouseover=" this.style.backgroundColor='#e05313'; this.style.boxShadow='0 0 12px rgba(242, 101, 34, 0.7), 0 2px 8px rgba(242, 101, 34, 0.3)'; this.style.transform='translateY(-1px)'; " onmouseout=" this.style.backgroundColor='#f26522'; this.style.boxShadow='0 2px 6px rgba(242, 101, 34, 0)'; this.style.transform='translateY(0px)'; "> Be a Supplier </a>
+		
+
+
+<div class="relative group py-1">
+    <a href="help-center.html" class="hover-primary font-semibold text-textDark flex items-center">
+        <i class="far fa-question-circle mr-1"></i> Help Center
+    </a>            
+    
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 20px 40px;">
+        
+		
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+            
+            <div style="flex: 1; display: flex; gap: 20px; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🚢</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Supplier</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">List your product</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential buying leads</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Supplier centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; background: #eef5f0; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/BKqsVXjc/help2.jpg" alt="Supplier Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 1px; gap: 10px; background-color: #e5e7eb; align-self:stretch;"></div>
+
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Buyer</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Post buying request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/cStpprd3/help.jpg" alt="Buyer Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+	
+
+<li style="list-style: none; margin: 0; padding: 0; box-sizing: border-box;">
+
+    <nav style="position: sticky; top: 0; z-index: 50; width: 100%; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #f1f5f9; box-sizing: border-box;">
+        <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;">
+
+            <div></div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                
+                <div style="position: relative; display: inline-block;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #475569; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9';" onmouseout="this.style.backgroundColor='transparent';">
+                        <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="globe-dropdown-wrapper" 
+                     style="position: relative; display: inline-block;"
+                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.12)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.3)'; this.querySelector('.tall-oval-btn').style.transform='scale(1.03)';"
+                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.08)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.15)'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
+                    
+                    <script>
+                        window.tempLang = "EN";
+                        window.tempLangFlag = "https://flagcdn.com/w20/us.png";
+                        window.tempCurrency = "USD ($)";
+                    </script>
+
+                    <a href="javascript:void(0);" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <div class="tall-oval-btn" style="border-radius: 50% / 35%; aspect-ratio: 3 / 4; height: 50px; display: flex; align-items: center; justify-content: center; background-color: rgba(249, 115, 22, 0.08); border: 1.5px solid rgba(249, 115, 22, 0.15); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
+                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <i class="fas fa-chevron-down" style="font-size:10px; color:#94a3b8;"></i>
+                    </a>
+
+                    <div class="dropdown-panel" style="position: absolute; top: 100%; right: 0; margin-top: 10px; width: 400px; background-color: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.16); padding: 16px; box-sizing: border-box; z-index: 100; opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.97); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s, visibility 0.2s; pointer-events: none;">
+                        
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f8fafc;">
+                            <div style="text-align: left;">
+                                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: #0f172a; font-size: 14px; margin: 0 0 2px 0;">Regional Settings</h4>
+                                <p style="color: #64748b; font-size: 11px; margin: 0; line-height: 1.3;">Configure language & currency variables.</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 5px; background-color: #f1f5f9; padding: 4px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                                <img id="active-lang-flag" src="https://flagcdn.com/w20/us.png" style="width: 13px; height: 9px; object-fit: cover; border-radius: 1px;" alt="Flag">
+                                <span id="active-settings-badge" style="font-size: 10px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">EN / USD</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 14px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Language</label>
+                            
+                            <div class="lang-grid-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                                <div class="lang-card" data-lang="EN" data-flag="https://flagcdn.com/w20/us.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'EN'; window.tempLangFlag = 'https://flagcdn.com/w20/us.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: rgba(79, 70, 229, 0.04); border: 1.5px solid #4f46e5; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="English">
+                                    <span style="font-size: 12px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">English (US)</span>
+                                </div>
+                                <div class="lang-card" data-lang="AE" data-flag="https://flagcdn.com/w20/ae.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'AE'; window.tempLangFlag = 'https://flagcdn.com/w20/ae.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Arabic">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">العربية (AE)</span>
+                                </div >
+                                <div class="lang-card" data-lang="ES" data-flag="https://flagcdn.com/w20/es.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'ES'; window.tempLangFlag = 'https://flagcdn.com/w20/es.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/es.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Spanish">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Español (ES)</span>
+                                </div>
+                                <div class="lang-card" data-lang="FR" data-flag="https://flagcdn.com/w20/fr.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'FR'; window.tempLangFlag = 'https://flagcdn.com/w20/fr.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/fr.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="French">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Français (FR)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 16px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Currency</label>
+                            
+                            <div class="currency-scroll-list" style="max-height: 130px; overflow-y: auto; border: 1px solid #f1f5f9; border-radius: 10px; padding: 3px; box-sizing: border-box;">
+                                
+                                <div class="curr-row" data-curr="USD" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'USD ($)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background-color: rgba(79, 70, 229, 0.04); cursor: pointer; margin-bottom: 3px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="USA">
+                                        <span style="font-size: 12px; font-weight: 700; color: #475569; font-family: sans-serif;">United States</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 11px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">USD ($)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="AED" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'AED (د.إ)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UAE">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Arab Emirates</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">AED (د.إ)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="GBP" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'GBP (£)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/gb.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UK">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Kingdom</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">GBP (£)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="EUR" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'EUR (€)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/eu.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="EU">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Germany (Eurozone)</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">EUR (€)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="JPY" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'JPY (¥)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/jp.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Japan">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Japan</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">JPY (¥)</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 10px; border-top: 1px solid #f8fafc; width: 100%;">
+                            <button type="button" 
+                                    onclick="
+                                        document.getElementById('active-settings-badge').innerText = window.tempLang + ' / ' + window.tempCurrency.split(' ')[0];
+                                        document.getElementById('active-lang-flag').src = window.tempLangFlag;
+                                        alert('Settings saved successfully: ' + window.tempLang + ' and ' + window.tempCurrency);
+                                    " 
+                                    style="width: 100%; display: block; padding: 10px 16px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); transition: all 0.2s;" 
+                                    onmouseover="this.style.backgroundColor='#1e293b';" 
+                                    onmouseout="this.style.backgroundColor='#0f172a';">
+                                Save Changes
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</li>
+
+    <!-- globe and currency ends -->
+
+
+  <!-- sign card in start  -->		
+	   <!-- sign card in start  -->			
+ <a href="my-account.html" class="hover-primary"> </a>		
+              
+ <div class="relative group py-1">
+                    <a href="#" class="hover-primary font-semibold text-textDark flex items-center">
+                        <i class="far fa-user mr-1"> </i> Sign In
+                    </a>			
+                    
+<div class="dropdown-card absolute right-0 top-full mt-1 w-[250px] bg-white border border-red-200 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm">
+                        
+						
+						
+						
+                        <div class="absolute -top-1.5 right-4 w-3 h-3 bg-white border-t border-l border-red-200 transform rotate-45"></div>
+
+                        <div class="p-4 border-b border-gray-100 ">
+                            <a href="signin.html" class="block w-full bg-[#008000] text-white text-base font-semibold py-2 rounded-full text-center hover:bg-primaryDark transition mb-3">Sign in</a>
+                            
+                            <div class="p-4 py-2 flex justify-center items-center space-x-4 mb-4">
+     <a href="https://accounts.google.com" target="_blank" class="w-9 h-9 border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition duration-200" title="Sign in with Google">
+                    <svg viewBox="0 0 24 24" class="w-4.5 h-4.5"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22l.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1C7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                </a>
+	
+	
+    <a href="https://www.facebook.com/login" target="_blank" class="transform hover:scale-110 transition duration-200" title="Sign in with Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="w-6 h-6 rounded-full">
+    </a>
+    <a href="https://x.com/i/flow/login" target="_blank" class="w-8 h-8 rounded-full bg-[#f6ab2e] flex items-center justify-center text-white text-xl font-bold transform hover:scale-110 transition duration-200" title="Sign in with X">X</a>
+    <a href="https://www.linkedin.com/login" target="_blank" class="w-8 h-8 rounded-full bg-[#3077b5] flex items-center justify-center text-white text-lg font-bold transform hover:scale-110 transition duration-200" title="Sign in with LinkedIn">in</a>
+</div>
+
+                <p class="text-xs text-textLight text-center mb-3">By clicking Sign in the <a href="#" class="text-textLight underline">Privacy Policy</a> .</p>
+                            
+                            <div class="relative flex py-2 items-center">
+                                <div class="flex-grow border-t border-gray-200"></div>
+                                <span class="flex-shrink mx-3 text-xs text-textLight">OR</span>
+                                <div class="flex-grow border-t border-gray-200"></div>
+                            </div>              
+ <a href="register.html" class="block w-full text-white text-sm font-semibold py-3 bg-[#FF4500] rounded-full text-center hover:bg-[#00008B] transition">
+    Register for free
+</a>
+                        </div>
+
+                        <ul class="py-2 text-textDark text-[15px] font-medium">
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">Buyer Center</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Inquires</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My RFQ</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Messages</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Orders</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Cart</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Account</a></li>
+                        </ul>
+                    </div>
+					
+					
+					
+</div>
+		  
+		  
+            </div>
+        </div>
+</div>
+
+   <!-- sign in card ends -->	   
+
+   <!-- sign in card ends -->
+   
+   
+ <!-- top nav ends -->
+	
+	
+	
+	
+	
+	
+
+	
+
+<header class="py-2 border-b border-gray-200 sticky top-0 bg-white z-40">
+    <div class="container mx-auto px-4 flex items-center justify-between max-w-7xl w-full">
+        
+        <div class="flex items-center flex-shrink-0">
+            <button class="md:hidden text-2xl mr-4" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="index.html" class="flex items-center"> 
+                <img src="https://i.ibb.co/8npYHX01/logo2-copy.png" alt="B2B GoX" class="h-10 lg:h-16 w-auto object-contain">  
+            </a> 
+        </div>
+
+        <div class="flex-1 hidden md:flex mx-6 lg:mx-12 border-2 border-primary rounded-full overflow-hidden h-11 items-center">
+            <select class="bg-gray-50 text-sm px-3 border-r border-gray-200 outline-none text-gray-600 font-medium cursor-pointer h-full flex-shrink-0">
+                <option>Products</option>
+                <option>Suppliers</option>
+                <option>Categories</option>
+            </select>
+            <input type="text" placeholder="What are you looking for..." class="w-full px-4 outline-none text-sm h-full">
+            <button class="bg-white text-gray-500 hover:text-primary px-5 h-full transition duration-300">
+                <i class="fas fa-search text-base"></i>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-6 flex-shrink-0">
+
+            <a href="videocard.html" style="display: flex; align-items: center; gap: 8px; background: linear-gradient(to right, #ff0000, #ff2b2b); color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 30px; box-shadow: 0 3px 10px rgba(255, 0, 0, .25); transition: all .3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px rgba(214, 0, 0, .3)';" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 3px 10px rgba(255, 0, 0, .25)';">
+                <div style="width: 22px; height: 22px; background: #fff; color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px;">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <img src="https://i.ibb.co/rK2M1mCr/x.png" alt="X" style="height: 24px; width: auto; object-fit: contain;">
+            </a>
+
+            
+			
+			
+<!-- Wrapper Div: Set to block to seamlessly link the icon hover zone directly with the mega-menu grid boundary -->
+<div class="sms-trigger-wrapper"
+     style="display: block;"
+     onmouseenter="this.querySelector('.msg-mega-dropdown').style.display='block'"
+     onmouseleave="this.querySelector('.msg-mega-dropdown').style.display='none'">
+
+    <!-- Icon Trigger Link Context Container -->
+    <a href="my-inbox.html" class="group flex flex-col items-center text-center no-underline transition duration-200" style="transform: scale(1.05); display: inline-flex; padding: 10px 16px; margin-bottom: 0;">
+        <i class="fas fa-envelope text-2xl transition duration-200 group-hover:text-gray-700" style="color: #2563eb;"></i>
+        <span style="font-size: 10px; font-weight: 700; margin-top: 3px; color: #1e3a8a; letter-spacing: 0.3px;">SMS</span>
+    </a>
+
+    <!-- FULL DESKTOP WIDTH MEGA DROPDOWN PANEL -->
+    <!-- Removed 100vw to prevent screen spill. Added seamless top anchoring so there is absolute zero gap -->
+    <div class="msg-mega-dropdown" style="display: none; position: absolute; left: 0; right: 0; width: 100%; background: #ffffff; border-bottom: 2px solid #e2e8f0; border-top: 1px solid #f1f5f9; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12); z-index: 9999; padding: 24px 0; margin-top: 0; box-sizing: border-box;">
+        
+        <!-- Hover Bridge: Guarantees your mouse never loses focus transitioning onto the component items -->
+        <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: transparent;"></div>
+        
+        <div class="container mx-auto px-4 max-w-7xl">
+            
+            <!-- 4-Column Responsive Messaging Grid System -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                
+             <!-- COLUMN 1: Inquiry Messages Box -->
+<div onclick="window.location.href='message.html';"
+     style="
+     display:flex;
+     flex-direction:column;
+     background:linear-gradient(135deg,#eff6ff,#dbeafe);
+     border:1px solid #bfdbfe;
+     border-radius:20px;
+     padding:0;
+     cursor:pointer;
+     transition:all 0.25s ease;
+     overflow:hidden;
+     "
+
+     onmouseover="
+     this.style.background='linear-gradient(135deg,#e0f2fe,#bfdbfe)';
+     this.style.borderColor='#3b82f6';
+     this.style.boxShadow='0 12px 25px rgba(59,130,246,0.15)';
+     "
+
+     onmouseout="
+     this.style.background='linear-gradient(135deg,#eff6ff,#dbeafe)';
+     this.style.borderColor='#bfdbfe';
+     this.style.boxShadow='none';
+     ">
+
+    <!-- HEADER -->
+    <div style="
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:18px 16px;
+        background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+        border-radius:20px 20px 0 0;
+    ">
+        <span style="
+            font-family:sans-serif;
+            font-size:15px;
+            font-weight:800;
+            color:#1d4ed8;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        ">
+            📩 Inquiry Messages
+        </span>
+
+        <span style="
+            background:#bfdbfe;
+            color:#1d4ed8;
+            font-size:11px;
+            font-weight:700;
+            padding:3px 10px;
+            border-radius:20px;
+        ">
+            Active
+        </span>
+    </div>
+
+    <!-- ICON -->
+    <div style="
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:25px 0;
+    ">
+        <i class="fa-solid fa-envelope" style="
+            width:144px;
+            height:144px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:50%;
+            background:linear-gradient(135deg,#2563eb,#60a5fa);
+            color:#ffffff;
+            font-size:60px;
+            box-shadow:0 15px 35px rgba(37,99,235,0.25);
+        "></i>
+    </div>
+
+    <!-- TEXT -->
+    <p style="
+        font-family:sans-serif;
+        font-size:12px;
+        color:#1e3a8a;
+        margin:0;
+        line-height:1.4;
+        padding:0 16px 18px 16px;
+    ">
+        Review pricing offers, corporate product inquiries,<br>
+        and custom specifications sheet logs.
+    </p>
+
+</div>
+
+                <!-- COLUMN 2: RFQ Messages Box -->
+<a href="rfq.html"
+   style="
+   display:flex;
+   flex-direction:column;
+   background:linear-gradient(135deg,#fff7ed,#ffedd5);
+   border:1px solid #fed7aa;
+   border-radius:20px 20px 0 0;
+   cursor:pointer;
+   transition:all 0.25s ease;
+   text-decoration:none;
+   overflow:hidden;
+   "
+   onmouseover="
+   this.style.background='linear-gradient(135deg,#fff1e6,#ffe4c2)';
+   this.style.borderColor='#fb923c';
+   this.style.boxShadow='0 12px 25px rgba(249,115,22,0.15)';
+   "
+   onmouseout="
+   this.style.background='linear-gradient(135deg,#fff7ed,#ffedd5)';
+   this.style.borderColor='#fed7aa';
+   this.style.boxShadow='none';
+   ">
+
+    <!-- Header -->
+    <div style="
+        background:linear-gradient(135deg,#ffedd5,#fed7aa);
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:18px 16px;
+        border-radius:20px 20px 0 0;
+    ">
+        <span style="
+            font-family:sans-serif;
+            font-size:15px;
+            font-weight:800;
+            color:#9a3412;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        ">
+            📄 RFQ Messages
+        </span>
+
+        <span style="
+            background:#fdba74;
+            color:#7c2d12;
+            font-size:11px;
+            font-weight:700;
+            padding:3px 10px;
+            border-radius:20px;
+        ">
+            Quotes
+        </span>
+    </div>
+
+    <!-- Icon -->
+<div style=" width:100%; display:flex; align-items:center; justify-content:center; margin:20px 0; "> <i class="fa-solid fa-file-signature" style=" width:144px; height:144px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:linear-gradient(135deg,#ff8a00,#ff5e00); color:#ffffff; font-size:60px; box-shadow:0 12px 30px rgba(255,138,0,.25); "></i> 
+</div>
+
+    <!-- Text -->
+    <p style="
+        font-size:12px;
+        color:#7c2d12;
+        margin:0;
+        line-height:1.4;
+         padding:0 16px 18px 16px;
+    ">
+        Track current Request for Quotes,<br>
+        manage direct supplier bids, and view estimates.
+    </p>
+
+</a>
+                <!-- COLUMN 3: Chat Messages Box -->
+  <div onclick="window.location.href='chat.html';"
+     style="display:flex; flex-direction:column; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; cursor:pointer; transition:all 0.25s ease;"
+     onmouseover="this.style.background='#ffffff'; this.style.borderColor='#0891b2'; this.style.boxShadow='0 10px 20px rgba(8,145,178,0.10)';"
+     onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';">
+
+    <div style="width:100%; background:linear-gradient(135deg,#dcfce7,#bbf7d0); display:flex; align-items:center; justify-content:space-between; padding:20px; border-radius:12px 12px 0 0;">
+
+        <span style="font-size:15px; font-weight:800; color:#0f172a;">
+            💬 Chat Messages
+        </span>
+
+        <span style="background:linear-gradient(135deg,#10b981,#059669); font-size:11px; font-weight:700; padding:2px 8px; border-radius:20px;">
+            Live Chat
+        </span>
+
+    </div>
+
+    <div style="width:100%; display:flex; align-items:center; justify-content:center; margin:20px 0;">
+
+        <i class="fa-solid fa-comments" style="
+            width:144px;
+            height:144px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:50%;
+            background:linear-gradient(135deg,#00b050,#008000);
+    color:#ffffff;
+            font-size:60px;
+            box-shadow:0 12px 30px rgba(8,145,178,.30);
+        "></i>
+
+    </div>
+
+    <p style="font-family:sans-serif; font-size:12px; color:#64748b;  padding:0 16px 18px 16px; line-height:1.4;">
+        Connect in real-time instantly with verified regional
+        <br>logistics partners and global support channels.
+    </p>
+
+</div>
+
+                <!-- COLUMN 4: System Notifications Box -->
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+			
+			
+		
+		
+			
+			
+
+        </div>
+    </div>
+</header>
+
+<!-- header ends-->
+    
+	
+	
+
+   
+<!-- Recommended For You (8 items) -->	
+<section class="container bg-white max-w-[1280px] w-full mx-auto my-10 px-5 py-12 z-10 flex-grow pt-4">
+        
+
+        <!-- Product Grid (8 items) -->
+        <div class=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-8">
+            
+            <!-- Standard B2B Product Card Function -->
+
+<!-- Product Card 1-->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <!-- Image Area -->
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+
+        <img src="https://i.ibb.co/KxWRMc7f/lap3.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+
+        <!-- Wishlist -->
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500 transition">
+                <i class="far fa-heart"></i></button> </div>
+    </div>
+
+    <!-- Content -->
+    <div class="text-center px-2">
+        <!-- Title -->
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 line-clamp-2 min-h-[40px]">
+           Dell Inspiration Laptop  </a>
+        <!-- Rating -->
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">   (4 Reviews)  </span>
+        </div>
+        <!-- Price -->
+        <div class="text-lg font-bold text-gray-900 mb-1"> $5.00-$8.00 </div>
+        <!-- MOQ -->
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-medium bg-blue-50 text-blue-700 rounded-full"> MOQ: 50 Pieces </div>
+        <!-- Button -->
+        <a href="supplier-order.html" class="mt-2 inline-flex items-center justify-center w-full  bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i>  Contact Supplier </a>  
+	</div>
+</div>
+
+
+
+
+
+
+<!-- Product Card 2 --> 
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/KxWRMc7f/lap3.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Think Pad Laptop </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
+</div>
+
+
+
+
+<!-- Product Card 3-->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/tTqCnpPS/wat4.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Think Pad Laptop </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
+</div>
+
+
+
+
+
+
+
+
+<!-- Card 4 --> 
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out"> 
+<!-- Image Area --> 
+<div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden"> <img src="https://i.ibb.co/5ftpmsk/trolly.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product"> <!-- Wishlist --> <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"> <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500"> <i class="far fa-heart"></i> </button> </div> 
+</div> 
+<!-- Content --> 
+	<div class="text-center px-2"> <!-- Title --> <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]"> Travelling Leather  </a> <!-- Rating --> <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <span class="text-gray-400 ml-1"> (4 Reviews) </span> </div> <!-- Price + Pieces --> <div class="flex items-center justify-center gap-3 mb-3"> <!-- Price --> <div class="text-lg font-bold text-gray-900"> $5.00 - $8.00 </div> <!-- Divider --> <div class="h-5 w-px bg-gray-200"></div> <!-- Pieces --> <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full"> 50 Pieces </div> </div> <!-- Button --> <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300"> <i class="fas fa-comments mr-2"></i> Contact Supplier </a> 
+	</div> 
+</div>
+
+
+
+
+<!-- Card 5 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <!-- Image Area -->
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Premium Running Shoes
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(18 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$18.00 - $25.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">20 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Wireless Bluetooth Headphones
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(27 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$15.00 - $22.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">30 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 7 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Fashion Sports Sneakers
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(11 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$20.00 - $28.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">40 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Luxury Wrist Watch
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(35 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$35.00 - $48.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">10 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 9 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Smart Mobile Phone
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(42 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$120.00 - $150.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">5 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- Card 10 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Portable Bluetooth Speaker
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(26 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$18.00 - $30.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">25 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 11 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Professional DSLR Camera
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(54 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$250.00 - $320.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">3 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 12 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Premium Cotton T-Shirt
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(16 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$6.00 - $10.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">100 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 13 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Protective Safety Helmet
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(31 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$12.00 - $18.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">50 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 14 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Product">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Ergonomic Office Chair
+        </a>
+
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(38 Reviews)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$55.00 - $75.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">15 Pieces</div>
+        </div>
+
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- Card 15 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Sports Shoes">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Lightweight Sports Shoes
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(23 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$24.00 - $35.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">20 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 16 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Fashion Jacket">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Men's Winter Jacket
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(19 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$30.00 - $45.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">15 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 17 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Smartphone">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Android Smart Phone
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(48 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$180.00 - $220.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">5 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 18 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Backpack">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Waterproof Travel Backpack
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(34 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$14.00 - $22.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">40 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 19 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Sunglasses">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Polarized Sunglasses
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(17 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$8.00 - $14.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">60 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+
+<!-- Card 20 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Lipstick">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Matte Lipstick Collection
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(32 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$5.00 - $9.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">100 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 21 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Sneakers">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Casual Canvas Sneakers
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(21 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$16.00 - $24.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">30 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 22 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Sunglasses">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            UV Protection Sunglasses
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span class="text-gray-400 ml-1">(28 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$9.00 - $15.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">80 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 23 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Speaker">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Wireless Smart Speaker
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="text-gray-400 ml-1">(44 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$22.00 - $34.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">20 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+<!-- Card 24 -->
+<div class="group relative bg-white border border-gray-100 rounded-2xl p-1 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/60 hover:-translate-y-1 transition-all duration-500 ease-out">
+    <div class="relative bg-gradient-to-b from-gray-50 to-white aspect-square flex items-center justify-center mb-4 rounded-t-xl rounded-b-none overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1511936606692-5e0b554f0e7f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="Coffee Maker">
+        <div class="absolute top-3 right-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <button class="w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center px-2">
+        <a href="product.html" class="block text-sm font-semibold text-gray-800 hover:text-blue-600 transition-colors line-clamp-2 min-h-[40px]">
+            Automatic Coffee Maker
+        </a>
+        <div class="flex justify-center items-center gap-1 text-yellow-400 text-xs my-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span class="text-gray-400 ml-1">(15 Reviews)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <div class="text-lg font-bold text-gray-900">$42.00 - $58.00</div>
+            <div class="h-5 w-px bg-gray-200"></div>
+            <div class="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">10 Pieces</div>
+        </div>
+        <a href="supplier-order.html" class="inline-flex items-center justify-center w-full bg-[#2f5bb7] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm hover:shadow-md hover:bg-[#23489a] transition-all duration-300">
+            <i class="fas fa-comments mr-2"></i> Contact Supplier
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+            <!-- Card 5 to 8 (Replicating pattern for grid completion) -->
+            <!-- Just inserting placeholder blocks to match the screenshot density -->
+
+            
+
+           
+   
+   
+
+</div>
+  <!-- Product card ends -->
+
+
+       
+		
+    </section> 
+                   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- footer-->
+	
+
+    <footer class="bg-white border-t border-gray-200 mt-16 pt-10">
+        <!-- Newsletter Bar -->
+        <div class="bg-[#2b5d8c] text-white py-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="far fa-envelope-open text-4xl mr-4 opacity-80"></i>
+                    <div>
+                        <h4 class="font-bold text-lg">SUBSCRIBE TO B2B NEWSLETTER</h4>
+                        <p class="text-sm text-blue-200">Get the latest info on global trends, trade shows and bulk offers.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 flex">
+                    <input type="email" placeholder="Your E-mail Address" class="w-full px-4 py-3 text-sm text-gray-700 outline-none">
+                    <button class="bg-[#333] hover:bg-black text-white px-6 py-3 text-sm font-bold uppercase transition flex items-center space-x-2">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="bg-bgGray py-16">
+            <div class="container mx-auto px-4 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Brand Info -->
+                <div>
+                   <a href="/"> <img src="https://i.ibb.co/5WrVC3q3/logoo.png" alt="B2B GoX"class="h-16 lg:h-20 w-auto object-contain"> </a>
+                    <p class="text-sm text-gray-500 mb-6 leading-relaxed">Your premier gateway for global wholesale trade. Connect with verified suppliers, secure transactions, and scale your business effortlessly.</p>
+                    <div class="mb-4 text-sm text-gray-500">
+                        <p>Got Questions? Call us 24/7 B2B Support</p>
+                        <p class="text-2xl font-bold text-textDark mt-1"> +9714-800-570-xxx</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1da1f2] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#bd081c] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+						<a href="#" class="w-8 h-8 rounded-full bg-[#fffc00] text-black flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-snapchat-ghost text-sm"></i>
+</a>
+
+<a href="#" class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-tiktok text-sm"></i>
+</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+					
+					
+                </div>
+				
+				
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">About Platform</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">About B2B GoX.com</a></li>
+                        <li><a href="career.html" class="hover-primary">Careers</a></li>
+                        <li><a href="contact.html" class="hover-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover-primary">News & Blog</a></li>
+                        <li><a href="#" class="hover-primary">Trade Shows</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Suppliers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="register.html" class="hover-primary">Become a Supplier</a></li>
+                        <li><a href="#" class="hover-primary">Supplier Memberships</a></li>
+                        <li><a href="#" class="hover-primary">Training Center</a></li>
+                        <li><a href="#" class="hover-primary">Logistics Services</a></li>
+                        <li><a href="#" class="hover-primary">Payment & Escrow</a></li>
+						   <li><a href="package.html" class="hover-primary">Packages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Buyers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Sourcing Guide</a></li>
+                        <li><a href="#" class="hover-primary">Post an RFQ</a></li>
+                        <li><a href="#" class="hover-primary">Trade Assurance Protection</a></li>
+                        <li><a href="#" class="hover-primary">Track Order</a></li>
+                        <li><a href="#" class="hover-primary">Return Policy</a></li>
+						<li><a href="my-account.html" class="hover-primary">My Account</a></li>
+						  
+                    </ul>
+                </div>
+            </div>
+			
+			
+			
+
+            <!-- Categories Tags Bottom -->
+            <div class="container mx-auto px-4 max-w-7xl mt-12 border-t border-gray-200 pt-8 hidden md:block">
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Consumer Electric:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">TV Television</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Air Condition</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Refrigerator</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Washing Machine</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Audio Speaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Security Camera</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Clothing & Apparel:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Men T-shirt</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Dresses</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Men's Sneaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Leather Backpack</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Machinery:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Packaging Machines</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Laser Cutters</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">CNC Routers</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Textile Machinery</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-bgGray pb-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
+                <p>Copyright © 2026 B2B GoX.com. All Rights Reserved.</p>
+                <div class="flex items-center space-x-2 mt-4 md:mt-0">
+                    <span>We're using safe payment for</span>
+                    <!-- Simulated Payment Badges -->
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">VISA</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">MC</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">TT</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">L/C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            // In a full implementation, this would open a side drawer
+            // For this single file demo, we just show an alert or toggle a class
+            alert('Mobile menu navigation would open here.');
+        });
+    </script>
+</body>
+</html>
