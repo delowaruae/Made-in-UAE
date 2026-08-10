@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>B2BGoX - Buyer Dashboard</title>
+</head>
+
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#f2f3f5;color:#222;overflow-x:hidden;">
+
+<!-- ================= TOP HEADER ================= -->
+<header style="height:64px;background:#fff;border-bottom:1px solid #e5e5e5;display:flex;align-items:center;justify-content:space-between;padding:0 28px;box-sizing:border-box;position:sticky;top:0;z-index:1000;">
+
+    <div style="display:flex;align-items:center;gap:18px;min-width:260px;">
+        <a href="#" style="text-decoration:none;font-size:25px;font-weight:800;letter-spacing:-1.5px;color:#ff6200;transition:all .25s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <span style="font-size:28px;">B2B</span><span style="color:#ff6200;">Go</span><span style="color:#174ea6;">X</span><span style="font-size:11px;color:#777;margin-left:2px;">.com</span>
+        </a>
+
+        <span style="height:25px;width:1px;background:#ddd;"></span>
+
+        <span style="font-size:15px;font-weight:600;color:#222;">My Alibaba</span>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:27px;font-size:13px;color:#333;white-space:nowrap;">
+
+        <div style="display:flex;align-items:center;gap:5px;">
+            <span>Deliver to:</span>
+            <span style="font-size:17px;">🇦🇪</span>
+            <strong>AE</strong>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:7px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#333'">
+            <span style="font-size:19px;">◎</span>
+            <span>English-USD</span>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:7px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#333'">
+            <span style="font-size:20px;">♜</span>
+            <span>Start selling</span>
+        </div>
+
+        <div style="font-size:22px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200';this.style.transform='translateY(-2px)'" onmouseout="this.style.color='#333';this.style.transform='translateY(0)'">▱</div>
+
+        <div style="font-size:21px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200';this.style.transform='translateY(-2px)'" onmouseout="this.style.color='#333';this.style.transform='translateY(0)'">▣</div>
+
+        <div style="font-size:22px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200';this.style.transform='translateY(-2px)'" onmouseout="this.style.color='#333';this.style.transform='translateY(0)'">🛒</div>
+
+        <div style="font-size:21px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200';this.style.transform='translateY(-2px)'" onmouseout="this.style.color='#333';this.style.transform='translateY(0)'">♧</div>
+
+        <div style="font-size:23px;cursor:pointer;transition:.2s;" onmouseover="this.style.color='#ff6200';this.style.transform='translateY(-2px)'" onmouseout="this.style.color='#333';this.style.transform='translateY(0)'">♙</div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN LAYOUT ================= -->
+<div style="display:flex;min-height:calc(100vh - 64px);">
+
+
+<!-- ================= LEFT SIDEBAR ================= -->
+<aside style="width:223px;min-width:223px;background:#f4f5f6;border-right:1px solid #e1e2e4;box-sizing:border-box;padding:24px 10px;position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto;">
+
+    <a href="#dashboard" style="height:37px;border-radius:8px;background:#fff;display:flex;align-items:center;padding:0 10px;text-decoration:none;color:#222;font-size:13px;font-weight:700;transition:all .25s ease;box-sizing:border-box;box-shadow:0 1px 2px rgba(0,0,0,.02);" onmouseover="this.style.background='#fff3ed';this.style.color='#ff6200'" onmouseout="this.style.background='#fff';this.style.color='#222'">
+        <span style="font-size:18px;margin-right:9px;">▦</span>
+        Dashboard
+    </a>
+
+
+    <div style="font-size:11px;color:#999;padding:19px 7px 7px;">Online trading</div>
+
+
+    <a href="#messages" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:17px;margin-right:9px;">▤</span>
+        <span style="flex:1;">Messages</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <a href="#orders" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:17px;margin-right:9px;">▣</span>
+        <span style="flex:1;">Orders</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <a href="#payment" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:17px;margin-right:9px;">$</span>
+        <span style="flex:1;">Payment</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <a href="#saved" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:19px;margin-right:8px;">♡</span>
+        <span style="flex:1;">Saved &amp; history</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <div style="font-size:11px;color:#999;padding:18px 7px 7px;">Add-on services</div>
+
+
+    <a href="#subscription" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">▤</span>
+        <span>Subscription</span>
+        <span style="font-size:11px;color:#e53935;font-weight:bold;margin-left:7px;">New</span>
+    </a>
+
+
+    <a href="#logistics" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">♙</span>
+        <span style="flex:1;">Logistics services</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <a href="#dropshipping" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">◇</span>
+        <span style="flex:1;">Dropshipping</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <a href="#services" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">▱</span>
+        <span style="flex:1;">More services</span>
+        <span style="font-size:17px;color:#888;">›</span>
+    </a>
+
+
+    <div style="font-size:11px;color:#999;padding:19px 7px 7px;">Settings</div>
+
+
+    <a href="#account" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">◎</span>
+        Account settings
+    </a>
+
+
+    <a href="#seller" style="height:43px;display:flex;align-items:center;padding:0 9px;text-decoration:none;color:#333;font-size:13px;border-radius:7px;transition:.25s;" onmouseover="this.style.background='#fff';this.style.color='#ff6200';this.style.transform='translateX(3px)'" onmouseout="this.style.background='transparent';this.style.color='#333';this.style.transform='translateX(0)'">
+        <span style="font-size:18px;margin-right:9px;">⌗</span>
+        Explore seller site
+    </a>
+
+</aside>
+
+
+<!-- ================= MAIN DASHBOARD ================= -->
+<main style="flex:1;min-width:0;padding:30px 18px 80px;background:#f2f3f5;box-sizing:border-box;">
+
+    <div style="max-width:1090px;margin:auto;display:grid;grid-template-columns:minmax(500px,2fr) minmax(280px,.72fr);gap:18px;align-items:start;">
+
+
+        <!-- ================= LEFT MAIN COLUMN ================= -->
+        <div style="display:flex;flex-direction:column;gap:18px;">
+
+
+            <!-- PROFILE CARD -->
+            <section id="dashboard" style="background:#fff;border-radius:13px;padding:20px 18px 16px;box-sizing:border-box;min-height:230px;box-shadow:0 1px 2px rgba(0,0,0,.02);transition:box-shadow .3s ease;" onmouseover="this.style.boxShadow='0 5px 20px rgba(0,0,0,.05)'" onmouseout="this.style.boxShadow='0 1px 2px rgba(0,0,0,.02)'">
+
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+
+                    <div style="display:flex;align-items:center;gap:10px;">
+
+                        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#f8d3a0,#fff1d6);display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 0 0 2px #fff,0 1px 4px rgba(0,0,0,.15);">
+                            🧑
+                        </div>
+
+                        <div>
+                            <div style="font-size:14px;font-weight:700;">BB</div>
+                            <a href="#" style="font-size:13px;color:#222;text-decoration:underline;">Profile</a>
+                        </div>
+
+                    </div>
+
+                    <a href="#" style="color:#222;font-size:13px;text-decoration:underline;display:flex;align-items:center;gap:6px;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#222'">
+                        ♧ Online support
+                    </a>
+
+                </div>
+
+
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;">
+
+                    <div style="text-align:center;border-right:1px solid #ddd;padding:0 10px;">
+                        <div style="font-size:16px;font-weight:700;">0</div>
+                        <div style="font-size:13px;margin-top:6px;color:#333;">Unread messages</div>
+                    </div>
+
+                    <div style="text-align:center;border-right:1px solid #ddd;padding:0 10px;">
+                        <div style="font-size:16px;font-weight:700;">0</div>
+                        <div style="font-size:13px;margin-top:6px;color:#333;">New quotes</div>
+                    </div>
+
+                    <div style="text-align:center;padding:0 10px;">
+                        <div style="font-size:16px;font-weight:700;">0</div>
+                        <div style="font-size:13px;margin-top:6px;color:#333;">Coupons</div>
+                    </div>
+
+                </div>
+
+
+                <div style="margin-top:20px;height:36px;border-radius:9px;background:#f5f5f5;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:12px;box-sizing:border-box;">
+
+                    <span style="font-weight:500;">Get verified for tax-exempt status</span>
+
+                    <a href="#" style="color:#174ea6;text-decoration:none;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#174ea6'">
+                        Verify business information ›
+                    </a>
+
+                </div>
+
+
+                <div style="display:flex;justify-content:center;gap:4px;margin-top:13px;">
+                    <span style="width:15px;height:7px;border-radius:10px;background:#777;"></span>
+                    <span style="width:7px;height:7px;border-radius:50%;background:#ddd;"></span>
+                </div>
+
+            </section>
+
+
+            <!-- ORDERS CARD -->
+            <section id="orders" style="background:#fff;border-radius:13px;padding:20px 18px;min-height:310px;box-sizing:border-box;box-shadow:0 1px 2px rgba(0,0,0,.02);">
+
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+
+                    <h2 style="font-size:19px;margin:0;">Orders</h2>
+
+                    <a href="#" style="font-size:12px;color:#333;text-decoration:none;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#333'">
+                        View all ›
+                    </a>
+
+                </div>
+
+
+                <div style="display:flex;gap:14px;overflow-x:auto;margin-top:14px;padding-bottom:2px;">
+
+                    <button onclick="showOrder('all',this)" style="border:1px solid #222;background:#fff;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;">
+                        All
+                    </button>
+
+                    <button onclick="showOrder('confirming',this)" style="border:1px solid #ddd;background:#fff;color:#777;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;" onmouseover="this.style.borderColor='#ff6200';this.style.color='#ff6200'" onmouseout="this.style.borderColor='#ddd';this.style.color='#777'">
+                        Confirming
+                    </button>
+
+                    <button onclick="showOrder('unpaid',this)" style="border:1px solid #ddd;background:#fff;color:#777;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;" onmouseover="this.style.borderColor='#ff6200';this.style.color='#ff6200'" onmouseout="this.style.borderColor='#ddd';this.style.color='#777'">
+                        Unpaid
+                    </button>
+
+                    <button onclick="showOrder('preparing',this)" style="border:1px solid #ddd;background:#fff;color:#777;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;" onmouseover="this.style.borderColor='#ff6200';this.style.color='#ff6200'" onmouseout="this.style.borderColor='#ddd';this.style.color='#777'">
+                        Preparing to ship
+                    </button>
+
+                    <button onclick="showOrder('delivering',this)" style="border:1px solid #ddd;background:#fff;color:#777;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;" onmouseover="this.style.borderColor='#ff6200';this.style.color='#ff6200'" onmouseout="this.style.borderColor='#ddd';this.style.color='#777'">
+                        Delivering
+                    </button>
+
+                    <button onclick="showOrder('refund',this)" style="border:1px solid #ddd;background:#fff;color:#777;padding:7px 16px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:.25s;" onmouseover="this.style.borderColor='#ff6200';this.style.color='#ff6200'" onmouseout="this.style.borderColor='#ddd';this.style.color='#777'">
+                        Refunds &amp; after-sales
+                    </button>
+
+                    <span style="font-size:18px;color:#777;">⌄</span>
+
+                </div>
+
+
+                <div id="orderContent" style="height:190px;display:flex;align-items:center;justify-content:center;text-align:center;transition:opacity .25s ease;">
+
+                    <div>
+
+                        <div style="font-size:70px;color:#aaa;line-height:1;transform:rotate(-12deg);margin-bottom:10px;">
+                            ▤
+                        </div>
+
+                        <div id="orderTitle" style="font-size:18px;font-weight:700;margin-bottom:18px;">
+                            No orders yet
+                        </div>
+
+                        <a href="#" style="display:inline-block;text-decoration:none;color:#222;border:1px solid #222;border-radius:20px;padding:8px 18px;font-size:12px;font-weight:600;transition:.25s;" onmouseover="this.style.background='#222';this.style.color='#fff';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#fff';this.style.color='#222';this.style.transform='translateY(0)'">
+                            Start sourcing
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAYMENT -->
+            <section id="payment" style="background:#fff;border-radius:13px;padding:25px;min-height:260px;box-sizing:border-box;">
+
+                <h2 style="font-size:19px;margin:0 0 20px;">Payment</h2>
+
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:15px;">
+
+                    <div style="border:1px solid #eee;border-radius:10px;padding:20px;transition:.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                        <div style="font-size:30px;">💳</div>
+                        <h3 style="font-size:15px;">Payment methods</h3>
+                        <p style="font-size:12px;color:#777;">Manage your payment options.</p>
+                    </div>
+
+                    <div style="border:1px solid #eee;border-radius:10px;padding:20px;transition:.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                        <div style="font-size:30px;">🛡️</div>
+                        <h3 style="font-size:15px;">Secure payment</h3>
+                        <p style="font-size:12px;color:#777;">Protected transaction services.</p>
+                    </div>
+
+                    <div style="border:1px solid #eee;border-radius:10px;padding:20px;transition:.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                        <div style="font-size:30px;">🧾</div>
+                        <h3 style="font-size:15px;">Payment history</h3>
+                        <p style="font-size:12px;color:#777;">View previous transactions.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================= RIGHT COLUMN ================= -->
+        <div style="display:flex;flex-direction:column;gap:18px;">
+
+
+            <!-- FAVORITES -->
+            <section id="saved" style="background:#fff;border-radius:13px;padding:20px;min-height:220px;box-sizing:border-box;">
+
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                    <h2 style="font-size:19px;margin:0;">Favorites</h2>
+                </div>
+
+                <div style="height:146px;background:#f7f7f7;border-radius:9px;display:flex;align-items:center;justify-content:center;text-align:center;">
+
+                    <div>
+                        <div style="font-size:52px;opacity:.65;">📦</div>
+
+                        <div style="font-size:14px;font-weight:700;margin-top:3px;">
+                            No favorites yet
+                        </div>
+
+                        <a href="#" style="font-size:11px;color:#777;text-decoration:underline;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#777'">
+                            Explore
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BROWSING HISTORY -->
+            <section id="history" style="background:#fff;border-radius:13px;padding:20px;min-height:220px;box-sizing:border-box;">
+
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+
+                    <h2 style="font-size:19px;margin:0;">
+                        Browsing history
+                    </h2>
+
+                    <a href="#" style="font-size:12px;color:#777;text-decoration:none;transition:.2s;" onmouseover="this.style.color='#ff6200'" onmouseout="this.style.color='#777'">
+                        View all ›
+                    </a>
+
+                </div>
+
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">
+
+                    <div style="text-align:center;border-right:1px solid #ddd;padding-right:8px;transition:.25s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+
+                        <div style="height:110px;background:#fafafa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:65px;">
+                            🚲
+                        </div>
+
+                        <div style="font-weight:700;font-size:13px;margin-top:7px;">
+                            $110
+                        </div>
+
+                        <div style="font-size:11px;color:#999;margin-top:4px;">
+                            Min. order: 1.0 piece
+                        </div>
+
+                    </div>
+
+
+                    <div style="text-align:center;transition:.25s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+
+                        <div style="height:110px;background:#222;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:63px;">
+                            🚲
+                        </div>
+
+                        <div style="font-weight:700;font-size:13px;margin-top:7px;">
+                            $125-160
+                        </div>
+
+                        <div style="font-size:11px;color:#999;margin-top:4px;">
+                            Min. order: 1.0 piece
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROMOTION -->
+            <section id="promotion" style="background:#fff;border-radius:13px;padding:20px;min-height:220px;box-sizing:border-box;overflow:hidden;">
+
+                <h2 style="font-size:19px;margin:0 0 15px;">
+                    Promotion
+                </h2>
+
+                <div style="height:145px;border-radius:8px;background:linear-gradient(135deg,#fff1eb,#ffe2d5);position:relative;overflow:hidden;display:flex;align-items:center;padding:20px;box-sizing:border-box;">
+
+                    <div style="position:absolute;right:-20px;bottom:-25px;font-size:110px;opacity:.2;">
+                        🛍️
+                    </div>
+
+                    <div style="position:relative;z-index:2;">
+
+                        <div style="font-size:12px;color:#ff6200;font-weight:700;margin-bottom:7px;">
+                            SPECIAL OFFER
+                        </div>
+
+                        <div style="font-size:19px;font-weight:700;">
+                            Discover more deals
+                        </div>
+
+                        <a href="#" style="display:inline-block;margin-top:12px;background:#ff6200;color:#fff;text-decoration:none;border-radius:5px;padding:8px 15px;font-size:11px;font-weight:600;transition:.25s;" onmouseover="this.style.background='#e95100';this.style.transform='translateY(-2px)';this.style.boxShadow='0 5px 12px rgba(255,98,0,.25)'" onmouseout="this.style.background='#ff6200';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                            Explore now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+
+<!-- ================= FLOATING SUPPORT ================= -->
+<a href="#" style="position:fixed;right:13px;bottom:205px;width:39px;height:39px;border-radius:50%;background:#ff6200;border:3px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:22px;z-index:2000;transition:.3s;" onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 5px 16px rgba(255,98,0,.35)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 3px 10px rgba(0,0,0,.2)'">
+    👩
+</a>
+
+
+<script>
+function showOrder(type,button){
+    var title=document.getElementById('orderTitle');
+    var content=document.getElementById('orderContent');
+
+    content.style.opacity='0';
+
+    setTimeout(function(){
+
+        if(type==='all'){
+            title.innerHTML='No orders yet';
+        }
+
+        if(type==='confirming'){
+            title.innerHTML='No confirming orders';
+        }
+
+        if(type==='unpaid'){
+            title.innerHTML='No unpaid orders';
+        }
+
+        if(type==='preparing'){
+            title.innerHTML='No orders preparing to ship';
+        }
+
+        if(type==='delivering'){
+            title.innerHTML='No orders being delivered';
+        }
+
+        if(type==='refund'){
+            title.innerHTML='No refunds or after-sales orders';
+        }
+
+        content.style.opacity='1';
+
+    },180);
+
+    var buttons=button.parentElement.querySelectorAll('button');
+
+    buttons.forEach(function(btn){
+        btn.style.background='#fff';
+        btn.style.color='#777';
+        btn.style.borderColor='#ddd';
+    });
+
+    button.style.background='#fff';
+    button.style.color='#222';
+    button.style.borderColor='#222';
+}
+</script>
+
+</body>
+</html>
