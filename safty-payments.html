@@ -1,0 +1,1536 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B GoX</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cloudflare.com">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1d4ed8', // Deep Blue
+                        primaryDark: '#1e3a8a',
+                        secondary: '#f97316', // Orange highlight (like Wolmart)
+                        textDark: '#333333',
+                        textLight: '#666666',
+                        borderGray: '#e5e7eb',
+                        bgGray: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; overflow-x: hidden; background-color: #f5f7fa; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #999; }
+        /* B2B Specific Styles */
+        .tier-price { font-size: 0.8rem; line-height: 1.2; }
+        .tier-price strong { font-size: 1.1rem; color: #333; }
+        .hover-primary:hover { color: #1d4ed8; transition: color 0.3s; }
+        .header-dropdown-shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+	</style>
+</head>
+<body class="bg-[#fcfdff]"> 
+
+
+<!-- top nav start -->
+<div class="bg-gray-100 text-xs text-textLight py-2 border-gray-200 hidden md:block">
+    <div class="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+							<div class="flex items-center space-x-4">
+								 
+            <a href="index.html" class="flex items-center"> 
+                <img src="https://i.ibb.co/8npYHX01/logo2-copy.png" alt="B2B GoX" class="h-10 lg:h-12 w-auto object-contain">  
+            </a> 
+							</div>
+     <div class="flex items-center space-x-6">
+                
+			
+       <span class="text-gray-300">|</span>
+
+				
+	<a href="become-supplier.html" style=" display: inline-flex; align-items: center; justify-content: center; background-color: #004d99; color: #ffffff; text-decoration: none; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; font-size: 12px; font-weight: 800; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.1px; white-space: nowrap; box-shadow: 0 2px 6px rgba(242, 101, 34, 0); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); " onmouseover=" this.style.backgroundColor='#e05313'; this.style.boxShadow='0 0 12px rgba(242, 101, 34, 0.7), 0 2px 8px rgba(242, 101, 34, 0.3)'; this.style.transform='translateY(-1px)'; " onmouseout=" this.style.backgroundColor='#f26522'; this.style.boxShadow='0 2px 6px rgba(242, 101, 34, 0)'; this.style.transform='translateY(0px)'; "> Be a Supplier </a>
+		
+
+
+<div class="relative group py-1">
+    <a href="help-center.html" class="hover-primary font-semibold text-textDark flex items-center">
+        <i class="far fa-question-circle mr-1"></i> Help Center
+    </a>            
+    
+    <div class="dropdown-card fixed left-0 right-0 top-auto mx-auto mt-2 w-screen max-w-full bg-white border-b border-gray-200 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm" 
+         style="padding: 20px 40px;">
+        
+		
+        <div style="margin: 0 auto; display: flex; gap: 10px; justify-content: space-between; align-items: stretch;">
+            
+            <div style="flex: 1; display: flex; gap: 20px; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🚢</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Supplier</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">List your product</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential buying leads</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Supplier centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; background: #eef5f0; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/BKqsVXjc/help2.jpg" alt="Supplier Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 1px; gap: 10px; background-color: #e5e7eb; align-self:stretch;"></div>
+
+            <div style="flex: 1; display: flex; align-items: flex-start; justify-content: space-between;">
+                <div style="flex: 0 0 200px;">
+                    <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">
+                        <span style="font-size: 18px;">🛒</span>
+                        <h3 style="margin: 0; font-size: 16px; color: #111111; font-weight: 700;">For Buyer</h3>
+                    </div>
+                    <ul class="text-textDark text-[15px] font-medium" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Post buying request</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Verify business account</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Find potential sources</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">Buyer centre</a></li>
+                        <li><a href="#" class="block py-1 hover:text-primary" style="transition: transform 0.2s; text-decoration: none;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">FAQs</a></li>
+                    </ul>
+                </div>
+                <div style="width: 380px; height: 200px; border-radius:10px; margin-top:40px; display: flex; align-items: center; justify-content: center; overflow: hidden; ">
+                    <div style="width:100%;height:100%;"> 
+                        <img src="https://i.ibb.co/cStpprd3/help.jpg" alt="Buyer Flyer" style="width:100%; height:100%; object-fit:cover; display:block;"> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+	
+
+<li style="list-style: none; margin: 0; padding: 0; box-sizing: border-box;">
+
+    <nav style="position: sticky; top: 0; z-index: 50; width: 100%; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #f1f5f9; box-sizing: border-box;">
+        <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;">
+
+            <div></div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                
+                <div style="position: relative; display: inline-block;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #475569; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9';" onmouseout="this.style.backgroundColor='transparent';">
+                        <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="globe-dropdown-wrapper" 
+                     style="position: relative; display: inline-block;"
+                     onmouseover="this.querySelector('.dropdown-panel').style.opacity='1'; this.querySelector('.dropdown-panel').style.visibility='visible'; this.querySelector('.dropdown-panel').style.transform='translateY(0) scale(1)'; this.querySelector('.dropdown-panel').style.pointerEvents='auto'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.12)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.3)'; this.querySelector('.tall-oval-btn').style.transform='scale(1.03)';"
+                     onmouseout="this.querySelector('.dropdown-panel').style.opacity='0'; this.querySelector('.dropdown-panel').style.visibility='hidden'; this.querySelector('.dropdown-panel').style.transform='translateY(12px) scale(0.97)'; this.querySelector('.dropdown-panel').style.pointerEvents='none'; this.querySelector('.tall-oval-btn').style.backgroundColor='rgba(249, 115, 22, 0.08)'; this.querySelector('.tall-oval-btn').style.borderColor='rgba(249, 115, 22, 0.15)'; this.querySelector('.tall-oval-btn').style.transform='scale(1)';">
+                    
+                    <script>
+                        window.tempLang = "EN";
+                        window.tempLangFlag = "https://flagcdn.com/w20/us.png";
+                        window.tempCurrency = "USD ($)";
+                    </script>
+
+                    <a href="javascript:void(0);" style="display: flex; align-items: center; gap:1px; text-decoration: none;">
+                        <div class="tall-oval-btn" style="border-radius: 50% / 35%; aspect-ratio: 3 / 4; height:30px; display: flex; align-items: center; justify-content: center; background-color: rgba(249, 115, 22, 0.08); border: 1.5px solid rgba(249, 115, 22, 0.15); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;"> 
+                            <svg style="width: 24px; height: 24px; color: #ea580c; flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"> </circle>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <i class="fas fa-chevron-down" style="font-size:10px; color:#94a3b8;"></i>
+                    </a>
+
+                    <div class="dropdown-panel" style="position: absolute; top: 100%; right: 0; margin-top: 10px; width: 400px; background-color: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.16); padding: 16px; box-sizing: border-box; z-index: 100; opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.97); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s, visibility 0.2s; pointer-events: none;">
+                        
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f8fafc;">
+                            <div style="text-align: left;">
+                                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: #0f172a; font-size: 14px; margin: 0 0 2px 0;">Regional Settings</h4>
+                                <p style="color: #64748b; font-size: 11px; margin: 0; line-height: 1.3;">Configure language & currency variables.</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 5px; background-color: #f1f5f9; padding: 4px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                                <img id="active-lang-flag" src="https://flagcdn.com/w20/us.png" style="width: 13px; height: 9px; object-fit: cover; border-radius: 1px;" alt="Flag">
+                                <span id="active-settings-badge" style="font-size: 10px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">EN / USD</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 14px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Language</label>
+                            
+                            <div class="lang-grid-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                                <div class="lang-card" data-lang="EN" data-flag="https://flagcdn.com/w20/us.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'EN'; window.tempLangFlag = 'https://flagcdn.com/w20/us.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: rgba(79, 70, 229, 0.04); border: 1.5px solid #4f46e5; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="English">
+                                    <span style="font-size: 12px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">English (US)</span>
+                                </div>
+                                <div class="lang-card" data-lang="AE" data-flag="https://flagcdn.com/w20/ae.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'AE'; window.tempLangFlag = 'https://flagcdn.com/w20/ae.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Arabic">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">العربية (AE)</span>
+                                </div >
+                                <div class="lang-card" data-lang="ES" data-flag="https://flagcdn.com/w20/es.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'ES'; window.tempLangFlag = 'https://flagcdn.com/w20/es.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/es.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Spanish">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Español (ES)</span>
+                                </div>
+                                <div class="lang-card" data-lang="FR" data-flag="https://flagcdn.com/w20/fr.png" onclick="
+                                    let items = this.parentNode.querySelectorAll('.lang-card');
+                                    items.forEach(el => { el.style.backgroundColor='#ffffff'; el.style.borderColor='#e2e8f0'; el.querySelector('span').style.color='#475569'; el.querySelector('span').style.fontWeight='500'; });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.style.borderColor='#4f46e5'; this.querySelector('span').style.color='#4f46e5'; this.querySelector('span').style.fontWeight='700';
+                                    window.tempLang = 'FR'; window.tempLangFlag = 'https://flagcdn.com/w20/fr.png';
+                                " style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background-color: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.2s;">
+                                    <img src="https://flagcdn.com/w20/fr.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="French">
+                                    <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Français (FR)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 16px; text-align: left;">
+                            <label style="display: block; font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px;">Select Currency</label>
+                            
+                            <div class="currency-scroll-list" style="max-height: 130px; overflow-y: auto; border: 1px solid #f1f5f9; border-radius: 10px; padding: 3px; box-sizing: border-box;">
+                                
+                                <div class="curr-row" data-curr="USD" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'USD ($)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background-color: rgba(79, 70, 229, 0.04); cursor: pointer; margin-bottom: 3px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/us.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="USA">
+                                        <span style="font-size: 12px; font-weight: 700; color: #475569; font-family: sans-serif;">United States</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 11px; font-weight: 700; color: #4f46e5; font-family: sans-serif;">USD ($)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="AED" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'AED (د.إ)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/ae.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UAE">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Arab Emirates</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">AED (د.إ)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="GBP" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'GBP (£)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/gb.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="UK">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">United Kingdom</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">GBP (£)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="EUR" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'EUR (€)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; margin-bottom: 3px; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/eu.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="EU">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Germany (Eurozone)</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">EUR (€)</span>
+                                </div>
+
+                                <div class="curr-row" data-curr="JPY" onclick="
+                                    let rows = this.parentNode.querySelectorAll('.curr-row');
+                                    rows.forEach(el => { el.style.backgroundColor='transparent'; if(el.querySelector('.lbl-code')){ el.querySelector('.lbl-code').style.color='#94a3b8'; } });
+                                    this.style.backgroundColor='rgba(79, 70, 229, 0.04)'; this.querySelector('.lbl-code').style.color='#4f46e5';
+                                    window.tempCurrency = 'JPY (¥)';
+                                " style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 8px; cursor: pointer; transition: background 0.15s;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <img src="https://flagcdn.com/w20/jp.png" style="width: 16px; height: 11px; object-fit: cover; border-radius: 2px;" alt="Japan">
+                                        <span style="font-size: 12px; font-weight: 500; color: #475569; font-family: sans-serif;">Japan</span>
+                                    </div>
+                                    <span class="lbl-code" style="font-size: 10px; font-weight: 600; color: #94a3b8; font-family: sans-serif;">JPY (¥)</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 10px; border-top: 1px solid #f8fafc; width: 100%;">
+                            <button type="button" 
+                                    onclick="
+                                        document.getElementById('active-settings-badge').innerText = window.tempLang + ' / ' + window.tempCurrency.split(' ')[0];
+                                        document.getElementById('active-lang-flag').src = window.tempLangFlag;
+                                        alert('Settings saved successfully: ' + window.tempLang + ' and ' + window.tempCurrency);
+                                    " 
+                                    style="width: 100%; display: block; padding: 10px 16px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); transition: all 0.2s;" 
+                                    onmouseover="this.style.backgroundColor='#1e293b';" 
+                                    onmouseout="this.style.backgroundColor='#0f172a';">
+                                Save Changes
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</li>
+
+    <!-- globe and currency ends -->
+
+
+  <!-- sign card in start  -->		
+	   <!-- sign card in start  -->			
+ <a href="my-account.html" class="hover-primary"> </a>		
+              
+ <div class="relative group py-1">
+                    <a href="#" class="hover-primary font-semibold text-textDark flex items-center">
+                        <i class="far fa-user mr-1"> </i> Sign In
+                    </a>			
+                    
+<div class="dropdown-card absolute right-0 top-full mt-1 w-[250px] bg-white border border-red-200 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-sm">
+                        
+						
+						
+						
+                        <div class="absolute -top-1.5 right-4 w-3 h-3 bg-white border-t border-l border-red-200 transform rotate-45"></div>
+
+                        <div class="p-4 border-b border-gray-100 ">
+                            <a href="signin.html" class="block w-full bg-[#008000] text-white text-base font-semibold py-2 rounded-full text-center hover:bg-primaryDark transition mb-3">Sign in</a>
+                            
+                            <div class="p-4 py-2 flex justify-center items-center space-x-4 mb-4">
+     <a href="https://accounts.google.com" target="_blank" class="w-9 h-9 border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition duration-200" title="Sign in with Google">
+                    <svg viewBox="0 0 24 24" class="w-4.5 h-4.5"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22l.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1C7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                </a>
+	
+	
+    <a href="https://www.facebook.com/login" target="_blank" class="transform hover:scale-110 transition duration-200" title="Sign in with Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="w-6 h-6 rounded-full">
+    </a>
+    <a href="https://x.com/i/flow/login" target="_blank" class="w-8 h-8 rounded-full bg-[#f6ab2e] flex items-center justify-center text-white text-xl font-bold transform hover:scale-110 transition duration-200" title="Sign in with X">X</a>
+    <a href="https://www.linkedin.com/login" target="_blank" class="w-8 h-8 rounded-full bg-[#3077b5] flex items-center justify-center text-white text-lg font-bold transform hover:scale-110 transition duration-200" title="Sign in with LinkedIn">in</a>
+</div>
+
+                <p class="text-xs text-textLight text-center mb-3">By clicking Sign in the <a href="#" class="text-textLight underline">Privacy Policy</a> .</p>
+                            
+                            <div class="relative flex py-2 items-center">
+                                <div class="flex-grow border-t border-gray-200"></div>
+                                <span class="flex-shrink mx-3 text-xs text-textLight">OR</span>
+                                <div class="flex-grow border-t border-gray-200"></div>
+                            </div>              
+ <a href="register.html" class="block w-full text-white text-sm font-semibold py-3 bg-[#FF4500] rounded-full text-center hover:bg-[#00008B] transition">
+    Register for free
+</a>
+                        </div>
+
+                        <ul class="py-2 text-textDark text-[15px] font-medium">
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">Buyer Center</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Inquires</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My RFQ</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Messages</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Orders</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Cart</a></li>
+                            <li><a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary">My Account</a></li>
+                        </ul>
+                    </div>
+					
+			
+					
+</div>
+		  
+            </div>
+        </div>
+</div>
+
+   <!-- sign in card ends -->	   
+
+   <!-- sign in card ends -->
+  
+   
+ <!-- top nav ends -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- verified supplier section -->
+    
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section
+style="min-height:470px;position:relative;overflow:hidden;background:linear-gradient(110deg,#ffffff 0%,#f5faff 50%,#eaf5ff 100%);">
+
+    <!-- Decorative background -->
+    <div style="position:absolute;width:600px;height:600px;border-radius:50%;right:-100px;top:-150px;background:radial-gradient(circle,rgba(0,119,255,.14),rgba(255,255,255,0) 70%);"></div>
+
+    <div style="position:absolute;width:420px;height:160px;left:-80px;bottom:-70px;border-radius:50%;background:#e2f3ff;filter:blur(15px);"></div>
+
+
+    <div style="width:92%;max-width:1280px;margin:auto;min-height:470px;display:flex;align-items:center;position:relative;z-index:2;">
+
+        <!-- LEFT CONTENT -->
+
+        <div
+        data-reveal="true"
+        style="width:48%;opacity:0;transform:translateY(45px);transition:opacity .9s ease,transform .9s ease;">
+
+            <!-- Badge -->
+
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border:1px solid #b9d9ff;border-radius:20px;background:#fff;color:#102d55;font-size:11px;font-weight:800;margin-bottom:18px;box-shadow:0 3px 12px rgba(0,80,180,.06);">
+
+                <span style="width:18px;height:18px;background:#086ee5;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;">
+                    ✓
+                </span>
+
+                SECURE PAYMENT
+
+            </div>
+
+
+            <h1 style="font-size:40px;line-height:1.12;letter-spacing:-1.2px;margin:0 0 15px;color:#081b3b;font-weight:800;">
+
+                Safe Payments.<br>
+
+                <span style="color:#0865cf;">
+                    Stronger Business.
+                </span>
+
+            </h1>
+
+
+            <p style="font-size:14px;line-height:1.8;color:#344867;max-width:490px;margin:0 0 25px;">
+
+                Your security is our priority. Enjoy safe, fast and reliable payments on B2BGoX.com.
+
+            </p>
+
+
+            <!-- Features -->
+
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:570px;">
+
+                <div style="text-align:left;">
+                    <div style="font-size:25px;color:#096ce3;margin-bottom:5px;">♢</div>
+                    <div style="font-size:10px;color:#233858;line-height:1.5;">
+                        Secure<br>Transactions
+                    </div>
+                </div>
+
+                <div style="text-align:left;">
+                    <div style="font-size:25px;color:#096ce3;margin-bottom:5px;">♙</div>
+                    <div style="font-size:10px;color:#233858;line-height:1.5;">
+                        Buyer &amp; Seller<br>Protection
+                    </div>
+                </div>
+
+                <div style="text-align:left;">
+                    <div style="font-size:25px;color:#096ce3;margin-bottom:5px;">ϟ</div>
+                    <div style="font-size:10px;color:#233858;line-height:1.5;">
+                        Fast &amp; Easy<br>Payments
+                    </div>
+                </div>
+
+                <div style="text-align:left;">
+                    <div style="font-size:25px;color:#096ce3;margin-bottom:5px;">◇</div>
+                    <div style="font-size:10px;color:#233858;line-height:1.5;">
+                        100% Trusted<br>Platform
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT HERO IMAGE -->
+
+        <div
+        data-reveal="true"
+        style="width:100%;height:420px;position:relative;opacity:0;transform:translateX(55px);transition:opacity 1s ease .2s,transform 1s ease .2s;">
+
+            <img
+            src="https://i.ibb.co/20Vc0jwq/sec-pay2.png"
+            alt="Secure Payment" style="position:absolute;right:0px;bottom:0;height:420px; object-fit:cover;object-position:center top;mask-image:linear-gradient(to left,black 72%,transparent 100%);-webkit-mask-image:linear-gradient(to left,black 72%,transparent 100%);"
+            >
+
+
+            <!-- Payment card -->
+
+            <div
+            style="position:absolute;left:65px;top:115px;width:205px;background:rgba(255,255,255,.93);border:1px solid rgba(200,220,240,.9);border-radius:10px;padding:17px;box-shadow:0 15px 35px rgba(20,65,120,.18);backdrop-filter:blur(10px);animation:floatCard 4s ease-in-out infinite;">
+
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:15px;">
+
+                    <span style="width:29px;height:29px;background:#e7f2ff;color:#0871dd;border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                        🔒
+                    </span>
+
+                    <span style="font-size:10px;font-weight:800;color:#172d4b;">
+                        Secure Payment
+                    </span>
+
+                </div>
+
+                <div style="font-size:9px;color:#74849a;margin-bottom:4px;">
+                    Amount
+                </div>
+
+                <div style="font-size:18px;font-weight:800;color:#172b4a;margin-bottom:14px;">
+                    $2,450.00
+                </div>
+
+                <div style="font-size:9px;color:#74849a;margin-bottom:5px;">
+                    Payment Method
+                </div>
+
+                <div style="height:25px;border:1px solid #e1e9f2;border-radius:4px;background:#f8fbff;display:flex;align-items:center;padding:0 7px;font-size:9px;color:#31445e;margin-bottom:12px;">
+                    •••• •••• •••• 2948
+                </div>
+
+                <button
+                style="width:100%;border:0;border-radius:4px;background:#096ce0;color:#fff;padding:9px;font-size:10px;font-weight:700;cursor:pointer;transition:all .3s;"
+                onmouseover="this.style.background='#0058c4';this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='#096ce0';this.style.transform='translateY(0)'">
+                    🔒 Pay Securely
+                </button>
+
+            </div>
+
+
+            <!-- Success -->
+
+            <div
+            style="position:absolute;right:45px;bottom:72px;background:#fff;padding:14px 19px;border-radius:9px;box-shadow:0 12px 30px rgba(20,60,110,.16);display:flex;align-items:center;gap:10px;animation:floatSuccess 4s ease-in-out infinite;">
+
+                <span style="width:24px;height:24px;background:#e9f5ff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#086de1;">
+                    ✓
+                </span>
+
+                <span style="font-size:10px;font-weight:800;color:#223755;">
+                    Payment Successful
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section style="padding:38px 0;background:#f4f9ff;">
+
+    <div
+    data-reveal="true"
+    style="width:92%;max-width:1350px;margin:auto;background:rgba(255,255,255,.92);border:1px solid #e3edf8;border-radius:14px;padding:30px 35px;box-shadow:0 10px 35px rgba(23,70,120,.08);opacity:0;transform:translateY(50px);transition:opacity .8s ease,transform .8s ease;">
+
+        <div style="font-size:11px;color:#086ee0;font-weight:800;text-transform:uppercase;margin-bottom:7px;">
+            HOW IT WORKS
+        </div>
+
+        <h2 style="font-size:23px;margin:0 0 28px;color:#111e34;">
+            Simple. Secure. Seamless.
+        </h2>
+
+
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative;">
+
+            <div style="position:absolute;left:9%;right:9%;top:42px;border-top:2px dashed #9fc9f7;"></div>
+
+
+            <!-- 01 -->
+
+            <div data-step="true" style="text-align:center;position:relative;z-index:2;opacity:0;transform:translateY(25px);transition:all .6s ease;">
+
+                <div style="width:68px;height:68px;border-radius:50%;background:#e7f3ff;border:1px solid #c9e3ff;margin:auto;display:flex;align-items:center;justify-content:center;font-size:29px;color:#086de1;position:relative;">
+                    🛒
+
+                    <span style="position:absolute;bottom:-22px;font-size:10px;color:#0864ca;font-weight:800;">
+                        01
+                    </span>
+                </div>
+
+                <h3 style="font-size:12px;margin:30px 0 5px;color:#162945;">
+                    Place Order
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#61718a;margin:0;">
+                    Buyer places an order<br>on B2BGoX.com
+                </p>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div data-step="true" style="text-align:center;position:relative;z-index:2;opacity:0;transform:translateY(25px);transition:all .6s ease .12s;">
+
+                <div style="width:68px;height:68px;border-radius:50%;background:#e4faf5;border:1px solid #c7eee5;margin:auto;display:flex;align-items:center;justify-content:center;font-size:29px;color:#20a77b;position:relative;">
+                    🛡️
+
+                    <span style="position:absolute;bottom:-22px;font-size:10px;color:#0864ca;font-weight:800;">
+                        02
+                    </span>
+                </div>
+
+                <h3 style="font-size:12px;margin:30px 0 5px;color:#162945;">
+                    Secure Payment
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#61718a;margin:0;">
+                    Payment is held safely<br>by our system
+                </p>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div data-step="true" style="text-align:center;position:relative;z-index:2;opacity:0;transform:translateY(25px);transition:all .6s ease .24s;">
+
+                <div style="width:68px;height:68px;border-radius:50%;background:#f0ebff;border:1px solid #ded2ff;margin:auto;display:flex;align-items:center;justify-content:center;font-size:29px;color:#7653e6;position:relative;">
+                    📦
+
+                    <span style="position:absolute;bottom:-22px;font-size:10px;color:#7653e6;font-weight:800;">
+                        03
+                    </span>
+                </div>
+
+                <h3 style="font-size:12px;margin:30px 0 5px;color:#162945;">
+                    Order Delivered
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#61718a;margin:0;">
+                    Seller ships the order<br>to the buyer
+                </p>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div data-step="true" style="text-align:center;position:relative;z-index:2;opacity:0;transform:translateY(25px);transition:all .6s ease .36s;">
+
+                <div style="width:68px;height:68px;border-radius:50%;background:#fff1e5;border:1px solid #ffe0c4;margin:auto;display:flex;align-items:center;justify-content:center;font-size:29px;color:#ff7600;position:relative;">
+                    🛡️
+
+                    <span style="position:absolute;bottom:-22px;font-size:10px;color:#ff7600;font-weight:800;">
+                        04
+                    </span>
+                </div>
+
+                <h3 style="font-size:12px;margin:30px 0 5px;color:#162945;">
+                    Confirm &amp; Release
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#61718a;margin:0;">
+                    Buyer confirms order<br>receipt
+                </p>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div data-step="true" style="text-align:center;position:relative;z-index:2;opacity:0;transform:translateY(25px);transition:all .6s ease .48s;">
+
+                <div style="width:68px;height:68px;border-radius:50%;background:#e7f3ff;border:1px solid #c9e3ff;margin:auto;display:flex;align-items:center;justify-content:center;font-size:29px;color:#086de1;position:relative;">
+                    💳
+
+                    <span style="position:absolute;bottom:-22px;font-size:10px;color:#0864ca;font-weight:800;">
+                        05
+                    </span>
+                </div>
+
+                <h3 style="font-size:12px;margin:30px 0 5px;color:#162945;">
+                    Payment Released
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#61718a;margin:0;">
+                    Payment is released<br>to the seller
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BUILT-IN PROTECTION
+========================================================= -->
+
+<section style="padding:48px 0;background:#ffffff;">
+
+    <div style="width:90%;max-width:1350px;margin:auto;display:grid;grid-template-columns:250px 1fr;gap:45px;align-items:center;">
+
+        <!-- LEFT -->
+
+        <div data-reveal="true" style="opacity:0;transform:translateX(-40px);transition:all .8s ease;">
+
+            <div style="font-size:11px;color:#0871df;font-weight:800;text-transform:uppercase;margin-bottom:9px;">
+                WE PROTECT YOU
+            </div>
+
+            <h2 style="font-size:24px;line-height:1.2;margin:0 0 17px;color:#0c1c35;">
+                Built-in Protection<br>
+                for Peace of Mind
+            </h2>
+
+            <div style="width:27px;height:3px;background:#ff7600;margin-bottom:15px;"></div>
+
+            <p style="font-size:11px;color:#566981;line-height:1.7;margin:0 0 18px;">
+                Our secure payment system protects both buyers and sellers at every step.
+            </p>
+
+            <a href="#" style="display:inline-block;text-decoration:none;background:#086de0;color:#fff;border-radius:5px;padding:9px 17px;font-size:10px;font-weight:700;box-shadow:0 5px 15px rgba(8,109,224,.2);transition:all .3s;"
+               onmouseover="this.style.background='#0058c4';this.style.transform='translateY(-3px)'"
+               onmouseout="this.style.background='#086de0';this.style.transform='translateY(0)'">
+                Learn More&nbsp;&nbsp; →
+            </a>
+
+        </div>
+
+
+        <!-- CARDS -->
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+
+            <!-- CARD -->
+
+            <div data-card="true"
+            style="background:#f9fcff;border:1px solid #dceafa;border-radius:10px;padding:13px;box-shadow:0 7px 22px rgba(30,80,130,.07);transition:all .35s ease;"
+            onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 15px 35px rgba(20,85,150,.15)'"
+            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 7px 22px rgba(30,80,130,.07)'">
+
+                <div style="height:125px;border-radius:8px;background:#eaf4ff;display:flex;align-items:center;justify-content:center;font-size:65px;color:#086de1;margin-bottom:13px;">
+                    🛡️
+                </div>
+
+                <h3 style="font-size:12px;color:#14243c;margin:0 0 7px;">
+                    Payment Security
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#687991;margin:0;">
+                    Advanced encryption keeps your transactions safe.
+                </p>
+
+            </div>
+
+
+            <div data-card="true"
+            style="background:#f9fcff;border:1px solid #dceafa;border-radius:10px;padding:13px;box-shadow:0 7px 22px rgba(30,80,130,.07);transition:all .35s ease;"
+            onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 15px 35px rgba(20,85,150,.15)'"
+            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 7px 22px rgba(30,80,130,.07)'">
+
+                <div style="height:125px;border-radius:8px;background:#eaf4ff;display:flex;align-items:center;justify-content:center;font-size:65px;color:#086de1;margin-bottom:13px;">
+                    👤
+                </div>
+
+                <h3 style="font-size:12px;color:#14243c;margin:0 0 7px;">
+                    Buyer Protection
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#687991;margin:0;">
+                    Get full support if your order is not as described.
+                </p>
+
+            </div>
+
+
+            <div data-card="true"
+            style="background:#f9fcff;border:1px solid #dceafa;border-radius:10px;padding:13px;box-shadow:0 7px 22px rgba(30,80,130,.07);transition:all .35s ease;"
+            onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 15px 35px rgba(20,85,150,.15)'"
+            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 7px 22px rgba(30,80,130,.07)'">
+
+                <div style="height:125px;border-radius:8px;background:#eaf4ff;display:flex;align-items:center;justify-content:center;font-size:65px;color:#086de1;margin-bottom:13px;">
+                    🏪
+                </div>
+
+                <h3 style="font-size:12px;color:#14243c;margin:0 0 7px;">
+                    Seller Protection
+                </h3>
+
+                <p style="font-size:9px;line-height:1.6;color:#687991;margin:0;">
+                    Receive your payments securely and on time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MULTIPLE PAYMENT METHODS
+========================================================= -->
+
+<section style="margin: 0 auto; max-width:1280px; width:100%; height:270px; background-color:#031e46; position:relative; overflow:hidden; background-image:url('https://i.ibb.co/4wdRjZmF/pay.jpg'); background-repeat:no-repeat; background-position:right center; background-size: auto 105%;">
+
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 80% 50%,rgba(0,113,255,.3),transparent 45%);"></div>
+
+    <div style="position:absolute;right:0;top:0;width:55%;height:100%;background-image:url('#"></div>
+
+
+    <div style="width:90%;max-width:1350px;margin:auto;min-height:270px;display:flex;align-items:center;position:relative;z-index:2;">
+
+        <div data-reveal="true" style="width:43%;color:#fff;opacity:0;transform:translateX(-40px);transition:all .8s ease;">
+
+            <div style="font-size:11px;color:#008cff;font-weight:800;text-transform:uppercase;margin-bottom:9px;">
+                MULTIPLE PAYMENT METHODS
+            </div>
+
+            <h2 style="font-size:26px;margin:0 0 8px;">
+                Pay Your Way
+            </h2>
+
+            <div style="height:3px;width:27px;background:#ff7600;margin-bottom:13px;"></div>
+
+            <p style="font-size:11px;line-height:1.7;color:#d4dfef;max-width:300px;margin:0 0 20px;">
+                Choose from multiple trusted payment methods that work best for you.
+            </p>
+
+
+            <div style="display:flex;gap:7px;flex-wrap:wrap;">
+
+                <div style="background:#fff;color:#14396a;border-radius:5px;padding:9px 13px;font-size:11px;font-weight:900;box-shadow:0 3px 10px rgba(0,0,0,.15);transition:transform .3s;"
+                onmouseover="this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.transform='translateY(0)'">
+                    VISA
+                </div>
+
+                <div style="background:#fff;color:#e30028;border-radius:5px;padding:9px 13px;font-size:11px;font-weight:900;box-shadow:0 3px 10px rgba(0,0,0,.15);transition:transform .3s;"
+                onmouseover="this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.transform='translateY(0)'">
+                    ●●
+                </div>
+
+                <div style="background:#fff;color:#153b83;border-radius:5px;padding:9px 13px;font-size:11px;font-weight:900;box-shadow:0 3px 10px rgba(0,0,0,.15);transition:transform .3s;"
+                onmouseover="this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.transform='translateY(0)'">
+                    PayPal
+                </div>
+
+                <div style="background:#fff;color:#122d54;border-radius:5px;padding:9px 13px;font-size:10px;font-weight:900;box-shadow:0 3px 10px rgba(0,0,0,.15);transition:transform .3s;"
+                onmouseover="this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.transform='translateY(0)'">
+                    T/T Bank
+                </div>
+
+                <div style="background:#fff;color:#111;border-radius:5px;padding:9px 13px;font-size:11px;font-weight:900;box-shadow:0 3px 10px rgba(0,0,0,.15);transition:transform .3s;"
+                onmouseover="this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.transform='translateY(0)'">
+                     Pay
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRUSTED GLOBALLY
+========================================================= -->
+
+<section style="padding:45px 0;background:#f7fbff;overflow:hidden;">
+
+    <div style="width:90%;max-width:1350px;margin:auto;display:flex;align-items:center;position:relative;">
+
+        <div data-reveal="true" style="width:40%;position:relative;z-index:3;opacity:0;transform:translateX(-40px);transition:all .8s ease;">
+
+            <div style="font-size:11px;color:#0871df;font-weight:800;text-transform:uppercase;margin-bottom:9px;">
+                TRUSTED GLOBALLY
+            </div>
+
+            <h2 style="font-size:26px;line-height:1.18;color:#101f36;margin:0 0 13px;">
+                A Trusted Payment<br>
+                Partner Worldwide
+            </h2>
+
+            <div style="width:27px;height:3px;background:#ff7600;margin-bottom:15px;"></div>
+
+            <p style="font-size:11px;line-height:1.7;color:#52657d;max-width:290px;margin:0 0 22px;">
+                Secure millions of transactions across the world every day.
+            </p>
+
+
+            <div style="display:flex;gap:28px;">
+
+                <div>
+                    <div style="font-size:20px;font-weight:800;color:#086de1;">
+                        ◉ 200+
+                    </div>
+                    <div style="font-size:9px;color:#5b6e85;text-align:center;">
+                        Countries
+                    </div>
+                </div>
+
+                <div>
+                    <div style="font-size:20px;font-weight:800;color:#086de1;">
+                        ♧ 10M+
+                    </div>
+                    <div style="font-size:9px;color:#5b6e85;text-align:center;">
+                        Orders Protected
+                    </div>
+                </div>
+
+                <div>
+                    <div style="font-size:20px;font-weight:800;color:#086de1;">
+                        ◇ 99.9%
+                    </div>
+                    <div style="font-size:9px;color:#5b6e85;text-align:center;">
+                        Security Guaranteed
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAP -->
+
+        <div style="width:60%;height:270px;position:relative;">
+
+            <div style="position:absolute;inset:0;background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg');background-repeat:no-repeat;background-position:center;background-size:contain;opacity:.18;filter:sepia(1) saturate(5) hue-rotate(180deg);"></div>
+
+            <div style="position:absolute;left:25%;top:30%;width:8px;height:8px;border-radius:50%;background:#0873e5;box-shadow:0 0 0 7px rgba(8,115,229,.12),0 0 20px rgba(8,115,229,.6);animation:pulsePoint 2s infinite;"></div>
+
+            <div style="position:absolute;left:50%;top:45%;width:8px;height:8px;border-radius:50%;background:#0873e5;box-shadow:0 0 0 7px rgba(8,115,229,.12),0 0 20px rgba(8,115,229,.6);animation:pulsePoint 2s infinite .4s;"></div>
+
+            <div style="position:absolute;left:67%;top:31%;width:8px;height:8px;border-radius:50%;background:#0873e5;box-shadow:0 0 0 7px rgba(8,115,229,.12),0 0 20px rgba(8,115,229,.6);animation:pulsePoint 2s infinite .8s;"></div>
+
+            <div style="position:absolute;left:74%;top:61%;width:8px;height:8px;border-radius:50%;background:#0873e5;box-shadow:0 0 0 7px rgba(8,115,229,.12),0 0 20px rgba(8,115,229,.6);animation:pulsePoint 2s infinite 1.2s;"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section style="min-height:225px;background:#03358b;position:relative;overflow:hidden;">
+
+    <div style="position:absolute;inset:0;background:radial-gradient(circle at 75% 50%,rgba(0,157,255,.35),transparent 42%);"></div>
+
+    <div style="position:absolute;right:0;top:0;width:50%;height:100%;background-image:url('https://i.ibb.co/mCGZBSy0/w2.png');background-size:cover;  background-repeat:no-repeat; background-position:center top;opacity:.5;"></div>
+
+
+    <div style="width:90%;max-width:1350px;margin:auto;min-height:225px;display:flex;align-items:center;position:relative;z-index:3;">
+
+        <div data-reveal="true" style="color:#fff;opacity:0;transform:translateY(40px);transition:all .8s ease;">
+
+            <div style="font-size:11px;color:#1da1ff;font-weight:800;text-transform:uppercase;margin-bottom:8px;">
+                SAFE. SECURE. RELIABLE.
+            </div>
+
+            <h2 style="font-size:27px;margin:0 0 8px;font-weight:800;">
+                Your Business. Our Priority.
+            </h2>
+
+            <p style="font-size:11px;color:#dbe9fb;line-height:1.7;max-width:310px;margin:0 0 15px;">
+                Experience secure payments designed to help your business grow with confidence.
+            </p>
+
+            <a href="#" style="display:inline-block;background:#fff;color:#0865cf;text-decoration:none;padding:10px 18px;border-radius:5px;font-size:11px;font-weight:800;transition:all .3s;"
+               onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 22px rgba(0,0,0,.2)'"
+               onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                Join B2BGoX.com&nbsp;&nbsp; →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	<!-- footer-->
+	
+    <footer class="bg-white border-t border-gray-200 mt-16 pt-10">
+        <!-- Newsletter Bar -->
+        <div class="bg-[#2b5d8c] text-white py-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="far fa-envelope-open text-4xl mr-4 opacity-80"></i>
+                    <div>
+                        <h4 class="font-bold text-lg">SUBSCRIBE TO B2B NEWSLETTER</h4>
+                        <p class="text-sm text-blue-200">Get the latest info on global trends, trade shows and bulk offers.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 flex">
+                    <input type="email" placeholder="Your E-mail Address" class="w-full px-4 py-3 text-sm text-gray-700 outline-none">
+                    <button class="bg-[#333] hover:bg-black text-white px-6 py-3 text-sm font-bold uppercase transition flex items-center space-x-2">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="bg-bgGray py-16">
+            <div class="container mx-auto px-4 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <!-- Brand Info -->
+                <div>
+                   <a href="/"> <img src="https://i.ibb.co/5WrVC3q3/logoo.png" alt="B2B GoX"class="h-16 lg:h-20 w-auto object-contain"> </a>
+                    <p class="text-sm text-gray-500 mb-6 leading-relaxed">Your premier gateway for global wholesale trade. Connect with verified suppliers, secure transactions, and scale your business effortlessly.</p>
+                    <div class="mb-4 text-sm text-gray-500">
+                        <p>  <i class="fas fa-headset text-4xl text-gray-600 mr-4 gap-3"></i> Get Support</p>
+						      <p>  Call us 24/7 B2B Support</p>
+                        <p class="text-xl font-bold text-textDark mt-1"> +9714
+						-800-570-xxx</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1da1f2] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#bd081c] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+						<a href="#" class="w-8 h-8 rounded-full bg-[#fffc00] text-black flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-snapchat-ghost text-sm"></i>
+</a>
+
+<a href="#" class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:opacity-80 transition">
+    <i class="fab fa-tiktok text-sm"></i>
+</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-80 transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+					
+					
+					
+                </div>
+				
+				 <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">About Platform</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="about-us.html" class="hover-primary">About B2B GoX.com</a></li>
+                        <li><a href="career.html" class="hover-primary">Careers</a></li>
+                        <li><a href="contact-us.html" class="hover-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover-primary">News & Blog</a></li>
+                        <li><a href="#" class="hover-primary">Trade Shows</a></li>
+						<li><a href="help-center.html" class="hover-primary">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Suppliers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="register.html" class="hover-primary"> Become a Supplier </a></li>
+                        <li><a href="#" class="hover-primary">Supplier Memberships</a></li>
+                        <li><a href="#" class="hover-primary">Training Center</a></li>
+                        <li><a href="#" class="hover-primary">Logistics Services</a></li>
+                        <li><a href="#" class="hover-primary">Payment & Escrow</a></li>
+						   <li><a href="package.html" class="hover-primary">Packages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">For Buyers</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Sourcing Guide</a></li>
+                        <li><a href="#" class="hover-primary">Post an RFQ</a></li>
+                        <li><a href="#" class="hover-primary">Trade Assurance Protection</a></li>
+                        <li><a href="#" class="hover-primary">Track Order</a></li>
+                        <li><a href="#" class="hover-primary">Return Policy</a></li>
+						<li><a href="my-account.html" class="hover-primary">My Account</a></li>
+						  
+                    </ul>
+                </div>
+				
+				<!-- Links 4 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm"> Sell On B2BGoX.com </h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="sell-on-gox.com.html" class="hover-primary"> Sell with Us </a></li>
+                        <li><a href="check-order-status.html" class="hover-primary">Check order status</a></li>
+                        <li><a href="become-verified-supplier.html" class="hover-primary">Become a Verified Supplier</a></li>
+                        <li><a href="become-partnership.html" class="hover-primary">Partnerships</a></li>
+                        <li><a href="sell-on-gox.html" class="hover-primary">Start selling</a></li>
+                    </ul>
+                </div>
+
+
+
+ <!-- Links 5 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">Our Safty </h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Payment Safty</a></li>
+                        <li><a href="#" class="hover-primary">Guurantee Safty</a></li>
+                        <li><a href="#" class="hover-primary">Delivery Safety</a></li>
+                        <li><a href="sales-protection.html" class="hover-primary">Sales Safety</a></li>
+                        <li><a href="#" class="hover-primary">Monitoring and Intense Guard</a></li>
+						<li><a href="my-account.html" class="hover-primary">Logistic Safety</a></li>
+						  
+                    </ul>
+                </div>
+
+
+
+ <!-- Links 5 -->
+                <div>
+                    <h4 class="font-bold text-textDark mb-6 uppercase text-sm">Help Center </h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover-primary">Buyers Help</a></li>
+                        <li><a href="#" class="hover-primary">Supplier Help</a></li>
+                        <li><a href="#" class="hover-primary">Account Help</a></li>
+                        <li><a href="sales-protection.html" class="hover-primary">Logistic Help</a></li>
+                        <li><a href="#" class="hover-primary">Transaction Help</a></li>
+						<li><a href="my-account.html" class="hover-primary">Live Chat</a></li>
+						  
+                    </ul>
+                </div>				
+
+              
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+				
+			<div class="relative">
+    <div class="absolute top-[-73px] right-[-800px]">
+        <a href="/">
+            <img
+                src="https://i.ibb.co/ZRjjQb10/barcode.jpg"
+                alt="barcode"
+                class="h-full lg:h-full object-contain">
+        </a>
+    </div>
+</div>
+			
+			
+            </div>
+			
+			
+		
+
+            <!-- Categories Tags Bottom -->
+            <div class="container mx-auto px-4 max-w-7xl mt-12 border-t border-gray-200 pt-8 hidden md:block">
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Consumer Electric:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">TV Television</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Air Condition</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Refrigerator</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Washing Machine</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Audio Speaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Security Camera</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500 mb-2">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Clothing & Apparel:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Men T-shirt</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Dresses</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Men's Sneaker</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Leather Backpack</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+                <div class="flex text-sm text-gray-500">
+                    <span class="font-bold text-textDark w-40 flex-shrink-0">Machinery:</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                        <a href="#" class="hover-primary">Packaging Machines</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Laser Cutters</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">CNC Routers</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary">Textile Machinery</a> <span class="text-gray-300">|</span> <a href="#" class="hover-primary text-primary">View all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-bgGray pb-8">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
+                <p>Copyright © 2026 B2B GoX.com. All Rights Reserved.</p>
+                <div class="flex items-center space-x-2 mt-4 md:mt-0">
+                    <span>We're using safe payment for</span>
+                    <!-- Simulated Payment Badges -->
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">VISA</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">MC</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">TT</div>
+                        <div class="w-8 h-5 bg-gray-200 rounded flex items-center justify-center text-[8px] text-gray-500 font-bold">L/C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+<script>
+
+(function(){
+
+    var revealItems = document.querySelectorAll('[data-reveal="true"]');
+
+    var observer = new IntersectionObserver(function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0) translateX(0)';
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },{
+        threshold:0.12
+    });
+
+
+    revealItems.forEach(function(item){
+        observer.observe(item);
+    });
+
+
+
+    /* STEP-BY-STEP ANIMATION */
+
+    var steps = document.querySelectorAll('[data-step="true"]');
+
+    var stepObserver = new IntersectionObserver(function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                var allSteps = document.querySelectorAll('[data-step="true"]');
+
+                allSteps.forEach(function(step,index){
+
+                    setTimeout(function(){
+
+                        step.style.opacity='1';
+                        step.style.transform='translateY(0)';
+
+                    },index * 130);
+
+                });
+
+                stepObserver.disconnect();
+
+            }
+
+        });
+
+    },{
+        threshold:.2
+    });
+
+
+    steps.forEach(function(step){
+        stepObserver.observe(step);
+    });
+
+
+
+    /* CARD REVEAL */
+
+    var cards = document.querySelectorAll('[data-card="true"]');
+
+    var cardObserver = new IntersectionObserver(function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                var allCards = document.querySelectorAll('[data-card="true"]');
+
+                allCards.forEach(function(card,index){
+
+                    setTimeout(function(){
+
+                        card.style.opacity='1';
+                        card.style.transform='translateY(0)';
+
+                    },index*130);
+
+                });
+
+                cardObserver.disconnect();
+
+            }
+
+        });
+
+    },{
+        threshold:.15
+    });
+
+
+    cards.forEach(function(card){
+
+        card.style.opacity='0';
+        card.style.transform='translateY(35px)';
+        cardObserver.observe(card);
+
+    });
+
+})();
+
+</script>
+
+
+<!-- =========================================================
+     KEYFRAME ANIMATIONS
+========================================================= -->
+
+<style>
+
+@keyframes floatCard {
+    0%,100% {
+        transform:translateY(0px) rotate(-1deg);
+    }
+
+    50% {
+        transform:translateY(-12px) rotate(1deg);
+    }
+}
+
+@keyframes floatSuccess {
+    0%,100% {
+        transform:translateY(0);
+    }
+
+    50% {
+        transform:translateY(-9px);
+    }
+}
+
+@keyframes pulsePoint {
+    0% {
+        box-shadow:0 0 0 0 rgba(8,115,229,.45),0 0 15px rgba(8,115,229,.5);
+    }
+
+    70% {
+        box-shadow:0 0 0 12px rgba(8,115,229,0),0 0 20px rgba(8,115,229,.6);
+    }
+
+    100% {
+        box-shadow:0 0 0 0 rgba(8,115,229,0),0 0 15px rgba(8,115,229,.5);
+    }
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    nav{
+        display:none !important;
+    }
+
+    header{
+        height:62px !important;
+    }
+
+    header > div{
+        width:94% !important;
+    }
+
+    section > div{
+        max-width:94% !important;
+    }
+
+}
+
+
+@media(max-width:800px){
+
+    .hero-content{
+        width:100% !important;
+    }
+
+}
+
+</style>
+    <script>
+        // Simple Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            // In a full implementation, this would open a side drawer
+            // For this single file demo, we just show an alert or toggle a class
+            alert('Mobile menu navigation would open here.');
+        });
+    </script>
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+	
+</body>
+</html>
